@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://smart-data-models.github.io/dataModel.GreenEnergy/GreenEnergyGenerator/schema.json",
+  "title": "GSMA / FIWARE - GreenEnergyGenerator",
+  "description": "A generic generator station which can generate energy from green energy",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "value": "GreenEnergyGenerator",
+          "description": "NGSI Entity type"
+        },
+        "status":{
+          "type":"string",
+          "enum": [
+            "working",
+            "outOfService",
+            "withIncidence"
+          ]
+        },
+        "generationSources": {
+          "type":"array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items":{
+            "type":"string",
+            "enum":[
+              "solar",
+              "eolic",
+              "hydropower",
+              "biomass",
+              "geothermal"
+            ]
+          }
+        },
+        "selfConsumption":{
+          "type":"boolean"
+        },
+        "redistribution":{
+          "type":"boolean"
+        },
+        "maxSolarPowerMeasure": {
+          "type": "number"
+        },
+        "maxEolicPowerMeasure": {
+          "type": "number"
+        },
+        "maxHydroPowerMeasure": {
+          "type": "number"
+        },
+        "maxBiomassMeasure": {
+          "type": "number"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "location",
+    "generationSources"
+  ]
+}

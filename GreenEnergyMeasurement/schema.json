@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "$id": "https://smart-data-models.github.io/dataModel.GreenEnergy/GreenEnergyMeasurement/schema.json",
+  "title": "GSMA / FIWARE - GreenEnergyMeasurement",
+  "description": "A instantaneous measure of power generation using green energy sources",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "$ref": "https://fiware.github.io/dataModels/common-schema.json#/definitions/Location-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "value":"GreenEnergyMeasurement",
+          "description": "NGSI Entity type"
+        },
+        "solarPowerGenerated": {
+          "type": "number",
+          "minimum": 0
+        },
+        "eolicPowerGenerated": {
+          "type": "number",
+          "minimum": 0
+        },
+        "hydroPowerGenerated": {
+          "type": "number",
+          "minimum": 0
+        },
+        "biomassPowerGenerated": {
+          "type": "number",
+          "minimum": 0
+        },
+        "geothermalPowerGenerated": {
+          "type": "number",
+          "minimum": 0
+        },
+        "refGreenEnergyGenerator":{
+          "oneOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "refGreenEnergyGenerator"
+  ]
+}
