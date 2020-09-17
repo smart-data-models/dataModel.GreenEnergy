@@ -1,0 +1,28 @@
+{
+  "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement-Generator:a34f24b",
+  "type": "GreenEnergyMeasurement",
+  "solarPowerGenerated":{
+    "type":"Number",
+    "value":5.1
+  },
+  "eolicPowerGenerated":{
+    "type":"Number",
+    "value":2.1
+  },
+  "hydroPowerGenerated":{
+    "type":"Number",
+    "value":0
+  },
+  "biomassPowerGenerated":{
+    "type":"Number",
+    "value":0
+  },
+  "geothermalPowerGenerated":{
+    "type":"Number",
+    "value":0
+  },
+  "refGreenEnergyGenerator":{
+    "type":"Relationship",
+    "value":"urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001"
+  }
+}
