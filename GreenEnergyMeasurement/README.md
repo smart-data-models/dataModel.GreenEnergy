@@ -1,7 +1,11 @@
 # GreenEnergyMeasurement
 
 ## Description 
+
+A instantaneous measure of power generation using green energy sources
 ### Specification
+
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://smart-data-models.github.io/dataModel.GreenEnergy/GreenEnergyMeasurement/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/GreenEnergyMeasurement/doc/spec.md)
 ### Examples
