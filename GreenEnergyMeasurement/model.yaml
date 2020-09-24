@@ -28,13 +28,13 @@ GreenEnergyMeasurement:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Specifies the amount of power generated using biomass energy'
     dataProvider:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Specifies the URL to information about the provider of this information'
     description:
       $ref: >-
         https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/description
@@ -42,17 +42,17 @@ GreenEnergyMeasurement:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Specifies the amount of power generated using eolic energy'
     geothermalPowerGenerated:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Specifies the amount of power generated using geothermal energy'
     hydroPowerGenerated:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Specifies the amount of power generated using hydropower energy'
     location:
       $ref: >-
         https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/location
@@ -60,26 +60,16 @@ GreenEnergyMeasurement:
       $ref: >-
         https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/name
     owner:
-      x-ngsi:
-        type: Property
-      type: array
-      description: ''
-      items:
-        anyOf:
-          - type: string
-            minLength: 1
-            maxLength: 256
-            pattern: '^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$'
-          - type: string
-            format: uri
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
     solarPowerGenerated:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Specifies the amount of power generated using solar energy'
     source:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'A sequence of characters giving the source of the entity data.'
