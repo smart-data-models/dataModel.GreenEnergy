@@ -1,0 +1,110 @@
+GreenEnergyGenerator:
+  required:
+    - id
+    - type
+    - location
+    - generationSources
+  allOf:
+    - $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/Common
+  type: object
+  description: A generic generator station which can generate energy from green energy
+  properties:
+    address:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/schema.org.yaml#/address
+    alternateName:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    areaServed:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    dataProvider:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    description:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/description
+    generationSources:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        type: string
+        enum:
+          - solar
+          - eolic
+          - hydropower
+          - biomass
+          - geothermal
+    location:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/location
+    maxBiomassMeasure:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    maxEolicPowerMeasure:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    maxHydroPowerMeasure:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    maxSolarPowerMeasure:
+      x-ngsi:
+        type: Property
+      type: number
+      description: ''
+    name:
+      $ref: >-
+        https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/name
+    owner:
+      x-ngsi:
+        type: Property
+      type: array
+      description: ''
+      items:
+        anyOf:
+          - type: string
+            minLength: 1
+            maxLength: 256
+            pattern: '^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$'
+          - type: string
+            format: uri
+    redistribution:
+      x-ngsi:
+        type: Property
+      type: boolean
+      description: ''
+    selfConsumption:
+      x-ngsi:
+        type: Property
+      type: boolean
+      description: ''
+    source:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
+    status:
+      x-ngsi:
+        type: Property
+        model: 'https://schema.org/Text'
+      type: string
+      description: ''
