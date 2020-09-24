@@ -1,0 +1,54 @@
+
+# Copyright (c) 2020 Contributors to Smart-Data-Models
+# see https://github.com/smart-data-models/dataModel.Energy
+---
+components: 
+  schemas: 
+    GreenEnergyMeasurement: 
+      $ref: "https://smart-data-models.github.io/dataModel.GreenEnergy/GreenEnergyMeasurement/model.yaml#/GreenEnergyMeasurement"
+info: 
+  description: |
+    Generic model for a snapshot measure of energy generated using one or more green energy sources. Thus, an entity of type GreenEnergyMeasurement cannot exist without an accompanying Entity of Type GreenEnergyGenerator
+    
+  title: GreenEnergyMeasurement
+  version: "1.0.0"
+openapi: "3.0.0"
+
+# These paths are merely representative.
+paths: 
+  /ngsi-ld/v1/entities: 
+    get: 
+      description: "Retrieve a set of entities which matches a specific query from an NGSI-LD system"
+      parameters: 
+        - 
+          in: query
+          name: type
+          required: true
+          schema: 
+            enum: 
+              - GreenEnergyMeasurement
+            type: string
+      responses: 
+        ? "200"
+        : 
+          content: 
+            application/ld+json: 
+              examples: 
+                keyvalues: 
+                  summary: "Key-Values Pairs"
+                  value: 
+                    - 
+                      $ref: "https://smart-data-models.github.io/dataModel.GreenEnergy/GreenEnergyMeasurement/examples/example.json"
+                normalized: 
+                  summary: "Normalized NGSI-LD"
+                  value: 
+                    - 
+                      $ref: "https://smart-data-models.github.io/dataModel.GreenEnergy/GreenEnergyMeasurement/examples/example-normalized.json"
+          description: OK
+      tags: 
+        - ngsi-ld
+tags: 
+  - 
+  
+    description: "NGSI-LD Linked-data Format"
+    name: ngsi-ld
