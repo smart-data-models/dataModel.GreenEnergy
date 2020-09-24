@@ -30,7 +30,7 @@ GreenEnergyGenerator:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Specifies the URL to information about the provider of this information'
     description:
       $ref: >-
         https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/description
@@ -38,7 +38,7 @@ GreenEnergyGenerator:
       x-ngsi:
         type: Property
       type: array
-      description: ''
+      description: 'A list of sources used for power generation.'
       items:
         type: string
         enum:
@@ -54,7 +54,7 @@ GreenEnergyGenerator:
       x-ngsi:
         type: Property
       type: number
-      description: ''
+      description: 'Geolocation of the green energy generator site represented by a GeoJSON (Multi)Polygon or Point.'
     maxEolicPowerMeasure:
       x-ngsi:
         type: Property
@@ -74,37 +74,24 @@ GreenEnergyGenerator:
       $ref: >-
         https://raw.githubusercontent.com/smart-data-models/data-models/master/ngsi-ld.yaml#/name
     owner:
-      x-ngsi:
-        type: Property
-      type: array
-      description: ''
-      items:
-        anyOf:
-          - type: string
-            minLength: 1
-            maxLength: 256
-            pattern: '^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$'
-          - type: string
-            format: uri
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/owner
     redistribution:
       x-ngsi:
         type: Property
       type: boolean
-      description: ''
+      description: 'Indicates whether the generated energy will be dumped into the network.'
     selfConsumption:
       x-ngsi:
         type: Property
       type: boolean
-      description: ''
+      description: 'Indicate whether energy generated will use for self.'
     source:
-      x-ngsi:
-        type: Property
-        model: 'https://schema.org/Text'
-      type: string
-      description: ''
+      $ref: >-
+        https://smart-data-models.github.io/data-models/fiware-terms.yaml#/source
     status:
       x-ngsi:
         type: Property
         model: 'https://schema.org/Text'
       type: string
-      description: ''
+      description: 'Status of the green energy generator.'
