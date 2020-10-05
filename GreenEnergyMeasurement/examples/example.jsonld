@@ -1,14 +1,8 @@
 {
   "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement:Generator:a34f24b",
   "type": "GreenEnergyMeasurement",
-  "source": {
-    "type": "Property",
-    "value": "bike-in.com"
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "bike-in.com"
-  },
+  "source": "bike-in.com",
+  "dataProvider": "bike-in.com",
   "dateCreated": "2019-01-01T12:00:00Z",
   "dateModified": "2020-07-22T12:00:00Z",
   "solarPowerGenerated":1.2,
