@@ -7,7 +7,8 @@ Entity: GreenEnergyMeasurement
 
 - `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided.  - `biomassPowerGenerated`:   - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `eolicPowerGenerated`:   - `geothermalPowerGenerated`:   - `hydroPowerGenerated`:   - `id`:   - `location`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `refGreenEnergyGenerator`:   - `seeAlso`:   - `solarPowerGenerated`:   - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `type`: NGSI Entity type  ## Data Model description of properties  
 Sorted alphabetically  
-```yaml  
+<details><summary><strong>full yaml details</strong></summary>    
+```yaml  
 GreenEnergyMeasurement:    
   description: 'A instantaneous measure of power generation using green energy sources'    
   properties:    
@@ -256,6 +257,7 @@ GreenEnergyMeasurement:
     - refGreenEnergyGenerator    
   type: object    
 ```  
+</details>    
 #### GreenEnergyMeasurement NGSI V2 key-values Example    
 Here is an example of a GreenEnergyMeasurement in JSON format as key-values. This is compatible with NGSI V2 when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
