@@ -16,27 +16,32 @@
         "type": {
           "type": "string",
           "value":"GreenEnergyMeasurement",
-          "description": "NGSI Entity type"
+          "description": "Property. NGSI Entity Type: It has to be GreenEnergyMeasurement"
         },
         "solarPowerGenerated": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Specifies the amount of power generated using solar energy. Units:'KWT'. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)."
         },
         "eolicPowerGenerated": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Specifies the amount of power generated using eolic energy. Units:'KWT'. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)."
         },
         "hydroPowerGenerated": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Specifies the amount of power generated using hydropower energy. Units:'KWT'. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)."
         },
         "biomassPowerGenerated": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Specifies the amount of power generated using biomass energy. Units:'KWT'. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)."
         },
         "geothermalPowerGenerated": {
           "type": "number",
-          "minimum": 0
+          "minimum": 0,
+          "description": "Property. Model:'https://schema.org/Number'. Specifies the amount of power generated using geothermal energy. Units:'KWT'. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)."
         },
         "refGreenEnergyGenerator":{
           "anyOf": [
@@ -47,7 +52,8 @@
             {
               "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
             }
-          ]
+          ],
+          "description": "Relationship. Model:'https://schema.org/URL'. A reference to the entity `GreenEnergyGenerator` which it belongs the measurement."
         }
       }
     }

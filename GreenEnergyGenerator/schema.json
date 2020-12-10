@@ -16,10 +16,11 @@
         "type": {
           "type": "string",
           "value": "GreenEnergyGenerator",
-          "description": "NGSI Entity type"
+          "description": "Property. NGSI Entity Type: It has to be GreenEnergyGenerator"
         },
         "status":{
           "type":"string",
+          "description": "Property. Status of the green energy generator. Model:'https://schema.org/Text'. Enum:'working, outOfService, withIncidence'",
           "enum": [
             "working",
             "outOfService",
@@ -28,6 +29,7 @@
         },
         "generationSources": {
           "type":"array",
+          "description": "Property. A list of sources used for power generation. Model:'https://schema.org/ItemList'. Enum:'solar, eolic, hydropower, biomass, geothermal'",
           "minItems": 1,
           "uniqueItems": true,
           "items":{
@@ -42,22 +44,32 @@
           }
         },
         "selfConsumption":{
-          "type":"boolean"
+          "type":"boolean",
+          "description": "Property. Indicate whether energy generated will use for self. Model:'https://schema.org/Boolean'"
         },
         "redistribution":{
-          "type":"boolean"
+          "type":"boolean",
+          "description": "Property. Indicates whether the generated energy will be dumped into the network. Model:'https://schema.org/Boolean'"
         },
         "maxSolarPowerMeasure": {
-          "type": "number"
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. A measure of maximum solar energy that can be generated. Units:'KWT'. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)."
         },
         "maxEolicPowerMeasure": {
-          "type": "number"
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. A measure of maximum eolic energy that can be generated. Units:'KWT'. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)."
         },
         "maxHydroPowerMeasure": {
-          "type": "number"
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. A measure of maximum hydropower energy that can be generated. Units:'KWT'. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)."
         },
         "maxBiomassMeasure": {
-          "type": "number"
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. A measure of maximum biomass energy that can be generated. Units:'KWT'. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)."
+        },
+        "maxGeothermalPowerGenerated": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. A measure of maximum geothermal energy that can be generated. Units:'KWT'. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)."
         }
       }
     }

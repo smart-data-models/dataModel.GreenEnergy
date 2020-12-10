@@ -1,0 +1,5 @@
+notesHeader:
+  Generic model for a snapshot measure of energy generated using one or more green energy sources. Thus, an entity of type `GreenEnergyMeasurement` cannot exist without an accompanying Entity of Type GreenEnergyGenerator.
+notesMiddle:
+
+notesFooter:
