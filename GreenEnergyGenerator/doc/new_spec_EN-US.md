@@ -5,9 +5,11 @@ Entity: GreenEnergyGenerator
 
 ## List of properties  
 
-- `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided.  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `generationSources`:   - `id`:   - `location`:   - `maxBiomassMeasure`:   - `maxEolicPowerMeasure`:   - `maxHydroPowerMeasure`:   - `maxSolarPowerMeasure`:   - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `redistribution`:   - `seeAlso`:   - `selfConsumption`:   - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `status`:   - `type`: NGSI Entity type    
+- `address`: The mailing address.  - `alternateName`: An alternative name for this item  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `description`: A description of this item  - `generationSources`: A list of sources used for power generation. Enum:'solar, eolic, hydropower, biomass, geothermal'  - `id`: Unique identifier of the entity  - `location`:   - `maxBiomassMeasure`: A measure of maximum biomass energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters).  - `maxEolicPowerMeasure`: A measure of maximum eolic energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters).  - `maxGeothermalPowerGenerated`: A measure of maximum geothermal energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters).  - `maxHydroPowerMeasure`: A measure of maximum hydropower energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters).  - `maxSolarPowerMeasure`: A measure of maximum solar energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters).  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `redistribution`: Indicates whether the generated energy will be dumped into the network  - `seeAlso`: list of uri pointing to additional resources about the item  - `selfConsumption`: Indicate whether energy generated will use for self  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `status`: Status of the green energy generator. Enum:'working, outOfService, withIncidence'  - `type`: NGSI Entity Type: It has to be GreenEnergyGenerator    
 Required properties  
-- `generationSources`  - `id`  - `location`  - `type`  ## Data Model description of properties  
+- `generationSources`  - `id`  - `location`  - `type`    
+Generic model for Green Energy Generator. A device which can generate energy using Solar or Eolic green energy.  
+## Data Model description of properties  
 Sorted alphabetically (click for details)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
@@ -18,26 +20,35 @@ GreenEnergyGenerator:
       description: 'The mailing address.'    
       properties:    
         addressCountry:    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         addressLocality:    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
           type: string    
         addressRegion:    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
           type: string    
         areaServed:    
+          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
           type: string    
         postOfficeBoxNumber:    
+          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         postalCode:    
+          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
           type: string    
         streetAddress:    
+          description: 'Property. The street address. Model:''https://schema.org/Text'''    
           type: string    
       type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided.'    
+      description: 'The geographic area where a service or offered item is provided'    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
       type: Property    
@@ -53,6 +64,7 @@ GreenEnergyGenerator:
       description: 'A description of this item'    
       type: Property    
     generationSources:    
+      description: 'A list of sources used for power generation. Enum:''solar, eolic, hydropower, biomass, geothermal'''    
       items:    
         enum:    
           - solar    
@@ -62,8 +74,10 @@ GreenEnergyGenerator:
           - geothermal    
         type: string    
       minItems: 1    
-      type: array    
+      type: Property    
       uniqueItems: true    
+      x-ngsi:    
+        model: https://schema.org/ItemList    
     id:    
       anyOf: &greenenergygenerator_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -74,6 +88,8 @@ GreenEnergyGenerator:
         - description: 'Property. Identifier format of any NGSI entity'    
           format: uri    
           type: string    
+      description: 'Unique identifier of the entity'    
+      type: Property    
     location:    
       $id: https://geojson.org/schema/Geometry.json    
       $schema: "http://json-schema.org/draft-07/schema#"    
@@ -222,13 +238,35 @@ GreenEnergyGenerator:
           type: object    
       title: 'GeoJSON Geometry'    
     maxBiomassMeasure:    
-      type: number    
+      description: 'A measure of maximum biomass energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters).'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        units: KWT    
     maxEolicPowerMeasure:    
-      type: number    
+      description: 'A measure of maximum eolic energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters).'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        units: KWT    
+    maxGeothermalPowerGenerated:    
+      description: 'A measure of maximum geothermal energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters).'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        units: KWT    
     maxHydroPowerMeasure:    
-      type: number    
+      description: 'A measure of maximum hydropower energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters).'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        units: KWT    
     maxSolarPowerMeasure:    
-      type: number    
+      description: 'A measure of maximum solar energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters).'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Number    
+        units: KWT    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -236,10 +274,15 @@ GreenEnergyGenerator:
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *greenenergygenerator_-_properties_-_owner_-_items_-_anyof    
+        description: 'Property. Unique identifier of the entity'    
       type: Property    
     redistribution:    
-      type: boolean    
+      description: 'Indicates whether the generated energy will be dumped into the network'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Boolean    
     seeAlso:    
+      description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
             - format: uri    
@@ -248,20 +291,27 @@ GreenEnergyGenerator:
           type: array    
         - format: uri    
           type: string    
+      type: Property    
     selfConsumption:    
-      type: boolean    
+      description: 'Indicate whether energy generated will use for self'    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Boolean    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
       type: Property    
     status:    
+      description: 'Status of the green energy generator. Enum:''working, outOfService, withIncidence'''    
       enum:    
         - working    
         - outOfService    
         - withIncidence    
-      type: string    
+      type: Property    
+      x-ngsi:    
+        model: https://schema.org/Text    
     type:    
-      description: 'NGSI Entity type'    
-      type: string    
+      description: 'NGSI Entity Type: It has to be GreenEnergyGenerator'    
+      type: Property    
       value: GreenEnergyGenerator    
   required:    
     - id    
