@@ -16,30 +16,30 @@
         "type": {
           "type": "string",
           "value": "GreenEnergyGenerator",
-          "description": "Property. NGSI Entity Type: It has to be GreenEnergyGenerator"
+          "description": "Property. NGSI Entity Type: It has to be GreenEnergyGenerator. Model:'https://schema.org/Text'"
         },
         "status":{
           "type":"string",
-          "description": "Property. Status of the green energy generator. Model:'https://schema.org/Text'. Enum:'working, outOfService, withIncidence'",
+          "description": "Property. Status of the green energy generator. Model:'https://schema.org/Text'. Enum:'outOfService, withIncidence, working'",
           "enum": [
-            "working",
             "outOfService",
-            "withIncidence"
+            "withIncidence",
+            "working"
           ]
         },
         "generationSources": {
           "type":"array",
-          "description": "Property. A list of sources used for power generation. Model:'https://schema.org/ItemList'. Enum:'solar, eolic, hydropower, biomass, geothermal'",
+          "description": "Property. A list of sources used for power generation. Model:'https://schema.org/ItemList'. Enum:'biomass, eolic, geothermal, hydropower, solar'",
           "minItems": 1,
           "uniqueItems": true,
           "items":{
             "type":"string",
             "enum":[
-              "solar",
-              "eolic",
-              "hydropower",
               "biomass",
-              "geothermal"
+              "eolic",
+              "geothermal",
+              "hydropower",
+              "solar"
             ]
           }
         },
