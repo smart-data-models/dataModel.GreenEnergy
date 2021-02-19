@@ -1,0 +1,2 @@
+"id_", "type_", "source_", "dataProvider_", "dateCreated_", "dateModified_", "solarPowerGenerated_", "eolicPowerGenerated_", "hydroPowerGenerated_", "biomassPowerGenerated_", "geothermalPowerGenerated_", "refGreenEnergyGenerator_"
+"urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement:Generator:a34f24b", "GreenEnergyMeasurement", "bike-in.com", "bike-in.com", "2019-01-01T12:00:00Z", "2020-07-22T12:00:00Z", "1.2", "3", "0", "0", "0", "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001"
