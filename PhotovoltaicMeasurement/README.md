@@ -4,6 +4,12 @@
 
 The Data Model is intended to measure the continuous power transferred by the photo-voltaic panel to an Inverter Device.
 ### Specification
+
+Link to the [specification](https://smart-data-models.github.io/dataModel.GreenEnergy/PhotovoltaicMeasurement/doc/spec.md)
+
+Link to the [specification in Spanish](https://smart-data-models.github.io/dataModel.GreenEnergy/PhotovoltaicMeasurement/doc/spec_ES.md)
+
+Link to the [specification in French](https://smart-data-models.github.io/dataModel.GreenEnergy/PhotovoltaicMeasurement/doc/spec_FR.md)
 ### Examples
 
 Link to the [example](https://smart-data-models.github.io/dataModel.GreenEnergy/PhotovoltaicMeasurement/examples/example.json) (keyvalues) for NGSI v2
