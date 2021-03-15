@@ -1,0 +1,11 @@
+notesHeader:
+  The measures performed for STC and NOCT are
+  - [Pmax]	Maximum Nominal Power measured in **WTT** represents Watt..
+  - [Umpp]	Optimal operating voltage measured in **VLT** represents Volt.
+  - [Impp]	Optimal Operating Current measured in **AMP** represents Ampere.
+  - [Uoc]		Open Circuit Voltage measured in **VLT** represents Volt.
+  - [Isc]		Short Circuit Current measured in **AMP** represents Ampere.
+
+notesMiddle:
+
+notesFooter:
