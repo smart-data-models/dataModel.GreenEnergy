@@ -1,0 +1,24 @@
+# PhotovoltaicDevice
+
+## Description 
+
+The Data Model is intended to describe the mechanical, electrical and thermal characteristics of photo-voltaic panels according to *STC - Standard Test Condition* and *NOCT - Normal Operating Cell Temperature*. *Remark* : This Data Model can be used directly as a main entity to describe the `Photovoltaic Device`  or as a sub-entity of the Data Model  `DEVICE` using a reference by the `refDevice` attribute. The measures performed for STC and NOCT are `Pmax` (Maximum Nominal Power), `Umpp` (Optimal operating voltage), `Impp` (Optimal Operating Current), `Uoc` (Open Circuit Voltage), `Isc` (Short Circuit Current). *Additional Information about Data Model:* This Data Model can be used directly as a main entity to describe the device [PHOTOVOLTAIC] or as a sub-entity of the Data Model [DEVICE] using a reference by the `refDevice` attribute.
+### Specification
+
+Link to the [specification](https://smart-data-models.github.io/dataModel.GreenEnergy/PhotovoltaicDevice/doc/spec.md)
+
+Link to the [specification in Spanish](https://smart-data-models.github.io/dataModel.GreenEnergy/PhotovoltaicDevice/doc/spec_ES.md)
+
+Link to the [specification in French](https://smart-data-models.github.io/dataModel.GreenEnergy/PhotovoltaicDevice/doc/spec_FR.md)
+### Examples
+
+Link to the [example](https://smart-data-models.github.io/dataModel.GreenEnergy/PhotovoltaicDevice/examples/example.json) (keyvalues) for NGSI v2
+
+Link to the [example](https://smart-data-models.github.io/dataModel.GreenEnergy/PhotovoltaicDevice/examples/example.jsonld) (keyvalues) for NGSI-LD
+
+Link to the [example](https://smart-data-models.github.io/dataModel.GreenEnergy/PhotovoltaicDevice/examples/example-normalized.json) (normalized) for NGSI-V2
+
+Link to the [example](https://smart-data-models.github.io/dataModel.GreenEnergy/PhotovoltaicDevice/examples/example-normalized.jsonld) (normalized) for NGSI-LD
+### Contribution
+
+ If you have any issue on this data model you can raise an [issue](https://github.com/smart-data-models/dataModel.GreenEnergy/issues)  or contribute with a [PR](https://github.com/smart-data-models/dataModel.GreenEnergy/pulls)
