@@ -1,13 +1,13 @@
 notesHeader:
   It can have following values.
-    - instant.	From the specific instant of time
-    - average.	The average of a time period
-    - rms. 		The root mean square of a time period
-    - maximum.	The maximum of a time period
-    - minimum.	The minimum of a time period.
+    - instant. From the specific instant of time
+    - average. The average of a time period
+    - rms.     The root mean square of a time period
+    - maximum. The maximum of a time period
+    - minimum. The minimum of a time period.
 
-  When using [average, rms, maximum, minimum] values another Meta Data attribute called `measurementInterval` should be used to give the length of the measurement period in Seconds.
-  Also the `timestamp` Meta Data attribute should be the end time of the measurement period.
+  When using [average, rms, maximum, minimum] values another Meta Data attribute called 'measurementInterval' should be used to give the length of the measurement period in Seconds.
+  Also the 'timestamp' Meta Data attribute should be the end time of the measurement period.
 notesMiddle:
 
 notesFooter:
