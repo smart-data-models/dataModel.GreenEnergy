@@ -27,7 +27,7 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 256,
-              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]'|~^@!,:\\\\]+$",
               "description": "Property. Identifier format of any NGSI entity"
             },
             {
@@ -44,7 +44,7 @@
               "type": "string",
               "minLength": 1,
               "maxLength": 256,
-              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]'|~^@!,:\\\\]+$",
               "description": "Property. Identifier format of any NGSI entity"
             },
             {
@@ -58,12 +58,12 @@
         "dateObservedFrom": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Observation period: Start date and time in an ISO8601 UTC format. The attribute can be used in addition to the `dateObserved` attribute when it corresponds to a time interval to be highlighted. Model:'https://schema.org/DateTime'"
+          "description": "Property. Observation period: Start date and time in an ISO8601 UTC format. The attribute can be used in addition to the 'dateObserved attribute when it corresponds to a time interval to be highlighted. Model:'https://schema.org/DateTime'"
         },
         "dateObservedTo": {
           "type": "string",
           "format": "date-time",
-          "description": "Property. Observation period: End date and time in an ISO8601 UTC format. The attribute can be used in addition to the `dateObserved` attribute when it corresponds to a time interval to be highlighted. Model:'https://schema.org/DateTime'"
+          "description": "Property. Observation period: End date and time in an ISO8601 UTC format. The attribute can be used in addition to the 'dateObserved' attribute when it corresponds to a time interval to be highlighted. Model:'https://schema.org/DateTime'"
         },
         "temperature": {
           "type": "number",
@@ -94,7 +94,7 @@
         },
         "inverterStatus": {
           "type": "array",
-          "description": "Property. Active Power,where phi is the phase shift of the current compared to the voltage. The unit code (text) is given using the UN/CEFACT_Common_Codes (max 3 characters). For instance, For instance, **KWT** represents Kilowatt. Model:'https://schema.org/Number'. Enum:''00-On sector', '01-Power failure / On battery','02-Loss of communication', '03-Battery fault','04-System shutdown',''05-Tension dip', '06-Overvoltage','07-Voltage drop',''08-Voltage increase', '09-Line noise', '10-Frequency variation',''11-Transient distortion', '12-Harmonic distortion''",
+          "description": "Property. Active Power,where phi is the phase shift of the current compared to the voltage. The unit code (text) is given using the UN/CEFACT_Common_Codes (max 3 characters). For instance, For instance, **KWT** represents Kilowatt. Model:'https://schema.org/Number'. Enum:'00-On sector, 01-Power failure / On battery, 02-Loss of communication,  03-Battery fault, 04-System shutdown, 05-Tension dip, 06-Overvoltage, 07-Voltage drop, 08-Voltage increase, 09-Line noise, 10-Frequency variation, 11-Transient distortion, 12-Harmonic distortion'",
           "items": {
             "type": "string",
             "enum": [
