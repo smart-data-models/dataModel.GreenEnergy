@@ -1,32 +1,17 @@
 {
-  "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement-Generator:a34f24b",
+  "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement:Generator:a34f24b",
   "type": "GreenEnergyMeasurement",
-  "solarPowerGenerated":{
-    "type":"Number",
-    "value":5.1
-  },
-  "eolicPowerGenerated":{
-    "type":"Number",
-    "value":2.1
-  },
-  "hydroPowerGenerated":{
-    "type":"Number",
-    "value":2.1
-  },
-  "biomassPowerGenerated":{
-    "type":"Number",
-    "value":2.1
-  },
-  "geothermalPowerGenerated":{
-    "type":"Number",
-    "value":2.1
-  },
-  "refGreenEnergyGenerator":{
-    "type":"Relationship",
-    "value":"urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001"
-  },
+  "source": "bike-in.com",
+  "dataProvider": "bike-in.com",
+  "dateCreated": "2019-01-01T12:00:00Z",
+  "dateModified": "2020-07-22T12:00:00Z",
+  "solarPowerGenerated": 1.2,
+  "eolicPowerGenerated": 3,
+  "hydroPowerGenerated": 0,
+  "biomassPowerGenerated": 0,
+  "geothermalPowerGenerated": 0,
+  "refGreenEnergyGenerator": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001",
   "@context": [
-    "https://schema.lab.fiware.org/ld/context",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
+    "https://smart-data-models.github.io/data-models/context.jsonld"
   ]
 }
