@@ -1,46 +1,46 @@
 Entité : GreenEnergyMeasurement  
 ===============================  
-[Licence ouverte](https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/GreenEnergyMeasurement/LICENSE.md)  
-Description globale : **Mesure instantanée de la production d'électricité à partir de sources d'énergie verte**  
+[Licence ouverte] (https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/GreenEnergyMeasurement/LICENSE.md)  
+[document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Description globale : **Mesure instantanée de la production d'électricité à partir de sources d'énergie vertes**.  
 
-## Liste des biens  
+## Liste des propriétés  
 
-- `address`: L'adresse postale.  - `alternateName`: Un autre nom pour cet article  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `biomassPowerGenerated`: Spécifie la quantité d'énergie produite à partir de l'énergie de la biomasse. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (max. 3 caractères).  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il est généralement attribué par la plate-forme de stockage.  - `description`: Une description de cet article  - `eolicPowerGenerated`: Spécifie la quantité d'énergie produite en utilisant l'énergie éolienne. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (max. 3 caractères).  - `geothermalPowerGenerated`: Précise la quantité d'électricité produite à l'aide de l'énergie géothermique. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (max. 3 caractères).  - `hydroPowerGenerated`: Précise la quantité d'énergie produite à partir de l'énergie hydraulique. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (max. 3 caractères).  - `id`: Identifiant unique de l'entité  - `location`:   - `name`: Le nom de cet article.  - `owner`: Une liste contenant une séquence de caractères codés en JSON faisant référence aux Ids uniques du ou des propriétaires  - `refGreenEnergyGenerator`: Une référence à l'entité "GreenEnergyGenerator" à laquelle il appartient la mesure.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur le sujet  - `solarPowerGenerated`: Spécifie la quantité d'énergie produite par l'énergie solaire. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (max. 3 caractères).  - `source`: Une séquence de caractères donnant comme URL la source originale des données de l'entité. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source, ou l'URL de l'objet source.  - `type`: Type d'entité NGSI : Il doit s'agir de GreenEnergyMeasurement    
+- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `biomassPowerGenerated`: Indique la quantité d'énergie produite à partir de la biomasse. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (3 caractères maximum).  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `eolicPowerGenerated`: Indique la quantité d'énergie produite à partir de l'énergie éolienne. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (3 caractères maximum).  - `geothermalPowerGenerated`: Indique la quantité d'énergie produite à partir de l'énergie géothermique. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (3 caractères maximum).  - `hydroPowerGenerated`: Indique la quantité d'énergie produite à partir de l'énergie hydroélectrique. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (3 caractères maximum).  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `refGreenEnergyGenerator`: Une référence à l'entité `GreenEnergyGenerator` à laquelle il appartient la mesure.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `solarPowerGenerated`: Indique la quantité d'énergie produite à partir de l'énergie solaire. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (3 caractères maximum).  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Type d'entité NGSI : Il doit s'agir de GreenEnergyMeasurement.    
 Propriétés requises  
 - `id`  - `refGreenEnergyGenerator`  - `type`    
-Modèle générique pour une mesure instantanée de l'énergie produite à l'aide d'une ou plusieurs sources d'énergie verte. Ainsi, une entité de type "GreenEnergyMeasurement" ne peut exister sans une entité de type GreenEnergyGenerator qui l'accompagne.  
-## Modèle de données description des biens  
-Classement par ordre alphabétique (cliquez pour plus de détails)  
+Modèle générique pour une mesure instantanée de l'énergie générée à l'aide d'une ou plusieurs sources d'énergie verte. Ainsi, une entité de type `GreenEnergyMeasurement` ne peut exister sans une entité de type GreenEnergyGenerator qui l'accompagne.  
+## Description des propriétés du modèle de données  
+Classés par ordre alphabétique (cliquez pour plus de détails)  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GreenEnergyMeasurement:    
   description: 'A instantaneous measure of power generation using green energy sources'    
   properties:    
     address:    
-      description: 'The mailing address.'    
+      description: 'The mailing address'    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
           type: string    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/Text'''    
+          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
           type: string    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/Text'''    
-          type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/Text'''    
+          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/Text'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/Text'''    
+          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
       type: Property    
+      x-ngsi:    
+        model: https://schema.org/address    
     alternateName:    
       description: 'An alternative name for this item'    
       type: Property    
@@ -104,10 +104,10 @@ GreenEnergyMeasurement:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -127,7 +127,8 @@ GreenEnergyMeasurement:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -150,7 +151,8 @@ GreenEnergyMeasurement:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -175,7 +177,8 @@ GreenEnergyMeasurement:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -197,7 +200,8 @@ GreenEnergyMeasurement:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -222,7 +226,8 @@ GreenEnergyMeasurement:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -249,7 +254,7 @@ GreenEnergyMeasurement:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -263,8 +268,15 @@ GreenEnergyMeasurement:
       anyOf:    
         - format: uri    
           type: string    
-        - anyOf: *greenenergymeasurement_-_properties_-_owner_-_items_-_anyof    
-          description: 'Property. Unique identifier of the entity'    
+        - anyOf:    
+            - description: 'Property. Identifier format of any NGSI entity'    
+              maxLength: 256    
+              minLength: 1    
+              pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+              type: string    
+            - description: 'Property. Identifier format of any NGSI entity'    
+              format: uri    
+              type: string    
       description: 'A reference to the entity `GreenEnergyGenerator` which it belongs the measurement.'    
       type: Relationship    
       x-ngsi:    
@@ -273,8 +285,8 @@ GreenEnergyMeasurement:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -302,8 +314,8 @@ GreenEnergyMeasurement:
 ```  
 </details>    
 ## Exemples de charges utiles  
-#### GreenEnergyMeasurement NGSI V2 key-values Exemple  
-Voici un exemple de mesure de l'énergie verte au format JSON en tant que valeurs clés. Ce format est compatible avec la version 2 de l'INSG lorsqu'il utilise "options=valeurs clés" et renvoie les données de contexte d'une entité individuelle.  
+#### GreenEnergyMeasurement Valeurs-clés NGSI-v2 Exemple  
+Voici un exemple de GreenEnergyMeasurement au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement:Generator:a34f24b",  
@@ -320,8 +332,8 @@ GreenEnergyMeasurement:
   "refGreenEnergyGenerator":"urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001"  
 }  
 ```  
-#### GreenEnergyMeasurement NGSI V2 normalisé Exemple  
-Voici un exemple de mesure de l'énergie verte au format JSON normalisé. Ce format est compatible avec la version 2 du NGSI lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
+#### Mesure de l'énergie verte NGSI-v2 normalisée Exemple  
+Voici un exemple de GreenEnergyMeasurement au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement-Generator:a34f24b",  
@@ -352,8 +364,44 @@ GreenEnergyMeasurement:
   }  
 }  
 ```  
-#### Mesure de l'énergie verte Exemple de valeurs clés de l'INSG-LD  
-Voici un exemple de mesure de l'énergie verte au format JSON-LD en tant que valeurs clés. Il est compatible avec le format NGSI-LD lorsqu'il utilise "options=keyValues" et renvoie les données de contexte d'une entité individuelle.  
+#### Valeurs-clés NGSI-LD de la mesure de l'énergie verte Exemple  
+Voici un exemple de GreenEnergyMeasurement au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+```json  
+{  
+  "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement-Generator:a34f24b",  
+  "type": "GreenEnergyMeasurement",  
+  "solarPowerGenerated": {  
+    "type": "Number",  
+    "value": 5.1  
+  },  
+  "eolicPowerGenerated": {  
+    "type": "Number",  
+    "value": 2.1  
+  },  
+  "hydroPowerGenerated": {  
+    "type": "Number",  
+    "value": 2.1  
+  },  
+  "biomassPowerGenerated": {  
+    "type": "Number",  
+    "value": 2.1  
+  },  
+  "geothermalPowerGenerated": {  
+    "type": "Number",  
+    "value": 2.1  
+  },  
+  "refGreenEnergyGenerator": {  
+    "type": "Relationship",  
+    "value": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001"  
+  },  
+  "@context": [  
+    "https://smartdatamodels.org/context.jsonld",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+#### Mesure de l'énergie verte NGSI-LD normalisée Exemple  
+Voici un exemple de GreenEnergyMeasurement au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement:Generator:a34f24b",  
@@ -362,14 +410,14 @@ GreenEnergyMeasurement:
   "dataProvider": "bike-in.com",  
   "dateCreated": "2019-01-01T12:00:00Z",  
   "dateModified": "2020-07-22T12:00:00Z",  
-  "solarPowerGenerated":1.2,  
-  "eolicPowerGenerated":3,  
-  "hydroPowerGenerated":0,  
-  "biomassPowerGenerated":0,  
-  "geothermalPowerGenerated":0,  
-  "refGreenEnergyGenerator":"urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001",  
-  "@context": ["https://smart-data-models.github.io/data-models/context.jsonld"]  
+  "solarPowerGenerated": 1.2,  
+  "eolicPowerGenerated": 3,  
+  "hydroPowerGenerated": 0,  
+  "biomassPowerGenerated": 0,  
+  "geothermalPowerGenerated": 0,  
+  "refGreenEnergyGenerator": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001",  
+  "@context": [  
+    "https://smart-data-models.github.io/data-models/context.jsonld"  
+  ]  
 }  
 ```  
-#### GreenEnergyMeasurement NGSI-LD normalisé Exemple  
-Voici un exemple de mesure de l'énergie verte au format JSON-LD, telle que normalisée. Ce format est compatible avec le format JSON-LD lorsqu'il n'utilise pas d'options et renvoie les données de contexte d'une entité individuelle.  
