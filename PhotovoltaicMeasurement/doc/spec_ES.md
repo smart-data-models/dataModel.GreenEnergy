@@ -1,11 +1,12 @@
 Entidad: FotovoltaicaMedición  
 =============================  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/PhotovoltaicMeasurement/LICENSE.md)  
+[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Descripción global: **El modelo de datos está destinado a medir la potencia continua transferida por el panel fotovoltaico a un dispositivo inversor.**  
 
 ## Lista de propiedades  
 
-- `activePower`: Potencia activa, donde phi es el desfase de la corriente respecto a la tensión. El código de la unidad (texto) se da utilizando los UN/CEFACT_Common_Codes (máximo 3 caracteres). Por ejemplo, **KWT** representa el kilovatio  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `current`: Intensidad eléctrica de la corriente. El código de la unidad (texto) se da utilizando los [Códigos comunes del UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **AMP** representa el amperio  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateEnergyMeteringStarted`: La fecha de inicio de la medición de energía en formato ISO8601 UTC  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObservedFrom`: Período de observación: Fecha y hora de inicio en un formato ISO8601 UTC. El atributo puede utilizarse además del atributo 'dateObserved cuando corresponde a un intervalo de tiempo que debe destacarse  - `dateObservedTo`: Período de observación: Fecha y hora de finalización en un formato ISO8601 UTC. El atributo puede utilizarse además del atributo "dateObserved" cuando corresponde a un intervalo de tiempo que debe destacarse  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `inverterStatus`: Potencia activa, donde phi es el desfase de la corriente respecto a la tensión. El código de la unidad (texto) se da utilizando los UN/CEFACT_Common_Codes (máximo 3 caracteres). Por ejemplo, **KWT** representa el kilovatio. Enum:'00-Sector, 01-Fallo de alimentación / En batería, 02-Pérdida de comunicación, 03-Avería de batería, 04-Apagado del sistema, 05-Bajo de tensión, 06-Sobretensión, 07-Caída de tensión, 08-Aumento de tensión, 09-Ruido de línea, 10-Variación de frecuencia, 11-Distorsión transitoria, 12-Distorsión armónica'  - `location`:   - `name`: El nombre de este artículo.  - `nominalPeakPowerGeneration`: nominalPeakPowerGeneration es un número. El código de la unidad (texto) se indica utilizando los [Códigos comunes del UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **KWT** representa el kilovatio  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `reactivePower`: Potencia reactiva utilizada por los circuitos. El código de la unidad (texto) se da utilizando los [Códigos comunes del UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **K5** representa el kilovoltio-amperio-reactivo  - `refPhotovoltaicDevice`:   - `refPointOfInterest`: Referencia a un [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) vinculado con el Repositorio.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `temperature`: Temperatura registrada en el momento de la Observación comparada con la temperatura nominal de referencia del dispositivo. El código de la unidad (texto) se indica utilizando los [Códigos comunes de la ONU/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **CEL** representa el grado Celsius  - `type`: Tipo de entidad NGSI. Tiene que ser PhotovoltaicMeasurement    
+- `activePower`: Potencia activa, donde phi es el desfase de la corriente respecto a la tensión. El código de la unidad (texto) se indica utilizando los UN/CEFACT_Common_Codes (máximo 3 caracteres). Por ejemplo, **KWT** representa el kilovatio  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `current`: Intensidad eléctrica de la corriente. El código de la unidad (texto) se da utilizando los [Códigos comunes del UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **AMP** representa el amperio  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateEnergyMeteringStarted`: La fecha de inicio de la medición de energía en formato ISO8601 UTC  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObservedFrom`: Período de observación: Fecha y hora de inicio en un formato ISO8601 UTC. El atributo puede utilizarse además del atributo 'dateObserved cuando corresponde a un intervalo de tiempo que debe destacarse  - `dateObservedTo`: Período de observación: Fecha y hora de finalización en un formato ISO8601 UTC. El atributo puede utilizarse además del atributo "dateObserved" cuando corresponde a un intervalo de tiempo que debe destacarse  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `inverterStatus`: Potencia activa, donde phi es el desfase de la corriente respecto a la tensión. El código de la unidad (texto) se da utilizando los UN/CEFACT_Common_Codes (máximo 3 caracteres). Por ejemplo, **KWT** representa el kilovatio. Enum:'00-Sector, 01-Fallo de alimentación / En batería, 02-Pérdida de comunicación, 03-Avería de batería, 04-Apagado del sistema, 05-Bajo de tensión, 06-Sobretensión, 07-Caída de tensión, 08-Aumento de tensión, 09-Ruido de línea, 10-Variación de frecuencia, 11-Distorsión transitoria, 12-Distorsión armónica'  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `nominalPeakPowerGeneration`: nominalPeakPowerGeneration es un número. El código de la unidad (texto) se indica utilizando los [Códigos comunes del UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **KWT** representa el kilovatio  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `reactivePower`: Potencia reactiva utilizada por los circuitos. El código de la unidad (texto) se da utilizando los [Códigos comunes del UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **K5** representa el kilovoltio-amperio-reactivo  - `refPhotovoltaicDevice`:   - `refPointOfInterest`: Referencia a un [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) vinculado con el Repositorio.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `temperature`: Temperatura registrada en el momento de la Observación comparada con la temperatura nominal de referencia del dispositivo. El código de la unidad (texto) se indica utilizando los [Códigos comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **CEL** representa el grado Celsius  - `type`: Tipo de entidad NGSI. Tiene que ser PhotovoltaicMeasurement    
 Propiedades requeridas  
 - `dateEnergyMeteringStarted`  - `dateObserved`  - `id`  - `location`  - `refPhotovoltaicDevice`  - `temperature`  - `type`    
 Puede tener los siguientes valores. - instantáneo. Del instante concreto del tiempo - media. La media de un periodo de tiempo - rms.     La raíz cuadrada media de un período de tiempo - máximo. El máximo de un periodo de tiempo - mínimo. El mínimo de un período de tiempo.  
@@ -35,14 +36,11 @@ PhotovoltaicMeasurement:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -130,10 +128,10 @@ PhotovoltaicMeasurement:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -153,7 +151,8 @@ PhotovoltaicMeasurement:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -176,7 +175,8 @@ PhotovoltaicMeasurement:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -201,7 +201,8 @@ PhotovoltaicMeasurement:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -223,7 +224,8 @@ PhotovoltaicMeasurement:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -248,7 +250,8 @@ PhotovoltaicMeasurement:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -275,7 +278,7 @@ PhotovoltaicMeasurement:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -329,8 +332,8 @@ PhotovoltaicMeasurement:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
@@ -363,8 +366,8 @@ PhotovoltaicMeasurement:
 ```  
 </details>    
 ## Ejemplo de carga útil  
-#### PhotovoltaicMeasurement NGSI V2 key-values Ejemplo  
-Aquí hay un ejemplo de un PhotovoltaicMeasurement en formato JSON como key-values. Esto es compatible con NGSI V2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### PhotovoltaicMeasurement NGSI-v2 key-values Ejemplo  
+Aquí hay un ejemplo de un PhotovoltaicMeasurement en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
@@ -393,8 +396,8 @@ PhotovoltaicMeasurement:
   "temperature": 23.4  
 }  
 ```  
-#### PhotovoltaicMeasurement NGSI V2 normalizado Ejemplo  
-Este es un ejemplo de un PhotovoltaicMeasurement en formato JSON normalizado. Esto es compatible con NGSI V2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### PhotovoltaicMeasurement NGSI-v2 normalizado Ejemplo  
+Este es un ejemplo de un PhotovoltaicMeasurement en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 ```json  
 {  
   "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
@@ -465,40 +468,6 @@ PhotovoltaicMeasurement:
 {  
   "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
   "type": "PhotovoltaicMeasurement",  
-  "dataProvider": "https://imredd.fr/en/home/",  
-  "name": "Photovoltaic station IMREDD",  
-  "description": "Photovoltaic data provided by the data logger ABB",  
-  "seeAlso": "https://us.sunpower.com/products/solar-panels",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      43.664810,  
-      7.196545  
-    ]  
-  },  
-  "address": {  
-    "addressCountry": "FR",  
-    "addressLocality": "Nice",  
-    "streetAddress": "61-63 Avenue Simone Veil"  
-  },  
-  "areaServed": "Nice",  
-  "refPhotovoltaicDevice": "urn:ngsi-ld:PhotovoltaicDevice:PV-T2-R-012",  
-  "dateObserved": "2019-09-05T16:00:00.999Z",  
-  "dateEnergyMeteringStarted": "2019-09-04T15:29:17.999Z",  
-  "nominalPeakPowerGeneration": 179,  
-  "temperature": 23.4,  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/common-schema.json",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
-}  
-```  
-#### PhotovoltaicMeasurement NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de un PhotovoltaicMeasurement en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
-```json  
-{  
-  "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
-  "type": "PhotovoltaicMeasurement",  
   "dataProvider": {  
     "type": "Property",  
     "value": "https://imredd.fr/en/home/"  
@@ -520,7 +489,7 @@ PhotovoltaicMeasurement:
     "value": {  
       "type": "Point",  
       "coordinates": [  
-        43.664810,  
+        43.66481,  
         7.196545  
       ]  
     }  
@@ -557,6 +526,40 @@ PhotovoltaicMeasurement:
     "type": "Property",  
     "value": 23.4  
   },  
+  "@context": [  
+    "https://smart-data-models.github.io/data-models/common-schema.json",  
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+  ]  
+}  
+```  
+#### PhotovoltaicMeasurement NGSI-LD normalizado Ejemplo  
+Este es un ejemplo de un PhotovoltaicMeasurement en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+```json  
+{  
+  "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
+  "type": "PhotovoltaicMeasurement",  
+  "dataProvider": "https://imredd.fr/en/home/",  
+  "name": "Photovoltaic station IMREDD",  
+  "description": "Photovoltaic data provided by the data logger ABB",  
+  "seeAlso": "https://us.sunpower.com/products/solar-panels",  
+  "location": {  
+    "type": "Point",  
+    "coordinates": [  
+      43.66481,  
+      7.196545  
+    ]  
+  },  
+  "address": {  
+    "addressCountry": "FR",  
+    "addressLocality": "Nice",  
+    "streetAddress": "61-63 Avenue Simone Veil"  
+  },  
+  "areaServed": "Nice",  
+  "refPhotovoltaicDevice": "urn:ngsi-ld:PhotovoltaicDevice:PV-T2-R-012",  
+  "dateObserved": "2019-09-05T16:00:00.999Z",  
+  "dateEnergyMeteringStarted": "2019-09-04T15:29:17.999Z",  
+  "nominalPeakPowerGeneration": 179,  
+  "temperature": 23.4,  
   "@context": [  
     "https://smart-data-models.github.io/data-models/common-schema.json",  
     "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
