@@ -1,11 +1,12 @@
 Entität: GreenEnergyMeasurement  
 ===============================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/GreenEnergyMeasurement/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Ein momentanes Maß für die Stromerzeugung mit grünen Energiequellen**  
 
 ## Liste der Eigenschaften  
 
-- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `biomassPowerGenerated`: Gibt die Menge an Strom an, die mit Energie aus Biomasse erzeugt wurde. Der Einheitencode (Text) der Messung wird unter Verwendung des UN/CEFACT Common Code angegeben (max. 3 Zeichen).  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `eolicPowerGenerated`: Gibt die Menge der mit eolischer Energie erzeugten Leistung an. Der Einheitencode (Text) der Messung wird unter Verwendung des UN/CEFACT Common Code angegeben (max. 3 Zeichen).  - `geothermalPowerGenerated`: Gibt die Menge der mit geothermischer Energie erzeugten Leistung an. Der Einheitencode (Text) der Messung wird unter Verwendung des UN/CEFACT Common Code angegeben (max. 3 Zeichen).  - `hydroPowerGenerated`: Gibt die Menge der mit Wasserkraft erzeugten Energie an. Der Einheitencode (Text) der Messung wird unter Verwendung des UN/CEFACT Common Code angegeben (max. 3 Zeichen).  - `id`: Eindeutiger Bezeichner der Entität  - `location`:   - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `refGreenEnergyGenerator`: Ein Verweis auf die Entität `GreenEnergyGenerator`, zu der die Messung gehört.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `solarPowerGenerated`: Gibt die Menge des mit Solarenergie erzeugten Stroms an. Der Einheitencode (Text) der Messung wird unter Verwendung des UN/CEFACT Common Code angegeben (max. 3 Zeichen).  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI Entity Type: Es muss GreenEnergyMeasurement sein    
+- `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `biomassPowerGenerated`: Gibt die Menge an Strom an, die mit Energie aus Biomasse erzeugt wurde. Der Einheitencode (Text) der Messung wird unter Verwendung des UN/CEFACT Common Code angegeben (max. 3 Zeichen).  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `eolicPowerGenerated`: Gibt die Menge der mit eolischer Energie erzeugten Leistung an. Der Einheitencode (Text) der Messung wird unter Verwendung des UN/CEFACT Common Code angegeben (max. 3 Zeichen).  - `geothermalPowerGenerated`: Gibt die Menge der mit geothermischer Energie erzeugten Leistung an. Der Einheitencode (Text) der Messung wird unter Verwendung des UN/CEFACT Common Code angegeben (max. 3 Zeichen).  - `hydroPowerGenerated`: Gibt die Menge der mit Wasserkraft erzeugten Energie an. Der Einheitencode (Text) der Messung wird unter Verwendung des UN/CEFACT Common Code angegeben (max. 3 Zeichen).  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `refGreenEnergyGenerator`: Ein Verweis auf die Entität `GreenEnergyGenerator`, zu der die Messung gehört.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `solarPowerGenerated`: Gibt die Menge des mit Solarenergie erzeugten Stroms an. Der Einheitencode (Text) der Messung wird unter Verwendung des UN/CEFACT Common Code angegeben (max. 3 Zeichen).  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `type`: NGSI Entity Type: Es muss GreenEnergyMeasurement sein    
 Erforderliche Eigenschaften  
 - `id`  - `refGreenEnergyGenerator`  - `type`    
 Generisches Modell für eine Momentaufnahme-Messung der mit einer oder mehreren grünen Energiequellen erzeugten Energie. Somit kann eine Entität vom Typ `GreenEnergyMeasurement` nicht ohne eine zugehörige Entität vom Typ GreenEnergyGenerator existieren.  
@@ -28,14 +29,11 @@ GreenEnergyMeasurement:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -106,10 +104,10 @@ GreenEnergyMeasurement:
       description: 'Unique identifier of the entity'    
       type: Property    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -129,7 +127,8 @@ GreenEnergyMeasurement:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -152,7 +151,8 @@ GreenEnergyMeasurement:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -177,7 +177,8 @@ GreenEnergyMeasurement:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -199,7 +200,8 @@ GreenEnergyMeasurement:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -224,7 +226,8 @@ GreenEnergyMeasurement:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -251,7 +254,7 @@ GreenEnergyMeasurement:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -282,8 +285,8 @@ GreenEnergyMeasurement:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
