@@ -1,11 +1,12 @@
 Entität: PhotovoltaicMeasurement  
 ================================  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/PhotovoltaicMeasurement/LICENSE.md)  
+[Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Globale Beschreibung: **Das Datenmodell ist für die Messung der kontinuierlichen Leistung vorgesehen, die von der Photovoltaikanlage an ein Wechselrichtergerät übertragen wird.**  
 
 ## Liste der Eigenschaften  
 
-- `activePower`: Wirkleistung,wobei phi die Phasenverschiebung des Stroms im Vergleich zur Spannung ist. Der Einheitencode (Text) wird unter Verwendung der UN/CEFACT_Common_Codes angegeben (max. 3 Zeichen). Zum Beispiel: **KWT** steht für Kilowatt  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `current`: Elektrische Intensität des Stroms. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **AMP** für Ampere  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateEnergyMeteringStarted`: Das Startdatum für die Energiemessung in einem ISO8601 UTC-Format  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObservedFrom`: Beobachtungszeitraum: Startdatum und -uhrzeit in einem ISO8601 UTC-Format. Das Attribut kann zusätzlich zum Attribut 'dateObserved verwendet werden, wenn es einem hervorzuhebenden Zeitintervall entspricht  - `dateObservedTo`: Beobachtungszeitraum: Enddatum und -uhrzeit in einem ISO8601 UTC-Format. Das Attribut kann zusätzlich zum Attribut 'dateObserved' verwendet werden, wenn es einem hervorzuhebenden Zeitintervall entspricht  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `inverterStatus`: Wirkleistung,wobei phi die Phasenverschiebung des Stroms im Vergleich zur Spannung ist. Der Einheitencode (Text) wird unter Verwendung der UN/CEFACT_Common_Codes angegeben (max. 3 Zeichen). Zum Beispiel: **KWT** steht für Kilowatt. Enum:'00-Ein Sektor, 01-Stromausfall / Auf Batterie, 02-Verlust der Kommunikation, 03-Batteriefehler, 04-Systemabschaltung, 05-Spannungseinbruch, 06-Überspannung, 07-Spannungsabfall, 08-Spannungsanstieg, 09-Leitungsrauschen, 10-Frequenzänderung, 11-Transientenverzerrung, 12-Harmonische Verzerrung'  - `location`:   - `name`: Der Name dieses Elements.  - `nominalPeakPowerGeneration`: nominalPeakPowerGeneration ist eine Zahl. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **KWT** für Kilowatt  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `reactivePower`: Blindleistung, die von Stromkreisen verwendet wird. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **K5** für Kilovolt-Ampere-Blindleistung  - `refPhotovoltaicDevice`:   - `refPointOfInterest`: Verweis auf einen [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md), der mit dem Repository verknüpft ist.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `temperature`: Die zum Zeitpunkt der Beobachtung aufgezeichnete Temperatur im Vergleich zur nominalen Referenztemperatur des Geräts. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **CEL** für Grad Celsius  - `type`: NGSI Entity-Typ. Es muss PhotovoltaicMeasurement sein    
+- `activePower`: Wirkleistung,wobei phi die Phasenverschiebung des Stroms im Vergleich zur Spannung ist. Der Einheitencode (Text) wird unter Verwendung der UN/CEFACT_Common_Codes angegeben (max. 3 Zeichen). Zum Beispiel: **KWT** steht für Kilowatt  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `current`: Elektrische Intensität des Stroms. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **AMP** für Ampere  - `dataProvider`: Eine Folge von Zeichen, die den Anbieter der harmonisierten Dateneinheit identifiziert.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen.  - `dateEnergyMeteringStarted`: Das Startdatum für die Energiemessung in einem ISO8601 UTC-Format  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObservedFrom`: Beobachtungszeitraum: Startdatum und -uhrzeit in einem ISO8601 UTC-Format. Das Attribut kann zusätzlich zum Attribut 'dateObserved verwendet werden, wenn es einem hervorzuhebenden Zeitintervall entspricht  - `dateObservedTo`: Beobachtungszeitraum: Enddatum und -uhrzeit in einem ISO8601 UTC-Format. Das Attribut kann zusätzlich zum Attribut 'dateObserved' verwendet werden, wenn es einem hervorzuhebenden Zeitintervall entspricht  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `inverterStatus`: Wirkleistung,wobei phi die Phasenverschiebung des Stroms im Vergleich zur Spannung ist. Der Einheitencode (Text) wird unter Verwendung der UN/CEFACT_Common_Codes angegeben (max. 3 Zeichen). Zum Beispiel: **KWT** steht für Kilowatt. Enum:'00-Ein Sektor, 01-Stromausfall / Auf Batterie, 02-Verlust der Kommunikation, 03-Batteriefehler, 04-Systemabschaltung, 05-Spannungseinbruch, 06-Überspannung, 07-Spannungsabfall, 08-Spannungsanstieg, 09-Leitungsrauschen, 10-Frequenzänderung, 11-Transientenverzerrung, 12-Harmonische Verzerrung'  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Elements.  - `nominalPeakPowerGeneration`: nominalPeakPowerGeneration ist eine Zahl. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **KWT** für Kilowatt  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Ids der Eigentümer verweist  - `reactivePower`: Blindleistung, die von Stromkreisen verwendet wird. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **K5** für Kilovolt-Ampere-Blindleistung  - `refPhotovoltaicDevice`:   - `refPointOfInterest`: Verweis auf einen [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md), der mit dem Repository verknüpft ist.  - `seeAlso`: Liste von uri, die auf zusätzliche Ressourcen über das Element verweist  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL zum Quellobjekt.  - `temperature`: Die zum Zeitpunkt der Beobachtung aufgezeichnete Temperatur im Vergleich zur nominalen Referenztemperatur des Geräts. Der Einheitencode (Text) wird unter Verwendung der [UN/CEFACT Common Codes] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes) angegeben. Zum Beispiel steht **CEL** für Grad Celsius  - `type`: NGSI Entity-Typ. Es muss PhotovoltaicMeasurement sein    
 Erforderliche Eigenschaften  
 - `dateEnergyMeteringStarted`  - `dateObserved`  - `id`  - `location`  - `refPhotovoltaicDevice`  - `temperature`  - `type`    
 Sie kann folgende Werte haben. - Moment. Ab einem bestimmten Zeitpunkt - Durchschnitt. Der Durchschnitt eines Zeitraums - rms.     Der quadratische Mittelwert eines Zeitraums - Maximum. Das Maximum eines Zeitraums - Minimum. Das Minimum eines Zeitraums.  
@@ -35,14 +36,11 @@ PhotovoltaicMeasurement:
         addressRegion:    
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
           type: string    
-        areaServed:    
-          description: 'Property. The geographic area where a service or offered item is provided. Model:''https://schema.org/areaServed'''    
-          type: string    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, Spain. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
           type: string    
         postalCode:    
-          description: 'Property. The postal code. For example, Spain. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
           type: string    
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
@@ -130,10 +128,10 @@ PhotovoltaicMeasurement:
       x-ngsi:    
         model: https://schema.org/Number    
     location:    
-      $id: https://geojson.org/schema/Geometry.json    
-      $schema: "http://json-schema.org/draft-07/schema#"    
+      description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Point'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -153,7 +151,8 @@ PhotovoltaicMeasurement:
             - coordinates    
           title: 'GeoJSON Point'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. LineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -176,7 +175,8 @@ PhotovoltaicMeasurement:
             - coordinates    
           title: 'GeoJSON LineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. Polygon'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -201,7 +201,8 @@ PhotovoltaicMeasurement:
             - coordinates    
           title: 'GeoJSON Polygon'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -223,7 +224,8 @@ PhotovoltaicMeasurement:
             - coordinates    
           title: 'GeoJSON MultiPoint'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -248,7 +250,8 @@ PhotovoltaicMeasurement:
             - coordinates    
           title: 'GeoJSON MultiLineString'    
           type: object    
-        - properties:    
+        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'    
+          properties:    
             bbox:    
               items:    
                 type: number    
@@ -275,7 +278,7 @@ PhotovoltaicMeasurement:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      title: 'GeoJSON Geometry'    
+      type: Geoproperty    
     name:    
       description: 'The name of this item.'    
       type: Property    
@@ -329,8 +332,8 @@ PhotovoltaicMeasurement:
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
         - items:    
-            - format: uri    
-              type: string    
+            format: uri    
+            type: string    
           minItems: 1    
           type: array    
         - format: uri    
