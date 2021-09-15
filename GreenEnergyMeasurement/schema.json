@@ -76,5 +76,6 @@
         "id",
         "type",
         "refGreenEnergyGenerator"
-    ]
+    ],
+    "$schemaVersion": "0.0.1"
 }
