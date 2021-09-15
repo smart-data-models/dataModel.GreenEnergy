@@ -2,5 +2,6 @@
     "$schema": "http://json-schema.org/schema#",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.GreenEnergy/GreenEnergyGenerator/schema.json",
-    "title": "GSMA / FIWARE - GreenEnergyGenerator"
+    "title": "GSMA / FIWARE - GreenEnergyGenerator",
+    "description": "A generic generator station which can generate energy from green energy"
 }
