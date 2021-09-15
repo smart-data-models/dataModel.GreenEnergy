@@ -2,5 +2,6 @@
     "$schema": "http://json-schema.org/schema#",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/data-models.Energy/PhotovoltaicMeasurement/schema.json",
-    "title": "PhotovoltaicMeasurement schema"
+    "title": "PhotovoltaicMeasurement schema",
+    "description": "The Data Model is intended to measure the continuous power transferred by the photo-voltaic panel to an Inverter Device."
 }
