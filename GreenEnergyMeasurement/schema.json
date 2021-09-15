@@ -2,5 +2,6 @@
     "$schema": "http://json-schema.org/schema#",
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/dataModel.GreenEnergy/GreenEnergyMeasurement/schema.json",
-    "title": "GSMA / FIWARE - GreenEnergyMeasurement"
+    "title": "GSMA / FIWARE - GreenEnergyMeasurement",
+    "description": "A instantaneous measure of power generation using green energy sources"
 }
