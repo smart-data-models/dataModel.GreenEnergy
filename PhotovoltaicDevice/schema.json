@@ -456,5 +456,6 @@
         "type",
         "location",
         "dateLastReported"
-    ]
+    ],
+    "$schemaVersion": "0.0.1"
 }
