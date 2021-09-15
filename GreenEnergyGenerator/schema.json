@@ -74,5 +74,11 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "location",
+        "generationSources"
     ]
 }
