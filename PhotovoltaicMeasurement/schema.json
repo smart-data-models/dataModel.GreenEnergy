@@ -116,5 +116,14 @@
                 }
             }
         }
+    ],
+    "required": [
+        "id",
+        "type",
+        "location",
+        "dateObserved",
+        "refPhotovoltaicDevice",
+        "dateEnergyMeteringStarted",
+        "temperature"
     ]
 }
