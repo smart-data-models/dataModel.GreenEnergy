@@ -125,5 +125,6 @@
         "refPhotovoltaicDevice",
         "dateEnergyMeteringStarted",
         "temperature"
-    ]
+    ],
+    "$schemaVersion": "0.0.1"
 }
