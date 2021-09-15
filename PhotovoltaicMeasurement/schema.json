@@ -1,5 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
     "modelTags": "",
-    "$id": "https://smart-data-models.github.io/data-models.Energy/PhotovoltaicMeasurement/schema.json"
+    "$id": "https://smart-data-models.github.io/data-models.Energy/PhotovoltaicMeasurement/schema.json",
+    "title": "PhotovoltaicMeasurement schema"
 }
