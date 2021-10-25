@@ -6,7 +6,7 @@ Version: 0.0.1
 A instantaneous measure of power generation using green energy sources
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/GreenEnergyMeasurement/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/GreenEnergyMeasurement/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/GreenEnergyMeasurement/doc/spec.md)
 
