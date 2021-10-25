@@ -6,7 +6,7 @@ Version: 0.0.1
 The Data Model is intended to measure the continuous power transferred by the photo-voltaic panel to an Inverter Device.
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/PhotovoltaicMeasurement/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/PhotovoltaicMeasurement/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/PhotovoltaicMeasurement/doc/spec.md)
 
