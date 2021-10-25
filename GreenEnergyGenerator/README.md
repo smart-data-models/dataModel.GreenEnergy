@@ -6,7 +6,7 @@ Version: 0.0.1
 A generic generator station which can generate energy from green energy
 ### Specification
 
-Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/GreenEnergyGenerator/swagger.yaml)
+Link to the [interactive specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/GreenEnergyGenerator/swagger.yaml)
 
 Link to the [specification](https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/GreenEnergyGenerator/doc/spec.md)
 
