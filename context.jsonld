@@ -50,6 +50,7 @@
         "moduleYieldRate": "https://smartdatamodels.org/dataModel.GreenEnergy/moduleYieldRate",
         "nTCClass": "https://smartdatamodels.org/dataModel.GreenEnergy/nTCClass",
         "name": "https://smartdatamodels.org/name",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "nominalPeakPowerGeneration": "https://smartdatamodels.org/dataModel.GreenEnergy/nominalPeakPowerGeneration",
         "owner": "https://smartdatamodels.org/owner",
         "pTCClass": "https://smartdatamodels.org/dataModel.GreenEnergy/pTCClass",
