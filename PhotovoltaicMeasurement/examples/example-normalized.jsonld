@@ -1,30 +1,30 @@
 {
-  "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",
-  "type": "PhotovoltaicMeasurement",
-  "dataProvider": "https://imredd.fr/en/home/",
-  "name": "Photovoltaic station IMREDD",
-  "description": "Photovoltaic data provided by the data logger ABB",
-  "seeAlso": "https://us.sunpower.com/products/solar-panels",
-  "location": {
-    "type": "Point",
-    "coordinates": [
-      43.66481,
-      7.196545
+    "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",
+    "type": "PhotovoltaicMeasurement",
+    "address": {
+        "addressCountry": "FR",
+        "addressLocality": "Nice",
+        "streetAddress": "61-63 Avenue Simone Veil"
+    },
+    "areaServed": "Nice",
+    "dataProvider": "https://imredd.fr/en/home/",
+    "dateEnergyMeteringStarted": "2019-09-04T15:29:17.999Z",
+    "dateObserved": "2019-09-05T16:00:00.999Z",
+    "description": "Photovoltaic data provided by the data logger ABB",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            43.66481,
+            7.196545
+        ]
+    },
+    "name": "Photovoltaic station IMREDD",
+    "nominalPeakPowerGeneration": 179,
+    "refPhotovoltaicDevice": "urn:ngsi-ld:PhotovoltaicDevice:PV-T2-R-012",
+    "seeAlso": "https://us.sunpower.com/products/solar-panels",
+    "temperature": 23.4,
+    "@context": [
+        "https://smart-data-models.github.io/data-models/common-schema.json",
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
     ]
-  },
-  "address": {
-    "addressCountry": "FR",
-    "addressLocality": "Nice",
-    "streetAddress": "61-63 Avenue Simone Veil"
-  },
-  "areaServed": "Nice",
-  "refPhotovoltaicDevice": "urn:ngsi-ld:PhotovoltaicDevice:PV-T2-R-012",
-  "dateObserved": "2019-09-05T16:00:00.999Z",
-  "dateEnergyMeteringStarted": "2019-09-04T15:29:17.999Z",
-  "nominalPeakPowerGeneration": 179,
-  "temperature": 23.4,
-  "@context": [
-    "https://smart-data-models.github.io/data-models/common-schema.json",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ]
 }
