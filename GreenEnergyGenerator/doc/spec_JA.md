@@ -1,17 +1,19 @@
-エンティティグリーンエナジー・ジェネレーター（GreenEnergyGenerator  
-===========================================  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティグリーンエナジー・ジェネレーター  
+======================  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/GreenEnergyGenerator/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明。**グリーンエネルギーからエネルギーを生成することができる汎用の発電機ステーション**。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな説明**グリーンエネルギーからエネルギーを生成することができる汎用発電所**。  
+バージョン: 0.0.2  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `generationSources`: 発電に使用されるソースのリストです。Enum:'biomass, eolic, geothermal, hydropower, solar'.  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `maxBiomassMeasure`: 発電可能な最大バイオマスエネルギーの指標。UN/CEFACT共通コードを用いて与えられた測定の単位コード（テキスト）（最大3文字）。  - `maxEolicPowerMeasure`: 発生可能な最大の電気エネルギーの尺度。UN/CEFACT共通コードを使用して与えられた測定の単位コード（テキスト）（最大3文字）。  - `maxGeothermalPowerGenerated`: 発電可能な地熱エネルギーの最大値を示す指標。UN/CEFACT共通コードを用いて与えられた測定の単位コード（テキスト）（最大3文字）。  - `maxHydroPowerMeasure`: 発電可能な最大水力エネルギーの指標。UN/CEFACT共通コードを用いて与えられた測定の単位コード（テキスト）（最大3文字）。  - `maxSolarPowerMeasure`: 発電可能な最大の太陽エネルギーを示す指標。UN/CEFACT共通コードを用いて与えられる測定の単位コード（テキスト）（最大3文字）。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `redistribution`: 発電したエネルギーをネットワークに投入するかどうかを示す  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `selfConsumption`: 発電したエネルギーを自分のために使うかどうかを示す  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `status`: グリーンエネルギー発電機のステータスです。Enum:'outOfService, withIncidence, working' (アウトオブサービス、ウィズインシデンス、ワーキング)  - `type`: NGSI エンティティ・タイプ。GreenEnergyGeneratorである必要があります。    
-必須項目  
-- `generationSources`  - `id`  - `location`  - `type`    
-Green Energy Generatorの汎用モデル。太陽光や電気のグリーンエネルギーを利用してエネルギーを生成する装置です。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+- `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `generationSources`: 発電に使用されるソースのリスト。Enum:'biomass, eolic, geothermal, hydropower, solar'.  - `id`: エンティティの一意な識別子  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `maxBiomassMeasure`: 生成可能な最大バイオマスエネルギーの指標。UN/CEFACT Common Code（3文字以内）を用いて付与された計測単位コード（テキスト）。  - `maxEolicPowerMeasure`: 発生可能な最大エオリックエネルギーの尺度。UN/CEFACT共通コード（最大3文字）を用いて与えられる計測単位コード（テキスト）。  - `maxGeothermalPowerGenerated`: 発電可能な最大地熱エネルギーの指標。UN/CEFACT Common Code（最大3文字）を用いて与えられる計測単位コード（テキスト）。  - `maxHydroPowerMeasure`: 発電可能な最大水力エネルギーの指標。UN/CEFACT Common Code（最大3文字）で示される計測単位コード（テキスト）。  - `maxSolarPowerMeasure`: 発電可能な最大太陽エネルギーの指標。UN/CEFACT共通コード（3文字以内）で示される計測単位コード（テキスト）。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `redistribution`: 発電したエネルギーをネットワークに投棄するかどうかを示す  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `selfConsumption`: 発電したエネルギーを自給自足で使用するかどうかを示す  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `status`: グリーンエネルギー発電機の状態。Enum:'outOfService, withIncidence, working'.  - `type`: NGSI エンティティタイプ。GreenEnergyGenerator でなければならない。    
+必要なプロパティ  
+- `id`  - `type`    
+グリーンエネルギー発電機の一般的なモデル。太陽エネルギーや電気エネルギーを用いてエネルギーを生成する装置。  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GreenEnergyGenerator:    
@@ -345,29 +347,28 @@ GreenEnergyGenerator:
         model: https://schema.org/Text    
         type: Property    
     type:    
-      description: 'NGSI Entity Type: It has to be GreenEnergyGenerator'    
+      description: 'NGSI Entity Type. It has to be GreenEnergyGenerator'    
+      enum:    
+        - GreenEnergyGenerator    
       type: string    
-      value: GreenEnergyGenerator    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
   required:    
     - id    
     - type    
-    - location    
-    - generationSources    
   type: object    
   x-derived-from: ""    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/GreenEnergyGenerator/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.GreenEnergy/GreenEnergyGenerator/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## ペイロードの例  
-#### GreenEnergyGenerator NGSI-v2 のキーバリューの例。  
-GreenEnergyGeneratorをJSON-LD形式でkey-valuesとして表現した例です。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### GreenEnergyGenerator NGSI-v2 key-value の例。  
+以下は、GreenEnergyGeneratorをJSON-LD形式でkey-valuesにした例である。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
 ```json  
 {  
   "id": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001",  
@@ -391,7 +392,7 @@ GreenEnergyGenerator:
 }  
 ```  
 #### GreenEnergyGenerator NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のGreenEnergyGeneratorの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、GreenEnergyGenerator を JSON-LD 形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:GreenEnergy:santander:GreenEnergy:greenEnergyGenerator:0001",  
@@ -429,82 +430,83 @@ GreenEnergyGenerator:
   }  
 }  
 ```  
-#### GreenEnergyGenerator NGSI-LDのキーバリューの例  
-GreenEnergyGeneratorをkey-valuesとしてJSON-LD形式で表現した例を示します。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### GreenEnergyGenerator NGSI-LD キー値例  
+ここでは、GreenEnergyGeneratorをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
 ```json  
 {  
-  "id": "urn:ngsi-ld:GreenEnergy:santander:GreenEnergy:greenEnergyGenerator:0001",  
-  "type": "GreenEnergyGenerator",  
-  "status": {  
-    "type": "Text",  
-    "value": "working"  
-  },  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -3.80356167695194,  
-      43.46296641666926  
+    "id": "urn:ngsi-ld:GreenEnergy:santander:GreenEnergy:greenEnergyGenerator:0001",  
+    "type": "GreenEnergyGenerator",  
+    "generationSources": {  
+        "type": "Array",  
+        "value": [  
+            "solar",  
+            "eolic"  
+        ]  
+    },  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -3.80356167695194,  
+            43.46296641666926  
+        ]  
+    },  
+    "maxEolicPowerGenerated": {  
+        "type": "Number",  
+        "value": 10  
+    },  
+    "maxSolarPowerGenerated": {  
+        "type": "Number",  
+        "value": 20  
+    },  
+    "redistribution": {  
+        "type": "Boolean",  
+        "value": false  
+    },  
+    "selfConsumption": {  
+        "type": "Boolean",  
+        "value": true  
+    },  
+    "status": {  
+        "type": "Text",  
+        "value": "working"  
+    },  
+    "@context": [  
+        "https://smart-data-models.github.io/data-models/context.jsonld",  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"  
     ]  
-  },  
-  "selfConsumption": {  
-    "type": "Boolean",  
-    "value": true  
-  },  
-  "redistribution": {  
-    "type": "Boolean",  
-    "value": false  
-  },  
-  "generationSources": {  
-    "type": "Array",  
-    "value": [  
-      "solar",  
-      "eolic"  
-    ]  
-  },  
-  "maxSolarPowerGenerated": {  
-    "type": "Number",  
-    "value": 20  
-  },  
-  "maxEolicPowerGenerated": {  
-    "type": "Number",  
-    "value": 10  
-  },  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-#### GreenEnergyGenerator NGSI-LDの正規化例  
-ここでは、正規化されたJSON-LD形式のGreenEnergyGeneratorの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### GreenEnergyGenerator NGSI-LD 正規化例  
+以下は、GreenEnergyGenerator を JSON-LD 形式で正規化した例である。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
-  "id": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001",  
-  "type": "GreenEnergyGenerator",  
-  "source": "bike-in.com",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -3.80356167695194,  
-      43.46296641666926  
+    "id": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001",  
+    "type": "GreenEnergyGenerator",  
+    "description": "mixed generator model ~004 with maximum power 22w",  
+    "generationSources": [  
+        "solar",  
+        "eolic"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -3.80356167695194,  
+            43.46296641666926  
+        ]  
+    },  
+    "maxBiomassPowerGenerated": 0,  
+    "maxEolicPowerGenerated": 7,  
+    "maxHydroPowerGenerated": 0,  
+    "maxSolarPowerGenerated": 15,  
+    "name": "generator solar and eolic #9e46d",  
+    "redistribution": false,  
+    "selfConsumption": true,  
+    "source": "bike-in.com",  
+    "status": "working",  
+    "@context": [  
+        "https://smart-data-models.github.io/data-models/context.jsonld"  
     ]  
-  },  
-  "name": "generator solar and eolic #9e46d",  
-  "description": "mixed generator model ~004 with maximum power 22w",  
-  "status": "working",  
-  "generationSources": [  
-    "solar",  
-    "eolic"  
-  ],  
-  "selfConsumption": true,  
-  "redistribution": false,  
-  "maxSolarPowerGenerated": 15,  
-  "maxEolicPowerGenerated": 7,  
-  "maxHydroPowerGenerated": 0,  
-  "maxBiomassPowerGenerated": 0,  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
