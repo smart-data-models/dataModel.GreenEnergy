@@ -1,32 +1,32 @@
 {
-  "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement-Generator:a34f24b",
-  "type": "GreenEnergyMeasurement",
-  "solarPowerGenerated": {
-    "type": "Number",
-    "value": 5.1
-  },
-  "eolicPowerGenerated": {
-    "type": "Number",
-    "value": 2.1
-  },
-  "hydroPowerGenerated": {
-    "type": "Number",
-    "value": 2.1
-  },
-  "biomassPowerGenerated": {
-    "type": "Number",
-    "value": 2.1
-  },
-  "geothermalPowerGenerated": {
-    "type": "Number",
-    "value": 2.1
-  },
-  "refGreenEnergyGenerator": {
-    "type": "Relationship",
-    "value": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001"
-  },
-  "@context": [
-    "https://smartdatamodels.org/context.jsonld",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"
-  ]
+    "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement-Generator:a34f24b",
+    "type": "GreenEnergyMeasurement",
+    "biomassPowerGenerated": {
+        "type": "Number",
+        "value": 2.1
+    },
+    "eolicPowerGenerated": {
+        "type": "Number",
+        "value": 2.1
+    },
+    "geothermalPowerGenerated": {
+        "type": "Number",
+        "value": 2.1
+    },
+    "hydroPowerGenerated": {
+        "type": "Number",
+        "value": 2.1
+    },
+    "refGreenEnergyGenerator": {
+        "type": "Relationship",
+        "value": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001"
+    },
+    "solarPowerGenerated": {
+        "type": "Number",
+        "value": 5.1
+    },
+    "@context": [
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"
+    ]
 }

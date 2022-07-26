@@ -1,18 +1,18 @@
-Entidad: FotovoltaicaMedición  
+エンティティPhotovoltaicMeasurement  
 =============================  
-[Licencia abierta](https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/PhotovoltaicMeasurement/LICENSE.md)  
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: **El modelo de datos está destinado a medir la potencia continua transferida por el panel fotovoltaico a un dispositivo inversor.**  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/PhotovoltaicMeasurement/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述です。**このデータモデルは、光電池パネルからインバータ装置に伝達される連続電力を測定するためのものである。  
 
-## Lista de propiedades  
+## プロパティのリスト  
 
-- `activePower`: Potencia activa, donde phi es el desfase de la corriente respecto a la tensión. El código de la unidad (texto) se indica utilizando los UN/CEFACT_Common_Codes (máximo 3 caracteres). Por ejemplo, **KWT** representa el kilovatio  - `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `current`: Intensidad eléctrica de la corriente. El código de la unidad (texto) se da utilizando los [Códigos comunes del UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **AMP** representa el amperio  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateEnergyMeteringStarted`: La fecha de inicio de la medición de energía en formato ISO8601 UTC  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `dateObservedFrom`: Período de observación: Fecha y hora de inicio en un formato ISO8601 UTC. El atributo puede utilizarse además del atributo 'dateObserved cuando corresponde a un intervalo de tiempo que debe destacarse  - `dateObservedTo`: Período de observación: Fecha y hora de finalización en un formato ISO8601 UTC. El atributo puede utilizarse además del atributo "dateObserved" cuando corresponde a un intervalo de tiempo que debe destacarse  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `inverterStatus`: Potencia activa, donde phi es el desfase de la corriente respecto a la tensión. El código de la unidad (texto) se da utilizando los UN/CEFACT_Common_Codes (máximo 3 caracteres). Por ejemplo, **KWT** representa el kilovatio. Enum:'00-Sector, 01-Fallo de alimentación / En batería, 02-Pérdida de comunicación, 03-Avería de batería, 04-Apagado del sistema, 05-Bajo de tensión, 06-Sobretensión, 07-Caída de tensión, 08-Aumento de tensión, 09-Ruido de línea, 10-Variación de frecuencia, 11-Distorsión transitoria, 12-Distorsión armónica'  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `nominalPeakPowerGeneration`: nominalPeakPowerGeneration es un número. El código de la unidad (texto) se indica utilizando los [Códigos comunes del UN/CEFACT] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **KWT** representa el kilovatio  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `reactivePower`: Potencia reactiva utilizada por los circuitos. El código de la unidad (texto) se da utilizando los [Códigos comunes del UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **K5** representa el kilovoltio-amperio-reactivo  - `refPhotovoltaicDevice`:   - `refPointOfInterest`: Referencia a un [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) vinculado con el Repositorio.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `temperature`: Temperatura registrada en el momento de la Observación comparada con la temperatura nominal de referencia del dispositivo. El código de la unidad (texto) se indica utilizando los [Códigos comunes UN/CEFACT](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Por ejemplo, **CEL** representa el grado Celsius  - `type`: Tipo de entidad NGSI. Tiene que ser PhotovoltaicMeasurement    
-Propiedades requeridas  
+- `activePower`: Active Power,ここで phi は、電圧と比較した電流の位相シフトである。単位コード（テキスト）は，UN/CEFACT_Common_Codesを用いて与えられる（最大3文字）。例えば、**KWT**はキロワットを表す。  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `current`: 電流の電気的強度。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**AMP**はアンペアを表します。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateEnergyMeteringStarted`: エネルギー計測の開始日（ISO8601 UTC形式  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateObservedFrom`: 観測期間。ISO8601 UTC形式の開始日時が設定されています。この属性は、ハイライトされる時間間隔に対応する場合、'dateObserved'属性に加えて使用することができます。  - `dateObservedTo`: 観測期間。ISO8601 UTC形式の終了日時が指定されます。この属性は、ハイライトされる時間間隔に対応する場合、'dateObserved'属性に加えて使用することができます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `inverterStatus`: Active Power,ここで phi は、電圧と比較した電流の位相シフトである。単位コード（テキスト）は，UN/CEFACT_Common_Codes（最大3文字）を用いて与えられる。例えば、For instance, **KWT**はキロワットを表す。Enum:'00-On sector, 01-Power failure / On battery, 02-Loss of communication, 03-Battery fault, 04-System shutdown, 05-Tension dip, 06-Overvoltage, 07-Voltage drop, 08-Voltage increase, 09-Line noise, 10-Frequency variation, 11-Transient distortion, 12-Harmonic distortion'.  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `nominalPeakPowerGeneration`: nominalPeakPowerGenerationは数値である。単位コード（テキスト）は[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**KWT**はキロワットを表します。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `reactivePower`: 回路が使用する無効電力。単位コード（テキスト）は，[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**K5**は、キロボルト・アンペア・リアクティブ・パワーを表します。  - `refPhotovoltaicDevice`:   - `refPointOfInterest`: リポジトリとリンクしている[PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)への参照。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperature`: 観察時に記録された温度を，装置の公称基準温度と比較したもの。単位コード（テキスト）は，[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば，**CEL**はDegree Celsiusを表す。  - `type`: NGSI エンティティタイプ。PhotovoltaicMeasurementでなければならない。    
+必須項目  
 - `dateEnergyMeteringStarted`  - `dateObserved`  - `id`  - `location`  - `refPhotovoltaicDevice`  - `temperature`  - `type`    
-Puede tener los siguientes valores. - instantáneo. Del instante concreto del tiempo - media. La media de un periodo de tiempo - rms.     La raíz cuadrada media de un período de tiempo - máximo. El máximo de un periodo de tiempo - mínimo. El mínimo de un período de tiempo.  
-Cuando se utilicen los valores [promedio, rms, máximo, mínimo] debe utilizarse otro atributo de metadatos denominado 'measurementInterval' para indicar la duración del periodo de medición en segundos. Además, el atributo de metadatos "timestamp" debe ser la hora de finalización del periodo de medición.  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+以下の値を持つことができます。- instant.時間の特定の瞬間から - average.ある時間帯の平均値 - rms.     ある期間の二乗平均値 - maximum.最大：ある期間の最大値 - 最小：ある期間の最小値ある期間の最小値。  
+average, rms, maximum, minimum]の値を使用する場合は、「measurementInterval」という別のメタデータ属性を使用して、測定期間の長さを秒単位で指定する必要があります。また、メタデータ属性の'timestamp'には、測定期間の終了時刻を指定します。  
+## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PhotovoltaicMeasurement:    
@@ -403,9 +403,9 @@ PhotovoltaicMeasurement:
   x-version: 0.0.1    
 ```  
 </details>    
-## Ejemplo de carga útil  
-#### PhotovoltaicMeasurement NGSI-v2 key-values Ejemplo  
-Aquí hay un ejemplo de un PhotovoltaicMeasurement en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+## ペイロードの例  
+#### PhotovoltaicMeasurement NGSI-v2 key-valuesの例。  
+PhotovoltaicMeasurementをkey-valuesとしてJSON-LD形式で表現した例を示します。これは`options=keyValues`を使った場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
@@ -434,8 +434,8 @@ PhotovoltaicMeasurement:
   "temperature": 23.4  
 }  
 ```  
-#### PhotovoltaicMeasurement NGSI-v2 normalizado Ejemplo  
-Este es un ejemplo de un PhotovoltaicMeasurement en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### PhotovoltaicMeasurement NGSI-v2の正規化例。  
+PhotovoltaicMeasurementをJSON-LD形式で正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
@@ -500,8 +500,8 @@ PhotovoltaicMeasurement:
   }  
 }  
 ```  
-#### PhotovoltaicMeasurement NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de un PhotovoltaicMeasurement en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### PhotovoltaicMeasurement NGSI-LD key-valuesの例。  
+PhotovoltaicMeasurementをkey-valuesとしてJSON-LD形式で表現した例を示します。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
@@ -570,8 +570,8 @@ PhotovoltaicMeasurement:
   ]  
 }  
 ```  
-#### PhotovoltaicMeasurement NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de un PhotovoltaicMeasurement en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### PhotovoltaicMeasurement NGSI-LDの正規化例。  
+ここでは、正規化されたJSON-LD形式のPhotovoltaicMeasurementの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
@@ -604,4 +604,4 @@ PhotovoltaicMeasurement:
   ]  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。

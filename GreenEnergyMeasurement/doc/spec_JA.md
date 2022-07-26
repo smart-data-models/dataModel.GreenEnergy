@@ -1,17 +1,17 @@
-Entidad: GreenEnergyMeasurement  
-===============================  
-[Licencia abierta](https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/GreenEnergyMeasurement/LICENSE.md)  
-[documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descripción global: **Medida instantánea de la generación de energía con fuentes de energía verde**  
+エンティティGreenEnergyMeasurement（グリーンエナジーメジャメント  
+===========================================  
+[オープンライセンス](https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/GreenEnergyMeasurement/LICENSE.md)  
+[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな説明。**グリーンエネルギーを利用した発電量の瞬間的な測定値**。  
 
-## Lista de propiedades  
+## プロパティのリスト  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `biomassPowerGenerated`: Especifica la cantidad de energía generada utilizando la energía de la biomasa. El código de la unidad (texto) de medida se da utilizando el código común UN/CEFACT (máx. 3 caracteres).  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `eolicPowerGenerated`: Especifica la cantidad de energía generada mediante energía eólica. El código de la unidad (texto) de medida se da utilizando el código común UN/CEFACT (máx. 3 caracteres).  - `geothermalPowerGenerated`: Especifica la cantidad de energía generada mediante energía geotérmica. El código de la unidad (texto) de medida dado utilizando el Código Común UN/CEFACT (máx. 3 caracteres).  - `hydroPowerGenerated`: Especifica la cantidad de potencia generada mediante energía hidroeléctrica. El código de la unidad (texto) de medida se da utilizando el Código Común UN/CEFACT (máx. 3 caracteres).  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `refGreenEnergyGenerator`: Una referencia a la entidad `Generador de Energía Verde` a la que pertenece la medición.  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `solarPowerGenerated`: Especifica la cantidad de energía generada mediante energía solar. El código de la unidad (texto) de medida dado utilizando el Código Común UN/CEFACT (máx. 3 caracteres).  - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Tipo de entidad NGSI: Tiene que ser GreenEnergyMeasurement    
-Propiedades requeridas  
+- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `biomassPowerGenerated`: バイオマスエネルギーによる発電量を指定する。UN/CEFACT Common Codeを使用した測定単位コード（テキスト）（最大3文字）を指定します。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `eolicPowerGenerated`: エオリックエネルギーを用いた発電量を指定する。UN/CEFACT Common Codeを使用した測定単位コード（テキスト）（最大3文字）を指定します。  - `geothermalPowerGenerated`: 地熱を利用した発電量を指定する。UN/CEFACT Common Codeを使用した測定単位コード（テキスト）（最大3文字）を指定します。  - `hydroPowerGenerated`: 水力発電のエネルギーを利用した発電量を指定する。UN/CEFACT Common Codeを用いて与えられた測定単位コード（テキスト）（最大3文字）。  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `refGreenEnergyGenerator`: 測定対象となるエンティティ `GreenEnergyGenerator` への参照です。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `solarPowerGenerated`: 太陽エネルギーによる発電量を指定する。UN/CEFACT Common Codeを使用した測定単位コード（テキスト）（最大3文字）。  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI Entity Typeです。GreenEnergyMeasurementでなければならない。    
+必須項目  
 - `id`  - `refGreenEnergyGenerator`  - `type`    
-Modelo genérico para una medida instantánea de la energía generada utilizando una o varias fuentes de energía verde. Por lo tanto, una entidad de tipo "Medición de energía verde" no puede existir sin una entidad de tipo "Generador de energía verde" que la acompañe.  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+1つまたは複数のグリーンエネルギー源を使用して生成されたエネルギーのスナップショット測定のための汎用モデルです。したがって、`GreenEnergyMeasurement`タイプのエンティティは、GreenEnergyGeneratorタイプのエンティティが付随していないと存在できません。  
+## データモデルによるプロパティの記述  
+アルファベット順（クリックすると詳細が表示されます）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GreenEnergyMeasurement:    
@@ -347,9 +347,9 @@ GreenEnergyMeasurement:
   x-version: 0.0.1    
 ```  
 </details>    
-## Ejemplo de carga útil  
-#### GreenEnergyMeasurement NGSI-v2 key-values Ejemplo  
-Este es un ejemplo de una GreenEnergyMeasurement en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+## ペイロードの例  
+#### GreenEnergyMeasurement NGSI-v2 key-values 例  
+GreenEnergyMeasurementをkey-valuesとしてJSON-LD形式で表現した例を示します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement:Generator:a34f24b",  
@@ -366,8 +366,8 @@ GreenEnergyMeasurement:
   "refGreenEnergyGenerator":"urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001"  
 }  
 ```  
-#### GreenEnergyMeasurement NGSI-v2 normalizado Ejemplo  
-Este es un ejemplo de una GreenEnergyMeasurement en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### GreenEnergyMeasurement NGSI-v2の正規化例。  
+ここでは、正規化されたJSON-LD形式のGreenEnergyMeasurementの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement-Generator:a34f24b",  
@@ -398,8 +398,8 @@ GreenEnergyMeasurement:
   }  
 }  
 ```  
-#### GreenEnergyMeasurement NGSI-LD key-values Ejemplo  
-Este es un ejemplo de una GreenEnergyMeasurement en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+#### GreenEnergyMeasurement NGSI-LD キーバリューの例  
+GreenEnergyMeasurementをkey-valuesとしてJSON-LD形式で表現した例です。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement-Generator:a34f24b",  
@@ -434,8 +434,8 @@ GreenEnergyMeasurement:
   ]  
 }  
 ```  
-#### GreenEnergyMeasurement NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de una GreenEnergyMeasurement en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+#### GreenEnergyMeasurement NGSI-LDの正規化例。  
+ここでは、正規化されたJSON-LD形式のGreenEnergyMeasurementの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement:Generator:a34f24b",  
@@ -455,4 +455,4 @@ GreenEnergyMeasurement:
   ]  
 }  
 ```  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。

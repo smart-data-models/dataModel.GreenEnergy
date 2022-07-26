@@ -29,29 +29,33 @@ PhotovoltaicDevice:
         wind:    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: Pascal    
     MaximumSystemVoltage:    
       description: 'Maximum system voltage permitted for the **module**. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **VLT** represents Volt'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: Volt    
     NominalPower:    
       description: 'Nominal Power for the **panel**. This is the same value of items [Pmax] for [moduleSTC] attribute. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **WTT** represents Watt'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: watts    
     PanelNbModules:    
       description: 'Number of ''Modules'' per ''Panel'''    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number.    
+        type: Property    
     address:    
       description: 'The mailing address'    
       properties:    
@@ -73,12 +77,15 @@ PhotovoltaicDevice:
         streetAddress:    
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
           type: string    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/address    
+        type: Property    
     alternateName:    
       description: 'An alternative name for this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     application:    
       description: 'Target application regarding the Type of Solar panel (In our case `electric`). A unique value. https://schema.org/Text. Enum:''electric, thermal, other'''    
       items:    
@@ -87,7 +94,9 @@ PhotovoltaicDevice:
           - thermal    
           - other    
         type: string    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     applicationClass:    
       description: 'Evaluation of the potential hazards associated with the module. A unique value. Enum:''A, B, C'''    
       items:    
@@ -96,25 +105,29 @@ PhotovoltaicDevice:
           - B    
           - C    
         type: string    
-      type: Property    
+      type: array    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     areaServed:    
       description: 'The geographic area where a service or offered item is provided'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     areaWeight:    
       description: 'Area Weight measured in Kg/m². The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **28** represents Kilogram per square meter'    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: 'kilograms per square meter'    
     brandName:    
       description: 'Brand Name of the item'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/brand    
+        type: Property    
     cellDimension:    
       description: 'External dimension of a cell. The format is structured by a sub-property of 3 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MMT** represents Millimeter.'    
       properties:    
@@ -127,7 +140,9 @@ PhotovoltaicDevice:
         width:    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
+      x-ngsi:    
+        type: Property    
     cellOperatingTemperature:    
       description: 'This is the nominal operating temperature range of the cells in which it collects solar energy. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CEL** represents Degree Celsius'    
       properties:    
@@ -137,9 +152,10 @@ PhotovoltaicDevice:
         min:    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
         units: 'Degree Celsius'    
     cellType:    
       description: 'Type of cells used to built the photo-voltaic unit. 2 kinds of Technologies *`Cristalline`* or  *`Thin layers`*. A unique value. Enum:''amorphousSilicon, CfTe, CIS, monocrystalline, polycrystalline, other'''    
@@ -152,34 +168,45 @@ PhotovoltaicDevice:
           - polycrystalline    
           - other    
         type: string    
-      type: Property    
+      type: array    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     dataProvider:    
       description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateCreated:    
       description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     dateLastReported:    
       description: 'A timestamps which denotes the last time when the device successfully reported data. Date and time in an ISO8601 UTCformat.'    
       format: date-time    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/DateTime    
+        type: Property    
     dateModified:    
       description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
       format: date-time    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     description:    
       description: 'A description of this item'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     documentation:    
       description: 'Technical Documentation (Installation / maintenance / used)'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text.    
+        type: Property    
     fireClass:    
       description: 'Evaluation to the fire (IEC 61730). A unique value. Enum:''A, B, C'''    
       items:    
@@ -188,9 +215,10 @@ PhotovoltaicDevice:
           - B    
           - C    
         type: string    
-      type: Property    
+      type: array    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     id:    
       anyOf: &photovoltaicdevice_-_properties_-_owner_-_items_-_anyof    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -202,7 +230,8 @@ PhotovoltaicDevice:
           format: uri    
           type: string    
       description: 'Unique identifier of the entity'    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     installationCondition:    
       description: 'Condition and possibility of use in the following environments. A combination. Enum:''desert, dust, extremeHeat, extremeCold, extremeClimate, extremeHumidity, marine, none, other, saline, sand, seismic'''    
       items:    
@@ -220,9 +249,10 @@ PhotovoltaicDevice:
           - sand    
           - seismic    
         type: string    
-      type: Property    
+      type: array    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     installationMode:    
       description: 'Positioning of the device in relation to a ground reference system. A unique value. Enum:''ground, other, pole, roofing, wall'''    
       items:    
@@ -233,9 +263,10 @@ PhotovoltaicDevice:
           - roofing    
           - wall    
         type: string    
-      type: Property    
+      type: array    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
@@ -387,17 +418,20 @@ PhotovoltaicDevice:
             - coordinates    
           title: 'GeoJSON MultiPolygon'    
           type: object    
-      type: Geoproperty    
+      x-ngsi:    
+        type: Geoproperty    
     manufacturerName:    
       description: 'Manufacturer Name of the item'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/manufacturer    
+        type: Property    
     modelName:    
       description: 'Model Name of the item'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/model    
+        type: Property    
     moduleDimension:    
       description: ' External dimension of a module. A module can be an assembly of 1 to n cells. The format is structured by a sub-property of 3 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MMT** represents Millimeter'    
       properties:    
@@ -410,8 +444,9 @@ PhotovoltaicDevice:
         width:    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
+        type: Property    
         units: Millimeters    
     moduleNOCT:    
       description: 'Normal Operating Cell Temperature measurements. The format is structured by a sub-property of 5 items. Pmax in Watt. Umpp in Volt. Impp in Ampere. Uoc in Volt. Isc in Ampere'    
@@ -431,14 +466,16 @@ PhotovoltaicDevice:
         Uoc:    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue.    
+        type: Property    
     moduleNbCells:    
       description: 'Number of ''cells'' per ''module'''    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number.    
+        type: Property    
     moduleSTC:    
       description: 'Standard Test Condition measurements. The format is structured by a sub-property of 5 items. Pmax in Watt. Umpp in Volt. Impp in Ampere. Uoc in Volt. Isc in Ampere'    
       properties:    
@@ -457,34 +494,43 @@ PhotovoltaicDevice:
         Uoc:    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue.    
+        type: Property    
     moduleYieldRate:    
       description: 'Positioning of the device in relation to a ground reference system. A unique value'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number.    
+        type: Property    
     nTCClass:    
       description: 'The Negative Temperature Coefficient of resistance - *NTC*, describes the relative change of a physical property that is associated with a given change in negative temperature. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **P1** represents Percent'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number.    
+        type: Property    
     name:    
       description: 'The name of this item.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     owner:    
       description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
       items:    
         anyOf: *photovoltaicdevice_-_properties_-_owner_-_items_-_anyof    
         description: 'Property. Unique identifier of the entity'    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     pTCClass:    
       description: ' The Positive Temperature Coefficient of resistance - *PTC*, describes the relative change of a physical property that is associated with a given change in positive temperature. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **P1** represents Percent.'    
       minimum: 0    
-      type: Property    
+      type: number    
+      x-ngsi:    
+        type: Property    
     panelDimension:    
       description: 'External dimension of a Panel. A solar panel can be an assembly of 1 to n modules, which themselves are made of several cells which collect heat from the sun''s rays. The format is structured by a sub-property of 3 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **MMT** represents Millimeter.'    
       properties:    
@@ -497,13 +543,16 @@ PhotovoltaicDevice:
         width:    
           minimum: 0    
           type: number    
-      type: Property    
+      type: object    
+      x-ngsi:    
+        type: Property    
     panelLifetime:    
       description: 'Average lifetime of a panel. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **ANN** represents Year'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: year    
     panelOperatingTemperature:    
       description: 'Ambient operating temperature range. This is the minimum and maximum resistance to cold and heat for using the panel. The format is structured by a sub-property of 2 items. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **CEL** represents Degree Celsius'    
@@ -514,28 +563,33 @@ PhotovoltaicDevice:
         min:    
           minimum: -50    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue.    
+        type: Property    
         units: 'Degree Celsius'    
     panelWeight:    
       description: 'Weight of a panel (Sometime the reference used is Kg / m²). The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **KGM** represents Kilogram'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number    
+        type: Property    
         units: kilograms    
     panelYieldCurve:    
       description: 'Option 1. Energy production yield curve of the panel from its [NominalPower] at [T0] and along its [panelLifetime]. The Measurements provided in the list are a sequence of Energy Production Capacity represented in Percent starting at 5 years with a ''Step'' of 5 years according to the information provided by the manufacturer. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **P1** represents Percent. '    
       items:    
         type: string    
-      type: Property    
+      type: array    
+      x-ngsi:    
+        type: Property    
     performanceLowIrradiance:    
       description: 'Average relative yield to Performance at Low Irradiance. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **P1** represents Percent'    
       minimum: 0    
-      type: Property    
+      type: number    
       x-ngsi:    
         model: https://schema.org/Number.    
+        type: Property    
     possibilityOfUse:    
       description: 'Possibility of use. A unique value. Enum:''mixed, mobile, other, stationary'''    
       items:    
@@ -545,14 +599,16 @@ PhotovoltaicDevice:
           - other    
           - stationary    
         type: string    
-      type: Property    
+      type: array    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
     protectionIP:    
       description: 'IP ''Ingress Protection'' for the Junction Box. This is the level classifies and rates the degree of protection provided by mechanical casings and electrical enclosures against intrusion, dust, accidental contact, and water according to International Electrotechnical Commission standard (EN 60-529). First digit: Solid particle protection (Single numeral: 0–6 or ''X''). Second digit: Liquid ingress protection (Single numeral: 0–9 or ''X'' ).Third digit: Personal Protection  against access to dangerous parts (optional additional letter). Fourth digit: Other protections (optional additional letter)'    
-      type: Property    
+      type: string    
       x-ngsi:    
         model: https://schema.org/Text.    
+        type: Property    
     refDevice:    
       anyOf:    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -564,9 +620,9 @@ PhotovoltaicDevice:
           format: uri    
           type: string    
       description: 'Reference to the Main Entity [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) if used as second link'    
-      type: Property    
       x-ngsi:    
         model: https://schema.org/URL    
+        type: Property    
     refPointOfInterest:    
       anyOf:    
         - description: 'Property. Identifier format of any NGSI entity'    
@@ -578,9 +634,9 @@ PhotovoltaicDevice:
           format: uri    
           type: string    
       description: 'Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the Repository.'    
-      type: Relationship    
       x-ngsi:    
         model: https://schema.org/URL    
+        type: Relationship    
     seeAlso:    
       description: 'list of uri pointing to additional resources about the item'    
       oneOf:    
@@ -591,17 +647,21 @@ PhotovoltaicDevice:
           type: array    
         - format: uri    
           type: string    
-      type: Property    
+      x-ngsi:    
+        type: Property    
     serialNumber:    
       description: 'List of serial numbers of Photo-voltaic device supplied by the manufacturer and assembled in operating mode on a single location'    
       items:    
         type: string    
-      type: Property    
+      type: array    
       x-ngsi:    
         model: https://schema.org/serialNumber    
+        type: Property    
     source:    
       description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     temperatureCoefficient:    
       description: ' Temperature influence coefficient on the panel. The format is structured by a sub-property of 3 items. Pmax in Watt. Uoc in Volt. Isc in Ampere'    
       properties:    
@@ -614,14 +674,17 @@ PhotovoltaicDevice:
         Uoc:    
           minimum: -1    
           type: number    
-      type: Property    
+      type: object    
       x-ngsi:    
         model: https://schema.org/StructuredValue    
+        type: Property    
     type:    
       description: 'NGSI Entity type. It has to be PhotovoltaicDevice'    
       enum:    
         - PhotovoltaicDevice    
-      type: Property    
+      type: string    
+      x-ngsi:    
+        type: Property    
     typeOfUse:    
       description: 'Accepted use regarding its positioning in an indoor / outdoor environment. A unique value. Enum:''indoor, outdoor, mixed, other'''    
       items:    
@@ -631,15 +694,22 @@ PhotovoltaicDevice:
           - mixed    
           - other    
         type: string    
-      type: Property    
+      type: array    
       x-ngsi:    
         model: https://schema.org/Text    
+        type: Property    
   required:    
     - id    
     - type    
     - location    
     - dateLastReported    
   type: object    
+  x-derived-from: ""    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-license-url: https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/PhotovoltaicDevice/LICENSE.md    
+  x-model-schema: https://smart-data-models.github.io/data-models.Energy/PhotovoltaicDevice/schema.json    
+  x-model-tags: ""    
+  x-version: 0.0.1    
 ```  
 </details>    
 ## Example payloads    
@@ -1447,3 +1517,4 @@ PhotovoltaicDevice:
   ]  
 }  
 ```  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
