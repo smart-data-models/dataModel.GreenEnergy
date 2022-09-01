@@ -38,7 +38,7 @@ PhotovoltaicDevice:
       description: 'Number of ''Modules'' per ''Panel'''
       type: number
       x-ngsi:
-        model: https://schema.org/Number.
+        model: https://schema.org/Number
         type: Property
     address:
       description: 'The mailing address'
@@ -189,7 +189,7 @@ PhotovoltaicDevice:
       description: 'Technical Documentation (Installation / maintenance / used)'
       type: string
       x-ngsi:
-        model: https://schema.org/Text.
+        model: https://schema.org/Text
         type: Property
     fireClass:
       description: 'Evaluation to the fire (IEC 61730). A unique value. Enum:''A, B, C'''
@@ -452,13 +452,13 @@ PhotovoltaicDevice:
           type: number
       type: object
       x-ngsi:
-        model: https://schema.org/StructuredValue.
+        model: https://schema.org/StructuredValue
         type: Property
     moduleNbCells:
       description: 'Number of ''cells'' per ''module'''
       type: number
       x-ngsi:
-        model: https://schema.org/Number.
+        model: https://schema.org/Number
         type: Property
     moduleSTC:
       description: 'Standard Test Condition measurements. The format is structured by a sub-property of 5 items. Pmax in Watt. Umpp in Volt. Impp in Ampere. Uoc in Volt. Isc in Ampere'
@@ -480,21 +480,21 @@ PhotovoltaicDevice:
           type: number
       type: object
       x-ngsi:
-        model: https://schema.org/StructuredValue.
+        model: https://schema.org/StructuredValue
         type: Property
     moduleYieldRate:
       description: 'Positioning of the device in relation to a ground reference system. A unique value'
       minimum: 0
       type: number
       x-ngsi:
-        model: https://schema.org/Number.
+        model: https://schema.org/Number
         type: Property
     nTCClass:
       description: 'The Negative Temperature Coefficient of resistance - *NTC*, describes the relative change of a physical property that is associated with a given change in negative temperature. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **P1** represents Percent'
       minimum: 0
       type: number
       x-ngsi:
-        model: https://schema.org/Number.
+        model: https://schema.org/Number
         type: Property
     name:
       description: 'The name of this item.'
@@ -549,7 +549,7 @@ PhotovoltaicDevice:
           type: number
       type: object
       x-ngsi:
-        model: https://schema.org/StructuredValue.
+        model: https://schema.org/StructuredValue
         type: Property
         units: 'Degree Celsius'
     panelWeight:
@@ -572,7 +572,7 @@ PhotovoltaicDevice:
       minimum: 0
       type: number
       x-ngsi:
-        model: https://schema.org/Number.
+        model: https://schema.org/Number
         type: Property
     possibilityOfUse:
       description: 'Possibility of use. A unique value. Enum:''mixed, mobile, other, stationary'''
@@ -591,7 +591,7 @@ PhotovoltaicDevice:
       description: 'IP ''Ingress Protection'' for the Junction Box. This is the level classifies and rates the degree of protection provided by mechanical casings and electrical enclosures against intrusion, dust, accidental contact, and water according to International Electrotechnical Commission standard (EN 60-529). First digit: Solid particle protection (Single numeral: 0–6 or ''X''). Second digit: Liquid ingress protection (Single numeral: 0–9 or ''X'' ).Third digit: Personal Protection  against access to dangerous parts (optional additional letter). Fourth digit: Other protections (optional additional letter)'
       type: string
       x-ngsi:
-        model: https://schema.org/Text.
+        model: https://schema.org/Text
         type: Property
     refDevice:
       anyOf:
@@ -689,8 +689,8 @@ PhotovoltaicDevice:
     - dateLastReported
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/PhotovoltaicDevice/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/data-models.Energy/PhotovoltaicDevice/schema.json
   x-model-tags: ""
-  x-version: 0.0.1
+  x-version: 0.0.2
