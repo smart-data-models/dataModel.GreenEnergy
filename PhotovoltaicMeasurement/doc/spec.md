@@ -1,8 +1,10 @@
-Entity: PhotovoltaicMeasurement  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: PhotovoltaicMeasurement  
 ===============================  
 [Open License](https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/PhotovoltaicMeasurement/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 Global description: **The Data Model is intended to measure the continuous power transferred by the photo-voltaic panel to an Inverter Device.**  
+version: 0.0.2  
 
 ## List of properties  
 
@@ -324,7 +326,7 @@ PhotovoltaicMeasurement:
       minimum: 0    
       type: number    
       x-ngsi:    
-        model: https://schema.org/Number.    
+        model: https://schema.org/Number    
         type: Property    
     refPhotovoltaicDevice:    
       anyOf:    
@@ -338,7 +340,7 @@ PhotovoltaicMeasurement:
           type: string    
       description: ""    
       x-ngsi:    
-        model: 'Reference to a [Photovoltaic Device](https://github.com/smart-data-models/dataModel.Energy/PhotovoltaicDevice/doc/spec.md) which captured this observation, if the entity is used https://schema.org/URL.'    
+        model: 'Reference to a [Photovoltaic Device](https://github.com/smart-data-models/dataModel.Energy/PhotovoltaicDevice/doc/spec.md) which captured this observation, if the entity is used https://schema.org/URL'    
         type: Relationship    
     refPointOfInterest:    
       anyOf:    
@@ -396,11 +398,11 @@ PhotovoltaicMeasurement:
     - temperature    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/PhotovoltaicMeasurement/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/data-models.Energy/PhotovoltaicMeasurement/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## Example payloads    
@@ -504,104 +506,105 @@ PhotovoltaicMeasurement:
 Here is an example of a PhotovoltaicMeasurement in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
 ```json  
 {  
-  "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
-  "type": "PhotovoltaicMeasurement",  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "https://imredd.fr/en/home/"  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Photovoltaic station IMREDD"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Photovoltaic data provided by the data logger ABB"  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": "https://us.sunpower.com/products/solar-panels"  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        43.66481,  
-        7.196545  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "addressCountry": "FR",  
-      "addressLocality": "Nice",  
-      "streetAddress": "61-63 Avenue Simone Veil"  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Nice"  
-  },  
-  "refPhotovoltaicDevice": {  
-    "type": "Relationship",  
-    "Object": "urn:ngsi-ld:PhotovoltaicDevice:PV-T2-R-012"  
-  },  
-  "dateObserved": {  
-    "type": "Property",  
-    "value": "2019-09-05T16:00:00.999Z"  
-  },  
-  "dateEnergyMeteringStarted": {  
-    "type": "Property",  
-    "value": "2019-09-04T15:29:17.999Z"  
-  },  
-  "nominalPeakPowerGeneration": {  
-    "type": "Property",  
-    "value": 179  
-  },  
-  "temperature": {  
-    "type": "Property",  
-    "value": 23.4  
-  },  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/common-schema.json",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
+    "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
+    "type": "PhotovoltaicMeasurement",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "addressCountry": "FR",  
+            "addressLocality": "Nice",  
+            "streetAddress": "61-63 Avenue Simone Veil"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Nice"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "https://imredd.fr/en/home/"  
+    },  
+    "dateEnergyMeteringStarted": {  
+        "type": "Property",  
+        "value": "2019-09-04T15:29:17.999Z"  
+    },  
+    "dateObserved": {  
+        "type": "Property",  
+        "value": "2019-09-05T16:00:00.999Z"  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Photovoltaic data provided by the data logger ABB"  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                43.66481,  
+                7.196545  
+            ]  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Photovoltaic station IMREDD"  
+    },  
+    "nominalPeakPowerGeneration": {  
+        "type": "Property",  
+        "value": 179  
+    },  
+    "refPhotovoltaicDevice": {  
+        "type": "Relationship",  
+        "Object": "urn:ngsi-ld:PhotovoltaicDevice:PV-T2-R-012"  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": "https://us.sunpower.com/products/solar-panels"  
+    },  
+    "temperature": {  
+        "type": "Property",  
+        "value": 23.4  
+    },  
+    "@context": [  
+        "https://smart-data-models.github.io/data-models/common-schema.json",  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"  
+    ]  
 }  
 ```  
 #### PhotovoltaicMeasurement NGSI-LD normalized Example    
 Here is an example of a PhotovoltaicMeasurement in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
 ```json  
 {  
-  "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
-  "type": "PhotovoltaicMeasurement",  
-  "dataProvider": "https://imredd.fr/en/home/",  
-  "name": "Photovoltaic station IMREDD",  
-  "description": "Photovoltaic data provided by the data logger ABB",  
-  "seeAlso": "https://us.sunpower.com/products/solar-panels",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      43.66481,  
-      7.196545  
+    "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
+    "type": "PhotovoltaicMeasurement",  
+    "address": {  
+        "addressCountry": "FR",  
+        "addressLocality": "Nice",  
+        "streetAddress": "61-63 Avenue Simone Veil"  
+    },  
+    "areaServed": "Nice",  
+    "dataProvider": "https://imredd.fr/en/home/",  
+    "dateEnergyMeteringStarted": "2019-09-04T15:29:17.999Z",  
+    "dateObserved": "2019-09-05T16:00:00.999Z",  
+    "description": "Photovoltaic data provided by the data logger ABB",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            43.66481,  
+            7.196545  
+        ]  
+    },  
+    "name": "Photovoltaic station IMREDD",  
+    "nominalPeakPowerGeneration": 179,  
+    "refPhotovoltaicDevice": "urn:ngsi-ld:PhotovoltaicDevice:PV-T2-R-012",  
+    "seeAlso": "https://us.sunpower.com/products/solar-panels",  
+    "temperature": 23.4,  
+    "@context": [  
+        "https://smart-data-models.github.io/data-models/common-schema.json",  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "addressCountry": "FR",  
-    "addressLocality": "Nice",  
-    "streetAddress": "61-63 Avenue Simone Veil"  
-  },  
-  "areaServed": "Nice",  
-  "refPhotovoltaicDevice": "urn:ngsi-ld:PhotovoltaicDevice:PV-T2-R-012",  
-  "dateObserved": "2019-09-05T16:00:00.999Z",  
-  "dateEnergyMeteringStarted": "2019-09-04T15:29:17.999Z",  
-  "nominalPeakPowerGeneration": 179,  
-  "temperature": 23.4,  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/common-schema.json",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
