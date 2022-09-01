@@ -1,17 +1,19 @@
-エンティティPhotovoltaicDevice  
-========================  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティフォトボルタイックデバイス  
+===================  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/PhotovoltaicDevice/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このデータモデルは、光電池パネルの機械的、電気的および熱的特性を、*STC - Standard Test Condition* および *NOCT - Normal Operating Cell Temperature* に従って記述することを目的としています。*Remark* :本データモデルは、`Photovoltaic Device`を記述するメインエンティティとして直接使用することも、`refDevice`属性による参照を用いてデータモデル`DEVICE`のサブエンティティとして使用することもできます。STCとNOCTで行われる測定は、`Pmax`（最大公称電力）、`Umpp`（最適動作電圧）、`Impp`（最適動作電流）、`Uoc`（開路電圧）、`Isc`（短絡電流）です。*データモデルに関する追加情報： *このデータモデルは、デバイス[PHOTOVOLTAIC]を記述するメインエンティティとして直接使用することも、データモデル[DEVICE]のサブエンティティとして、`refDevice`属性による参照を使用することもできます。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述。**このデータモデルは、STC（Standard Test Condition）及びNOCT（Normal Operating Cell Temperature）に準拠した光電池パネルの機械的特性、電気的特性、熱的特性を記述することを目的としています。*備考このデータモデルは、`Photovoltaic Device`を記述するメインエンティティとして直接使用することも、`refDevice`属性による参照を用いてデータモデル`DEVICE`のサブエンティティとして使用することも可能です。STCとNOCTで行う測定は、`Pmax`（最大公称電力）、`Umpp`（最適動作電圧）、`Impp`（最適動作電流）、`Uoc`（開放電圧）、`Isc`（短絡電流）である。*このデータモデルは、デバイス[PHOTOVOLTAIC]を記述するメインエンティティとして直接使用することも、`refDevice`属性による参照を使用してデータモデル[DEVICE]のサブエンティティとして使用することも可能です**。  
+バージョン: 0.0.2  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `MaxPressureLoad`: aximum mechanics パネルにかかる圧力（せん断、弾性、圧縮）荷重。フォーマットは、3項目のサブプロパティで構成されています。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。例えば、**PAL**はPascalを表します。  - `MaximumSystemVoltage`: モジュール**に許容される最大システム電圧です。単位コード(テキスト)は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられます。例えば、**VLT**はVoltを表します。  - `NominalPower`: パネル**の公称電力。これは、[moduleSTC]属性の項目[Pmax]と同じ値である。単位コード(テキスト)は[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば，**WTT**はWattを表す。  - `PanelNbModules`: パネル」ごとの「モジュール」の数  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `application`: ソーラーパネルの種類（ここでは「電気」）に応じたターゲットアプリケーション。ユニークな値です。https://schema.org/Text。Enum:'electric, thermal, other' (電気、熱、その他)  - `applicationClass`: モジュールに関連する潜在的な危険性の評価。固有の値。イナム:'A, B, C'  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `areaWeight`: 面積 重量の単位はKg/m²です。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられます。例えば、**28**はKilogram per square meterを表します。  - `brandName`: アイテムのブランド名  - `cellDimension`: セルの外寸。フォーマットは3項目のサブプロパティで構成される。単位コード（テキスト）は，[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば，**MMT**はミリメートルを表す。  - `cellOperatingTemperature`: これは、太陽エネルギーを集めるセルの公称動作温度範囲である。フォーマットは2項目のサブプロパティで構成されています。単位コード（テキスト）は，[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**CEL**はDegree Celsiusを表します。  - `cellType`: フォトボルタユニットを構成するセルの種類。クリスタリン」と「薄層」の2種類の技術。ユニークな値です。Enum:'amorphousSilicon, CfTe, CIS, monocrystalline, polycrystalline, other'.  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateLastReported`: デバイスがデータの報告に成功した最後の時間を示すタイムスタンプ。ISO8601 UTCフォーマットの日付と時刻。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `documentation`: テクニカルドキュメント（インストール／メンテナンス／使用）  - `fireClass`: 炎に対する評価（IEC 61730）。ユニークな値です。イナム:'A, B, C'  - `id`: エンティティのユニークな識別子  - `installationCondition`: 以下の環境での使用条件と可能性。組み合わせです。Enum:'desert, dust, extremeHeat, extremeCold, extremeClimate, extremeHumidity, marine, none, other, saline, sand, seismic'.  - `installationMode`: 地面の基準となるシステムに対するデバイスの位置決め。ユニークな値です。Enum:'ground, other, pole, roofing, wall'.  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `manufacturerName`: メーカー名 商品名  - `modelName`: アイテムのモデル名  - `moduleDimension`: モジュールの外寸。モジュールは，1～n個のセルの集合体である。フォーマットは3項目のサブプロパティで構成される。単位コード（テキスト）は，[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**MMT**はミリメートルを表します。  - `moduleNOCT`: 通常の動作セル温度の測定。フォーマットは5項目のサブプロパティで構成されています。Pmax（ワット）。Umpp（ボルト）。Impp（アンペア）。Uoc（ボルト）。Isc（アンペア  - `moduleNbCells`: モジュール」ごとの「セル」の数  - `moduleSTC`: 標準的なテストコンディションの測定値です。フォーマットは5項目のサブプロパティで構成されています。Pmax（ワット）。Umpp（ボルトImpp（アンペア）。Uoc（ボルト）。Isc（アンペア  - `moduleYieldRate`: 地面の基準となるシステムに対するデバイスの位置決め。固有の値  - `nTCClass`: 負の温度係数（Negative Temperature Coefficient of Resistance） - *NTC* は、負の温度の所定の変化に伴う物理的特性の相対的変化を表す。単位コード（テキスト）は，[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**P1**はPercentを表します。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `pTCClass`: 抵抗の正温度係数（Positive Temperature Coefficient of Resistance - *PTC*）は、正温度の所定の変化に伴う物理的特性の相対的な変化を示すものである。単位コード（テキスト）は，[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**P1**はPercentを表します。  - `panelDimension`: パネルの外寸。太陽電池パネルは、1～n個のモジュールの集合体であり、モジュール自体は、太陽の光から熱を集める複数のセルで構成されています。フォーマットは3つの項目からなるサブプロパティで構成されています。ユニットコード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられます。例えば、**MMT**はミリメートルを表します。  - `panelLifetime`: パネルの平均寿命。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**ANN**はYearを表します。  - `panelOperatingTemperature`: 使用周囲温度の範囲。パネルを使用する上での寒さや暑さに対する耐性の最小値と最大値です。フォーマットは2項目のサブプロパティで構成されています。単位コード(テキスト)は[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与える。例えば，**CEL**は摂氏何度を表す。  - `panelWeight`: パネルの重量（Kg / m²が使われることもある）。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用しています。例えば、**KGM**はキログラムを表します。  - `panelYieldCurve`: オプション1.T0]における[NominalPower]から[panelLifetime]に沿ったパネルのエネルギー生産収量曲線。このリストに記載されている測定値は、製造者が提供した情報に基づき、5年から始まるエネルギー生産能力をパーセントで表したシーケンスであり、「ステップ」は5年である。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**P1**はPercentを表します。  - `performanceLowIrradiance`: Performance at Low Irradianceに対する平均相対収量。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**P1**はPercentを表します。  - `possibilityOfUse`: 使用の可能性。固有の値。Enum:'mixed, mobile, other, stationary'.  - `protectionIP`: ジャンクションボックスのIP「Ingress Protection」。これは、国際電気標準会議の規格（EN 60-529）に基づいて、機械的な筐体や電気的な筐体が、侵入、埃、偶発的な接触、および水に対して提供する保護の度合いを分類し、評価するものです。1桁目1桁目：固体粒子に対する保護等級（単一の数字：0～6または「X」）。2桁目2桁目：液体の侵入に対する保護（数字1つ：0-9または'X'）。3桁目：危険な部品へのアクセスに対する個人保護（オプションの追加文字）。4桁目4桁目：その他の保護（オプションで追加文字）  - `refDevice`: 2番目のリンクとして使用されている場合、メインエンティティ[デバイス](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md)への参照  - `refPointOfInterest`: リポジトリとリンクしている[PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)への参照。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `serialNumber`: メーカーから供給され、稼働状態で1箇所に集められた光起電力装置のシリアルナンバーのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperatureCoefficient`: パネルの温度影響係数。フォーマットは3項目のサブプロパティで構成されています。Pmax（ワット）。Uoc（ボルトIsc（アンペア  - `type`: NGSI エンティティタイプ。PhotovoltaicDeviceである必要があります。  - `typeOfUse`: 屋内外での使用を前提としています。ユニークな値です。Enum:'インドア、アウトドア、ミックス、その他'    
-必須項目  
+- `MaxPressureLoad`: aximum mechanics Panel にかかる圧力(せん断、弾性、圧縮)荷重。フォーマットは、3 項目のサブプロパティで構成される。単位コード（テキスト）は，[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与える。例えば，**PAL** は Pascal を表す。  - `MaximumSystemVoltage`: モジュール**に許容される最大システム電圧です。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて示される。例えば、**VLT**はVolt（ボルト）を表します。  - `NominalPower`: パネル**の公称消費電力。moduleSTC]属性の[Pmax]項目と同じ値です。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて指定します。例えば、**WTT**はWattを表します。  - `PanelNbModules`: パネル」ごとの「モジュール」数  - `address`: 郵送先住所  - `alternateName`: この項目の別称  - `application`: ソーラーパネルの種類（ここでは「電気式」）に関する対象用途。一意の値。https://schema.org/Text。Enum:'electric, thermal, other' (電気、熱、その他)  - `applicationClass`: モジュールに関連する潜在的な危険性を評価する。一意の値。Enum:'A, B, C'。  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `areaWeight`: 面積 重量はKg/m²で測定。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて示される。例えば、**28**はKilogram per square meter（1平方メートルあたりキログラム）を表します。  - `brandName`: アイテムのブランド名  - `cellDimension`: セルの外形寸法。フォーマットは 3 項目のサブプロパティで構成される。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて指定する。例えば、**MMT** はミリメートルを表す。  - `cellOperatingTemperature`: 太陽エネルギーを収集するセルの公称動作温度範囲である。フォーマットは 2 項目のサブプロパティで構成される。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。例えば、**CEL** は摂氏を表す。  - `cellType`: 光電池を構成するセルの種類。2種類の技術 *`Cristalline`* or *`Thin layers`*.一意の値。Enum:'amorphousSilicon, CfTe, CIS, monocrystalline, polycrystalline, other' （アモルファスシリコン、CfTe、CIS、単結晶、多結晶、その他）。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateLastReported`: デバイスが正常にデータを報告した最後の時刻を示すタイムスタンプ。ISO8601 UTCフォーマットによる日付と時刻。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `documentation`: 技術ドキュメント（インストール/メンテナンス/使用済み）  - `fireClass`: 火への評価（IEC 61730）。ユニークな値。Enum:'A, B, C'。  - `id`: エンティティの一意な識別子  - `installationCondition`: 以下の環境での使用条件、可能性。組み合わせです。Enum:'desert, dust, extremeHeat, extremeCold, extremeClimate, extremeHumidity, marine, none, other, saline, sand, seismic'.  - `installationMode`: 地上基準系に対する装置の位置決め。一意の値。Enum:'ground, other, pole, roofing, wall'.  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `manufacturerName`: メーカー名 品名  - `modelName`: アイテムのモデル名  - `moduleDimension`: モジュールの外形寸法。モジュールは 1～n 個のセルの集合体である。フォーマットは 3 項目のサブプロパティで構成される。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与え る。例えば、**MMT** はミリメートル（Millimeter）を表す。  - `moduleNOCT`: 通常動作時のセル温度の測定値。フォーマットは 5 項目のサブプロパティで構成される。Pmax (W)。Umpp（ボルト）。Impp（アンペア）。Uoc（ボルト）。Isc（アンペア  - `moduleNbCells`: モジュール」ごとの「セル」数  - `moduleSTC`: Standard Test Condition の測定値。フォーマットは 5 項目のサブプロパティで構成される。Pmax (W)。Umpp（ボルト）。Impp（アンペア）。Uoc（ボルト）。Isc（アンペア  - `moduleYieldRate`: 地上基準系に対する装置の位置決め。一意の値  - `nTCClass`: 抵抗の負温度係数 - *NTC*は、与えられた負温度の変化に関連する物理的性質の相対的な変化を記述するものです。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用して与えられます。例えば、**P1** は Percent（パーセント）を表します。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pTCClass`: 抵抗の正温度係数 - *PTC* は、与えられた正温度の変化に関連する物理的性質の相対的な変化を記述するものです。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用して与えられます。例えば、**P1**はPercent（パーセント）を表す。  - `panelDimension`: パネルの外形寸法。太陽電池パネルは、1～n個のモジュールの集合体であり、モジュール自体は複数のセルで構成され、太陽の光から熱を集める。フォーマットは 3 項目のサブプロパティで構成される。ユニットコード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**MMT**はMillimeterを表す。  - `panelLifetime`: パネルの平均寿命。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与される。例えば、**ANN**はYearを表します。  - `panelOperatingTemperature`: 使用周囲温度範囲。パネルを使用する際の寒さや暑さに対する耐性の最小値と最大値を示す。フォーマットは 2 項目のサブプロパティで構成される。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。例えば、**CEL**は摂氏を表す。  - `panelWeight`: パネルの重量（Kg/m²を基準とする場合もある）。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて記載します。例えば、**KGM**はキログラムを表します。  - `panelYieldCurve`: オプション 1.T0] での [NominalPower] から [panelLifetime] に沿ったパネルのエネルギー生産量カーブ。このリストで提供される測定値は、製造者から提供された情報に従って、5 年を「ステップ」と して、5 年から始まるエネルギー生産能力をパーセントで表したシーケンスである。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用し て示される。例えば、**P1**はPercentを表す。  - `performanceLowIrradiance`: Performance at Low Irradianceに対する平均相対収量。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与される。例えば、**P1**はPercent（パーセント）を表します。  - `possibilityOfUse`: 活用の可能性。ユニークな値。Enum:'mixed, mobile, other, stationary'.  - `protectionIP`: ジャンクションボックスのIP 'Ingress Protection'。国際電気標準会議規格（EN 60-529）に基づき、機械筐体や電気筐体の侵入、粉塵、偶発的な接触、水に対する保護の度合いを分類・評価したレベルです。1桁目1桁目：固体粒子に対する保護等級（数字1桁：0～6または'X'）。2桁目2桁目：液体侵入に対する保護（数字1桁：0～9または'X'）3桁目：危険物へのアクセスに対する個人保護（数字1桁：0～9または'X'）。3桁目：危険箇所への立ち入りに対する個人保護（オプションの追加文字）。4桁目その他の保護（オプションで追加可能な文字）  - `refDevice`: 2番目のリンクとして使用される場合、メインエンティティの[デバイス](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md)への参照  - `refPointOfInterest`: リポジトリとリンクしている[PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)への参照。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `serialNumber`: 製造者から供給され、単一場所で動作モードで組み立てられた光電変換デバイスのシリアル番号のリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperatureCoefficient`: パネルへの温度影響係数。フォーマットは3項目のサブプロパティで構成される。Pmax (ワット)Uoc (ボルト)Isc (アンペア)  - `type`: NGSI エンティティタイプ。これは、PhotovoltaicDevice でなければならない。  - `typeOfUse`: 屋内外での位置づけを考慮した使い方ができる。ユニークな値。Enum:'indoor, outdoor, mixed, other'.    
+必要なプロパティ  
 - `dateLastReported`  - `id`  - `location`  - `type`    
-Pmax] 最大公称電力、単位：WTT**、単位：Watt.- Umpp] 最適動作電圧 **VLT** は、ボルトを表します。- Impp] 最適動作電流は **AMP** で測定され、アンペアを表します。- Uoc] 開放電圧は **VLT** で測定され、ボルトを表します。- Isc] 短絡電流（**AMP**で測定）はアンペアを表します。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+Pmax] 最大公称電力は**WTT**で測定され、ワットを表す。- Umpp] 最適動作電圧は**VLT**単位で表され、ボルトを表す。- Impp] 最適動作電流（単位：AMP**）は、アンペアを表します。- Uoc] 開回路電圧は**VLT**で測定され、Voltを表します。- Isc] 短絡電流は、**AMP**で測定され、アンペアを表します。  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PhotovoltaicDevice:    
@@ -54,7 +56,7 @@ PhotovoltaicDevice:
       description: 'Number of ''Modules'' per ''Panel'''    
       type: number    
       x-ngsi:    
-        model: https://schema.org/Number.    
+        model: https://schema.org/Number    
         type: Property    
     address:    
       description: 'The mailing address'    
@@ -205,7 +207,7 @@ PhotovoltaicDevice:
       description: 'Technical Documentation (Installation / maintenance / used)'    
       type: string    
       x-ngsi:    
-        model: https://schema.org/Text.    
+        model: https://schema.org/Text    
         type: Property    
     fireClass:    
       description: 'Evaluation to the fire (IEC 61730). A unique value. Enum:''A, B, C'''    
@@ -468,13 +470,13 @@ PhotovoltaicDevice:
           type: number    
       type: object    
       x-ngsi:    
-        model: https://schema.org/StructuredValue.    
+        model: https://schema.org/StructuredValue    
         type: Property    
     moduleNbCells:    
       description: 'Number of ''cells'' per ''module'''    
       type: number    
       x-ngsi:    
-        model: https://schema.org/Number.    
+        model: https://schema.org/Number    
         type: Property    
     moduleSTC:    
       description: 'Standard Test Condition measurements. The format is structured by a sub-property of 5 items. Pmax in Watt. Umpp in Volt. Impp in Ampere. Uoc in Volt. Isc in Ampere'    
@@ -496,21 +498,21 @@ PhotovoltaicDevice:
           type: number    
       type: object    
       x-ngsi:    
-        model: https://schema.org/StructuredValue.    
+        model: https://schema.org/StructuredValue    
         type: Property    
     moduleYieldRate:    
       description: 'Positioning of the device in relation to a ground reference system. A unique value'    
       minimum: 0    
       type: number    
       x-ngsi:    
-        model: https://schema.org/Number.    
+        model: https://schema.org/Number    
         type: Property    
     nTCClass:    
       description: 'The Negative Temperature Coefficient of resistance - *NTC*, describes the relative change of a physical property that is associated with a given change in negative temperature. The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **P1** represents Percent'    
       minimum: 0    
       type: number    
       x-ngsi:    
-        model: https://schema.org/Number.    
+        model: https://schema.org/Number    
         type: Property    
     name:    
       description: 'The name of this item.'    
@@ -565,7 +567,7 @@ PhotovoltaicDevice:
           type: number    
       type: object    
       x-ngsi:    
-        model: https://schema.org/StructuredValue.    
+        model: https://schema.org/StructuredValue    
         type: Property    
         units: 'Degree Celsius'    
     panelWeight:    
@@ -588,7 +590,7 @@ PhotovoltaicDevice:
       minimum: 0    
       type: number    
       x-ngsi:    
-        model: https://schema.org/Number.    
+        model: https://schema.org/Number    
         type: Property    
     possibilityOfUse:    
       description: 'Possibility of use. A unique value. Enum:''mixed, mobile, other, stationary'''    
@@ -607,7 +609,7 @@ PhotovoltaicDevice:
       description: 'IP ''Ingress Protection'' for the Junction Box. This is the level classifies and rates the degree of protection provided by mechanical casings and electrical enclosures against intrusion, dust, accidental contact, and water according to International Electrotechnical Commission standard (EN 60-529). First digit: Solid particle protection (Single numeral: 0–6 or ''X''). Second digit: Liquid ingress protection (Single numeral: 0–9 or ''X'' ).Third digit: Personal Protection  against access to dangerous parts (optional additional letter). Fourth digit: Other protections (optional additional letter)'    
       type: string    
       x-ngsi:    
-        model: https://schema.org/Text.    
+        model: https://schema.org/Text    
         type: Property    
     refDevice:    
       anyOf:    
@@ -705,16 +707,16 @@ PhotovoltaicDevice:
     - dateLastReported    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/PhotovoltaicDevice/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/data-models.Energy/PhotovoltaicDevice/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## ペイロードの例  
-#### PhotovoltaicDevice NGSI-v2 key-valuesの例。  
-PhotovoltaicDeviceをJSON-LD形式のkey-valuesで表現した例を示します。これは`options=keyValues`を使った場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### PhotovoltaicDevice NGSI-v2 key-value 例  
+ここでは、PhotovoltaicDeviceをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
 ```json  
 {  
   "id": "urn:ngsi-ld:PhotovoltaicDevice:PhotovoltaicDevice:MNCA-PV-T2-R-012",  
@@ -839,7 +841,7 @@ PhotovoltaicDevice:
 }  
 ```  
 #### PhotovoltaicDevice NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のPhotovoltaicDeviceの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+PhotovoltaicDeviceをJSON-LD形式で正規化した例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:PhotovoltaicDevice:PhotovoltaicDevice:MNCA-PV-T2-R-012",  
@@ -1104,417 +1106,416 @@ PhotovoltaicDevice:
   }  
 }  
 ```  
-#### PhotovoltaicDevice NGSI-LDのキーバリューの例。  
-PhotovoltaicDeviceをJSON-LD形式でkey-valuesとして表現した例です。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 太陽光発電装置 NGSI-LD キー値例  
+PhotovoltaicDeviceをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
 ```json  
 {  
-  "id": "urn:ngsi-ld:PhotovoltaicDevice:PhotovoltaicDevice:MNCA-PV-T2-R-012",  
-  "type": "PhotovoltaicDevice",  
-  "name": {  
-    "type": "Property",  
-    "value": "DEVICE-PV-T2-R-012"  
-  },  
-  "alternateName": {  
-    "type": "Property",  
-    "value": "AirPort \u2013 global Observation"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Photo-voltaic Device description"  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates ": [  
-        43.66481,  
-        7.196545  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "addressCountry": "FR",  
-      "addressLocality": "Nice",  
-      "streetAddress": "Airport - Terminal 2 - Roof 2 - Local  12"  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Nice Aeroport"  
-  },  
-  "refDevice": {  
-    "type": "Relationship",  
-    "value": "urn:ngsi-ld:Device:PV-T2-R-012"  
-  },  
-  "dateLastReported": {  
-    "type": "Property",  
-    "value": {  
-      "type": "DateTime",  
-      "value": "2020-05-17T09:47:00Z"  
-    }  
-  },  
-  "brandName": {  
-    "type": "Property",  
-    "value": "Canadian Solar"  
-  },  
-  "modelName": {  
-    "type": "Property",  
-    "value": "CS6P-270P"  
-  },  
-  "manufacturerName": {  
-    "type": "Property",  
-    "value": "Canadian Solar EMEA GmbH,"  
-  },  
-  "serialNumber": {  
-    "type": "Property",  
-    "value": [  
-      "CSPV270P-SN1804L6J34Z8742H",  
-      "CSPV270P-SN1804L6J34Z8743H",  
-      "CSPV270P-SN1804L6J34Z8744H",  
-      "CSPV270P-SN1804L6J34Z8745H",  
-      "CSPV270P-SN1804L6J34Z8746H"  
+    "id": "urn:ngsi-ld:PhotovoltaicDevice:PhotovoltaicDevice:MNCA-PV-T2-R-012",  
+    "type": "PhotovoltaicDevice",  
+    "MaximumSystemVoltage": {  
+        "type": "Property",  
+        "value": 1000  
+    },  
+    "NominalPower": {  
+        "type": "Property",  
+        "value": 270  
+    },  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "addressCountry": "FR",  
+            "addressLocality": "Nice",  
+            "streetAddress": "Airport - Terminal 2 - Roof 2 - Local  12"  
+        }  
+    },  
+    "alternateName": {  
+        "type": "Property",  
+        "value": "AirPort \u2013 global Observation"  
+    },  
+    "application": {  
+        "type": "Property",  
+        "value": [  
+            "electric"  
+        ]  
+    },  
+    "applicationClass": {  
+        "type": "Property",  
+        "value": "A"  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Nice Aeroport"  
+    },  
+    "arealWeight": {  
+        "type": "Property",  
+        "value": 32  
+    },  
+    "brandName": {  
+        "type": "Property",  
+        "value": "Canadian Solar"  
+    },  
+    "cellDimension": {  
+        "type": "Property",  
+        "value": {  
+            "length": 16.0,  
+            "width": 9.0,  
+            "thickness": 2.3  
+        }  
+    },  
+    "cellOperatingTemperature": {  
+        "type": "Property",  
+        "value": {  
+            "min": 45,  
+            "max": 2  
+        }  
+    },  
+    "cellType": {  
+        "type": "Property",  
+        "value": "polycrystalline"  
+    },  
+    "dateLastReported": {  
+        "type": "Property",  
+        "value": {  
+            "type": "DateTime",  
+            "value": "2020-05-17T09:47:00Z"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Photo-voltaic Device description"  
+    },  
+    "documentation": {  
+        "type": "Property",  
+        "value": "https://www.myDevicePV.Cn"  
+    },  
+    "fireClass": {  
+        "type": "Property",  
+        "value": [  
+            "C"  
+        ]  
+    },  
+    "installationCondition": {  
+        "type": "Property",  
+        "value": [  
+            "extremeHeat",  
+            "extremeCold",  
+            "extremeClimate",  
+            "desert"  
+        ]  
+    },  
+    "installationMode": {  
+        "type": "Property",  
+        "value": "roofing"  
+    },  
+    "integrationMode": {  
+        "type": "Property",  
+        "value": "IAB"  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates ": [  
+                43.66481,  
+                7.196545  
+            ]  
+        }  
+    },  
+    "manufacturerName": {  
+        "type": "Property",  
+        "value": "Canadian Solar EMEA GmbH,"  
+    },  
+    "maxPressureLoad": {  
+        "type": "Property",  
+        "value": {  
+            "hail": 2500,  
+            "snow": 5400,  
+            "wind": 2400  
+        }  
+    },  
+    "modelName": {  
+        "type": "Property",  
+        "value": "CS6P-270P"  
+    },  
+    "moduleDimension": {  
+        "type": "Property",  
+        "value": {  
+            "length": 1600,  
+            "width": 975,  
+            "thickness": 3.75  
+        }  
+    },  
+    "moduleNOCT": {  
+        "type": "Property",  
+        "value": {  
+            "Pmax": 196,  
+            "Umpp": 28.1,  
+            "Impp": 6.97,  
+            "Uoc": 34.8,  
+            "Isc": 7.55  
+        }  
+    },  
+    "moduleNbCells": {  
+        "type": "Property",  
+        "value": 60  
+    },  
+    "moduleSTC": {  
+        "type": "Property",  
+        "value": {  
+            "Pmax": 270,  
+            "Umpp": 30.8,  
+            "Impp": 8.75,  
+            "Uoc": 37.9,  
+            "Isc": 9.32  
+        }  
+    },  
+    "moduleYieldRate": {  
+        "type": "Property",  
+        "value": 16.79  
+    },  
+    "nTCClass": {  
+        "type": "Property",  
+        "value": 88.3  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "DEVICE-PV-T2-R-012"  
+    },  
+    "owners": {  
+        "type": "Property",  
+        "value": [  
+            "Airport-Division Maintenance"  
+        ]  
+    },  
+    "pTCClass": {  
+        "type": "Property",  
+        "value": 92.1  
+    },  
+    "panelDimension": {  
+        "type": "Property",  
+        "value": {  
+            "length": 1638,  
+            "width": 982,  
+            "thickness": 40  
+        }  
+    },  
+    "panelLifetime": {  
+        "type": "Property",  
+        "value": 30  
+    },  
+    "panelNbModules": {  
+        "type": "Property",  
+        "value": 1  
+    },  
+    "panelOperatingTemperature": {  
+        "type": "Property",  
+        "value": {  
+            "min": -40,  
+            "max": 85  
+        }  
+    },  
+    "panelTiltReference": {  
+        "type": "Property",  
+        "value": {  
+            "min": 28,  
+            "max": 37  
+        }  
+    },  
+    "panelWeight": {  
+        "type": "Property",  
+        "value": 18  
+    },  
+    "panelYieldCurve": {  
+        "type": "Property",  
+        "value": [  
+            "95.0",  
+            "92.5",  
+            "90.0",  
+            "87.5",  
+            "85.0",  
+            "80.0"  
+        ]  
+    },  
+    "panelYieldRate": {  
+        "type": "Property",  
+        "value": 0.5  
+    },  
+    "performanceLowIrradiance": {  
+        "type": "Property",  
+        "value": 96.5  
+    },  
+    "possibilityOfUsed": {  
+        "type": "Property",  
+        "value": "stationary"  
+    },  
+    "protectionIP": {  
+        "type": "Property",  
+        "value": "IP67"  
+    },  
+    "refDevice": {  
+        "type": "Relationship",  
+        "value": "urn:ngsi-ld:Device:PV-T2-R-012"  
+    },  
+    "serialNumber": {  
+        "type": "Property",  
+        "value": [  
+            "CSPV270P-SN1804L6J34Z8742H",  
+            "CSPV270P-SN1804L6J34Z8743H",  
+            "CSPV270P-SN1804L6J34Z8744H",  
+            "CSPV270P-SN1804L6J34Z8745H",  
+            "CSPV270P-SN1804L6J34Z8746H"  
+        ]  
+    },  
+    "temperatureCoefficient": {  
+        "type": "Property",  
+        "value": {  
+            "Pmax": -0.41,  
+            "Uoc": -0.31,  
+            "Isc": 0.053  
+        }  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"  
     ]  
-  },  
-  "application": {  
-    "type": "Property",  
-    "value": [  
-      "electric"  
-    ]  
-  },  
-  "cellType": {  
-    "type": "Property",  
-    "value": "polycrystalline"  
-  },  
-  "installationMode": {  
-    "type": "Property",  
-    "value": "roofing"  
-  },  
-  "installationCondition": {  
-    "type": "Property",  
-    "value": [  
-      "extremeHeat",  
-      "extremeCold",  
-      "extremeClimate",  
-      "desert"  
-    ]  
-  },  
-  "possibilityOfUsed": {  
-    "type": "Property",  
-    "value": "stationary"  
-  },  
-  "integrationMode": {  
-    "type": "Property",  
-    "value": "IAB"  
-  },  
-  "documentation": {  
-    "type": "Property",  
-    "value": "https://www.myDevicePV.Cn"  
-  },  
-  "owners": {  
-    "type": "Property",  
-    "value": [  
-      "Airport-Division Maintenance"  
-    ]  
-  },  
-  "cellDimension": {  
-    "type": "Property",  
-    "value": {  
-      "length": 16.0,  
-      "width": 9.0,  
-      "thickness": 2.3  
-    }  
-  },  
-  "moduleNbCells": {  
-    "type": "Property",  
-    "value": 60  
-  },  
-  "moduleDimension": {  
-    "type": "Property",  
-    "value": {  
-      "length": 1600,  
-      "width": 975,  
-      "thickness": 3.75  
-    }  
-  },  
-  "panelNbModules": {  
-    "type": "Property",  
-    "value": 1  
-  },  
-  "panelDimension": {  
-    "type": "Property",  
-    "value": {  
-      "length": 1638,  
-      "width": 982,  
-      "thickness": 40  
-    }  
-  },  
-  "panelWeight": {  
-    "type": "Property",  
-    "value": 18  
-  },  
-  "arealWeight": {  
-    "type": "Property",  
-    "value": 32  
-  },  
-  "maxPressureLoad": {  
-    "type": "Property",  
-    "value": {  
-      "hail": 2500,  
-      "snow": 5400,  
-      "wind": 2400  
-    }  
-  },  
-  "NominalPower": {  
-    "type": "Property",  
-    "value": 270  
-  },  
-  "MaximumSystemVoltage": {  
-    "type": "Property",  
-    "value": 1000  
-  },  
-  "applicationClass": {  
-    "type": "Property",  
-    "value": "A"  
-  },  
-  "fireClass": {  
-    "type": "Property",  
-    "value": [  
-      "C"  
-    ]  
-  },  
-  "pTCClass": {  
-    "type": "Property",  
-    "value": 92.1  
-  },  
-  "nTCClass": {  
-    "type": "Property",  
-    "value": 88.3  
-  },  
-  "protectionIP": {  
-    "type": "Property",  
-    "value": "IP67"  
-  },  
-  "moduleSTC": {  
-    "type": "Property",  
-    "value": {  
-      "Pmax": 270,  
-      "Umpp": 30.8,  
-      "Impp": 8.75,  
-      "Uoc": 37.9,  
-      "Isc": 9.32  
-    }  
-  },  
-  "moduleNOCT": {  
-    "type": "Property",  
-    "value": {  
-      "Pmax": 196,  
-      "Umpp": 28.1,  
-      "Impp": 6.97,  
-      "Uoc": 34.8,  
-      "Isc": 7.55  
-    }  
-  },  
-  "moduleYieldRate": {  
-    "type": "Property",  
-    "value": 16.79  
-  },  
-  "panelOperatingTemperature": {  
-    "type": "Property",  
-    "value": {  
-      "min": -40,  
-      "max": 85  
-    }  
-  },  
-  "cellOperatingTemperature": {  
-    "type": "Property",  
-    "value": {  
-      "min": 45,  
-      "max": 2  
-    }  
-  },  
-  "temperatureCoefficient": {  
-    "type": "Property",  
-    "value": {  
-      "Pmax": -0.41,  
-      "Uoc": -0.31,  
-      "Isc": 0.053  
-    }  
-  },  
-  "performanceLowIrradiance": {  
-    "type": "Property",  
-    "value": 96.5  
-  },  
-  "panelLifetime": {  
-    "type": "Property",  
-    "value": 30  
-  },  
-  "panelYieldCurve": {  
-    "type": "Property",  
-    "value": [  
-      "95.0",  
-      "92.5",  
-      "90.0",  
-      "87.5",  
-      "85.0",  
-      "80.0"  
-    ]  
-  },  
-  "panelYieldRate": {  
-    "type": "Property",  
-    "value": 0.5  
-  },  
-  "panelTiltReference": {  
-    "type": "Property",  
-    "value": {  
-      "min": 28,  
-      "max": 37  
-    }  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-#### PhotovoltaicDevice NGSI-LD 正規化例  
-ここでは、正規化されたJSON-LD形式のPhotovoltaicDeviceの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 太陽光発電装置 NGSI-LD 正規化例  
+PhotovoltaicDeviceをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
-  "id": "urn:ngsi-ld:PhotovoltaicDevice:PhotovoltaicDevice:MNCA-PV-T2-R-012",  
-  "type": "PhotovoltaicDevice",  
-  "name": "DEVICE-PV-T2-R-012",  
-  "alternateName": "AirPort \u2013 global Observation",  
-  "description": "Photo-voltaic Device description",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      43.66481,  
-      7.196545  
+    "id": "urn:ngsi-ld:PhotovoltaicDevice:PhotovoltaicDevice:MNCA-PV-T2-R-012",  
+    "type": "PhotovoltaicDevice",  
+    "MaximumSystemVoltage": 1000,  
+    "NominalPower": 270,  
+    "address": {  
+        "addressCountry": "FR",  
+        "addressLocality": "Nice",  
+        "streetAddress": "Airport - Terminal 2 - Roof 2 - Local  12"  
+    },  
+    "alternateName": "AirPort \u2013 global Observation",  
+    "application": [  
+        "electric"  
+    ],  
+    "applicationClass": [  
+        "A"  
+    ],  
+    "areaServed": "Nice Aeroport",  
+    "arealWeight": 32,  
+    "brandName": "Canadian Solar",  
+    "cellDimension": {  
+        "length": 16.0,  
+        "width": 9.0,  
+        "thickness": 2.3  
+    },  
+    "cellOperatingTemperature": {  
+        "min": 45,  
+        "max": 2  
+    },  
+    "cellType": [  
+        "polycrystalline"  
+    ],  
+    "dateLastReported": "2020-05-17T09:47:00Z",  
+    "description": "Photo-voltaic Device description",  
+    "documentation": "https://www.myDevicePV.Cn",  
+    "fireClass": [  
+        "C"  
+    ],  
+    "installationCondition": [  
+        "extremeHeat",  
+        "extremeCold",  
+        "extremeClimate",  
+        "desert"  
+    ],  
+    "installationMode": [  
+        "roofing"  
+    ],  
+    "integrationMode": "IAB",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            43.66481,  
+            7.196545  
+        ]  
+    },  
+    "manufacturerName": "Canadian Solar EMEA GmbH,",  
+    "maxPressureLoad": {  
+        "hail": 2500,  
+        "snow": 5400,  
+        "wind": 2400  
+    },  
+    "modelName": "CS6P-270P",  
+    "moduleDimension": {  
+        "length": 1600,  
+        "width": 975,  
+        "thickness": 3.75  
+    },  
+    "moduleNOCT": {  
+        "Pmax": 196,  
+        "Umpp": 28.1,  
+        "Impp": 6.97,  
+        "Uoc": 34.8,  
+        "Isc": 7.55  
+    },  
+    "moduleNbCells": 60,  
+    "moduleSTC": {  
+        "Pmax": 270,  
+        "Umpp": 30.8,  
+        "Impp": 8.75,  
+        "Uoc": 37.9,  
+        "Isc": 9.32  
+    },  
+    "moduleYieldRate": 16.79,  
+    "nTCClass": 88.3,  
+    "name": "DEVICE-PV-T2-R-012",  
+    "owners": [  
+        "Airport-Division Maintenance"  
+    ],  
+    "pTCClass": 92.1,  
+    "panelDimension": {  
+        "length": 1638,  
+        "width": 982,  
+        "thickness": 40  
+    },  
+    "panelLifetime": 30,  
+    "panelNbModules": 1,  
+    "panelOperatingTemperature": {  
+        "min": -40,  
+        "max": 85  
+    },  
+    "panelTiltReference": {  
+        "min": 28,  
+        "max": 37  
+    },  
+    "panelWeight": 18,  
+    "panelYieldCurve": [  
+        "95.0",  
+        "92.5",  
+        "90.0",  
+        "87.5",  
+        "85.0",  
+        "80.0"  
+    ],  
+    "panelYieldRate": 0.5,  
+    "performanceLowIrradiance": 96.5,  
+    "possibilityOfUsed": "stationary",  
+    "protectionIP": "IP67",  
+    "refDevice": "urn:ngsi-ld:Device:PV-T2-R-012",  
+    "serialNumber": [  
+        "CSPV270P-SN1804L6J34Z8742H",  
+        "CSPV270P-SN1804L6J34Z8743H",  
+        "CSPV270P-SN1804L6J34Z8744H",  
+        "CSPV270P-SN1804L6J34Z8745H",  
+        "CSPV270P-SN1804L6J34Z8746H"  
+    ],  
+    "temperatureCoefficient": {  
+        "Pmax": -0.41,  
+        "Uoc": -0.31,  
+        "Isc": 0.053  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "addressCountry": "FR",  
-    "addressLocality": "Nice",  
-    "streetAddress": "Airport - Terminal 2 - Roof 2 - Local  12"  
-  },  
-  "areaServed": "Nice Aeroport",  
-  "refDevice": "urn:ngsi-ld:Device:PV-T2-R-012",  
-  "dateLastReported": "2020-05-17T09:47:00Z",  
-  "brandName": "Canadian Solar",  
-  "modelName": "CS6P-270P",  
-  "manufacturerName": "Canadian Solar EMEA GmbH,",  
-  "serialNumber": [  
-    "CSPV270P-SN1804L6J34Z8742H",  
-    "CSPV270P-SN1804L6J34Z8743H",  
-    "CSPV270P-SN1804L6J34Z8744H",  
-    "CSPV270P-SN1804L6J34Z8745H",  
-    "CSPV270P-SN1804L6J34Z8746H"  
-  ],  
-  "application": [  
-    "electric"  
-  ],  
-  "cellType": [  
-    "polycrystalline"  
-  ],  
-  "installationMode": [  
-    "roofing"  
-  ],  
-  "installationCondition": [  
-    "extremeHeat",  
-    "extremeCold",  
-    "extremeClimate",  
-    "desert"  
-  ],  
-  "possibilityOfUsed": "stationary",  
-  "integrationMode": "IAB",  
-  "documentation": "https://www.myDevicePV.Cn",  
-  "owners": [  
-    "Airport-Division Maintenance"  
-  ],  
-  "cellDimension": {  
-    "length": 16.0,  
-    "width": 9.0,  
-    "thickness": 2.3  
-  },  
-  "moduleNbCells": 60,  
-  "moduleDimension": {  
-    "length": 1600,  
-    "width": 975,  
-    "thickness": 3.75  
-  },  
-  "panelNbModules": 1,  
-  "panelDimension": {  
-    "length": 1638,  
-    "width": 982,  
-    "thickness": 40  
-  },  
-  "panelWeight": 18,  
-  "arealWeight": 32,  
-  "maxPressureLoad": {  
-    "hail": 2500,  
-    "snow": 5400,  
-    "wind": 2400  
-  },  
-  "NominalPower": 270,  
-  "MaximumSystemVoltage": 1000,  
-  "applicationClass": [  
-    "A"  
-  ],  
-  "fireClass": [  
-    "C"  
-  ],  
-  "pTCClass": 92.1,  
-  "nTCClass": 88.3,  
-  "protectionIP": "IP67",  
-  "moduleSTC": {  
-    "Pmax": 270,  
-    "Umpp": 30.8,  
-    "Impp": 8.75,  
-    "Uoc": 37.9,  
-    "Isc": 9.32  
-  },  
-  "moduleNOCT": {  
-    "Pmax": 196,  
-    "Umpp": 28.1,  
-    "Impp": 6.97,  
-    "Uoc": 34.8,  
-    "Isc": 7.55  
-  },  
-  "moduleYieldRate": 16.79,  
-  "panelOperatingTemperature": {  
-    "min": -40,  
-    "max": 85  
-  },  
-  "cellOperatingTemperature": {  
-    "min": 45,  
-    "max": 2  
-  },  
-  "temperatureCoefficient": {  
-    "Pmax": -0.41,  
-    "Uoc": -0.31,  
-    "Isc": 0.053  
-  },  
-  "performanceLowIrradiance": 96.5,  
-  "panelLifetime": 30,  
-  "panelYieldCurve": [  
-    "95.0",  
-    "92.5",  
-    "90.0",  
-    "87.5",  
-    "85.0",  
-    "80.0"  
-  ],  
-  "panelYieldRate": 0.5,  
-  "panelTiltReference": {  
-    "min": 28,  
-    "max": 37  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
