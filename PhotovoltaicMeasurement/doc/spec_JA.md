@@ -1,18 +1,20 @@
-エンティティPhotovoltaicMeasurement  
-=============================  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ太陽光発電の測定  
+==============  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/PhotovoltaicMeasurement/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述です。**このデータモデルは、光電池パネルからインバータ装置に伝達される連続電力を測定するためのものである。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+Global description:**光起電力パネルからインバータ装置へ送られる連続電力を測定するためのデータモデルである。  
+バージョン: 0.0.2  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `activePower`: Active Power,ここで phi は、電圧と比較した電流の位相シフトである。単位コード（テキスト）は，UN/CEFACT_Common_Codesを用いて与えられる（最大3文字）。例えば、**KWT**はキロワットを表す。  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `current`: 電流の電気的強度。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**AMP**はアンペアを表します。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateEnergyMeteringStarted`: エネルギー計測の開始日（ISO8601 UTC形式  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateObservedFrom`: 観測期間。ISO8601 UTC形式の開始日時が設定されています。この属性は、ハイライトされる時間間隔に対応する場合、'dateObserved'属性に加えて使用することができます。  - `dateObservedTo`: 観測期間。ISO8601 UTC形式の終了日時が指定されます。この属性は、ハイライトされる時間間隔に対応する場合、'dateObserved'属性に加えて使用することができます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `inverterStatus`: Active Power,ここで phi は、電圧と比較した電流の位相シフトである。単位コード（テキスト）は，UN/CEFACT_Common_Codes（最大3文字）を用いて与えられる。例えば、For instance, **KWT**はキロワットを表す。Enum:'00-On sector, 01-Power failure / On battery, 02-Loss of communication, 03-Battery fault, 04-System shutdown, 05-Tension dip, 06-Overvoltage, 07-Voltage drop, 08-Voltage increase, 09-Line noise, 10-Frequency variation, 11-Transient distortion, 12-Harmonic distortion'.  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `nominalPeakPowerGeneration`: nominalPeakPowerGenerationは数値である。単位コード（テキスト）は[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**KWT**はキロワットを表します。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `reactivePower`: 回路が使用する無効電力。単位コード（テキスト）は，[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**K5**は、キロボルト・アンペア・リアクティブ・パワーを表します。  - `refPhotovoltaicDevice`:   - `refPointOfInterest`: リポジトリとリンクしている[PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)への参照。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperature`: 観察時に記録された温度を，装置の公称基準温度と比較したもの。単位コード（テキスト）は，[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば，**CEL**はDegree Celsiusを表す。  - `type`: NGSI エンティティタイプ。PhotovoltaicMeasurementでなければならない。    
-必須項目  
+- `activePower`: アクティブパワー、φは電圧に対する電流の位相のずれを表す。単位コード（テキスト）は、UN/CEFACT_Common_Codes（最大3文字）を用いて与えられる。例えば、**KWT**はキロワットを表す。  - `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `current`: 電流の電気的強度。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて示される。例えば、**AMP**はAmpere（アンペア）を表します。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateEnergyMeteringStarted`: エネルギー計測の開始日（ISO8601 UTC形式  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObservedFrom`: 観測期間。ISO8601 UTC フォーマットでの開始日時。この属性は、ハイライトされる時間間隔に対応する場合、'dateObserved 属性に加えて使用することができます。  - `dateObservedTo`: 観測期間。ISO8601 UTC フォーマットによる終了日時。この属性は、強調表示する時間間隔に対応する場合、'dateObserved' 属性に加えて使用することができる  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `inverterStatus`: アクティブパワー、φは電圧に対する電流の位相のずれを表す。単位コード（テキスト）は、UN/CEFACT_Common_Codes（最大3文字）を用いて与えられる。例えば、**KWT** はキロワットを表す。Enum:'00-On sector, 01-Power failure / On battery, 02-Loss of communication, 03-Battery fault, 04-System shutdown, 05-Tension dip, 06-Overvoltage, 07-Voltage drop, 08-Voltage increase, 09-Line noise, 10-Frequency variation, 11-Transient Distortion, 12-Harmonic Distortion'.  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `nominalPeakPowerGeneration`: nominalPeakPowerGeneration は数値である。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられます。例えば、**KWT** はキロワットを表す。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `reactivePower`: 回路が使用する無効電力。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて示される。例えば、**K5** は、キロボルトアンペア-無効電力（kilovolt-ampere-reactive）を表す。  - `refPhotovoltaicDevice`:   - `refPointOfInterest`: リポジトリとリンクしている[PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)への参照。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperature`: 観測時に記録された温度を、装置の公称基準温度と比較したもの。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて示される。例えば、**CEL**は摂氏を表す。  - `type`: NGSI エンティティタイプ。これは、PhotovoltaicMeasurement でなければならない。    
+必要なプロパティ  
 - `dateEnergyMeteringStarted`  - `dateObserved`  - `id`  - `location`  - `refPhotovoltaicDevice`  - `temperature`  - `type`    
-以下の値を持つことができます。- instant.時間の特定の瞬間から - average.ある時間帯の平均値 - rms.     ある期間の二乗平均値 - maximum.最大：ある期間の最大値 - 最小：ある期間の最小値ある期間の最小値。  
-average, rms, maximum, minimum]の値を使用する場合は、「measurementInterval」という別のメタデータ属性を使用して、測定期間の長さを秒単位で指定する必要があります。また、メタデータ属性の'timestamp'には、測定期間の終了時刻を指定します。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+以下の値を持つことができる。- 瞬間。特定の瞬間の時間から - 平均。ある時間帯の平均値 - rms.     rms. 一定期間の二乗平均平方根 - max.最大値：時間軸の最大値 - 最小値：時間軸の最小値time periodの最小値。  
+average, rms, maximum, minimum]の値を使用する場合、'measurementInterval'という別のメタデータ属性を使用して、測定期間の長さを秒単位で指定する必要があります。また、'timestamp' Meta Data属性は、測定期間の終了時刻を指定する必要があります。  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PhotovoltaicMeasurement:    
@@ -324,7 +326,7 @@ PhotovoltaicMeasurement:
       minimum: 0    
       type: number    
       x-ngsi:    
-        model: https://schema.org/Number.    
+        model: https://schema.org/Number    
         type: Property    
     refPhotovoltaicDevice:    
       anyOf:    
@@ -338,7 +340,7 @@ PhotovoltaicMeasurement:
           type: string    
       description: ""    
       x-ngsi:    
-        model: 'Reference to a [Photovoltaic Device](https://github.com/smart-data-models/dataModel.Energy/PhotovoltaicDevice/doc/spec.md) which captured this observation, if the entity is used https://schema.org/URL.'    
+        model: 'Reference to a [Photovoltaic Device](https://github.com/smart-data-models/dataModel.Energy/PhotovoltaicDevice/doc/spec.md) which captured this observation, if the entity is used https://schema.org/URL'    
         type: Relationship    
     refPointOfInterest:    
       anyOf:    
@@ -396,16 +398,16 @@ PhotovoltaicMeasurement:
     - temperature    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/PhotovoltaicMeasurement/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/data-models.Energy/PhotovoltaicMeasurement/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
 ## ペイロードの例  
-#### PhotovoltaicMeasurement NGSI-v2 key-valuesの例。  
-PhotovoltaicMeasurementをkey-valuesとしてJSON-LD形式で表現した例を示します。これは`options=keyValues`を使った場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### PhotovoltaicMeasurement NGSI-v2 key-value 例  
+PhotovoltaicMeasurementをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
 ```json  
 {  
   "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
@@ -434,8 +436,8 @@ PhotovoltaicMeasurement:
   "temperature": 23.4  
 }  
 ```  
-#### PhotovoltaicMeasurement NGSI-v2の正規化例。  
-PhotovoltaicMeasurementをJSON-LD形式で正規化した例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 太陽光発電測定 NGSI-v2 正規化例  
+以下は、正規化されたJSON-LD形式のPhotovoltaicMeasurementの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
@@ -500,108 +502,109 @@ PhotovoltaicMeasurement:
   }  
 }  
 ```  
-#### PhotovoltaicMeasurement NGSI-LD key-valuesの例。  
-PhotovoltaicMeasurementをkey-valuesとしてJSON-LD形式で表現した例を示します。これは`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### 太陽光発電測定 NGSI-LD キー値例  
+PhotovoltaicMeasurementをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
 ```json  
 {  
-  "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
-  "type": "PhotovoltaicMeasurement",  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "https://imredd.fr/en/home/"  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "Photovoltaic station IMREDD"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "Photovoltaic data provided by the data logger ABB"  
-  },  
-  "seeAlso": {  
-    "type": "Property",  
-    "value": "https://us.sunpower.com/products/solar-panels"  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        43.66481,  
-        7.196545  
-      ]  
-    }  
-  },  
-  "address": {  
-    "type": "Property",  
-    "value": {  
-      "addressCountry": "FR",  
-      "addressLocality": "Nice",  
-      "streetAddress": "61-63 Avenue Simone Veil"  
-    }  
-  },  
-  "areaServed": {  
-    "type": "Property",  
-    "value": "Nice"  
-  },  
-  "refPhotovoltaicDevice": {  
-    "type": "Relationship",  
-    "Object": "urn:ngsi-ld:PhotovoltaicDevice:PV-T2-R-012"  
-  },  
-  "dateObserved": {  
-    "type": "Property",  
-    "value": "2019-09-05T16:00:00.999Z"  
-  },  
-  "dateEnergyMeteringStarted": {  
-    "type": "Property",  
-    "value": "2019-09-04T15:29:17.999Z"  
-  },  
-  "nominalPeakPowerGeneration": {  
-    "type": "Property",  
-    "value": 179  
-  },  
-  "temperature": {  
-    "type": "Property",  
-    "value": 23.4  
-  },  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/common-schema.json",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
-}  
-```  
-#### PhotovoltaicMeasurement NGSI-LDの正規化例。  
-ここでは、正規化されたJSON-LD形式のPhotovoltaicMeasurementの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
-```json  
-{  
-  "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
-  "type": "PhotovoltaicMeasurement",  
-  "dataProvider": "https://imredd.fr/en/home/",  
-  "name": "Photovoltaic station IMREDD",  
-  "description": "Photovoltaic data provided by the data logger ABB",  
-  "seeAlso": "https://us.sunpower.com/products/solar-panels",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      43.66481,  
-      7.196545  
+    "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
+    "type": "PhotovoltaicMeasurement",  
+    "address": {  
+        "type": "Property",  
+        "value": {  
+            "addressCountry": "FR",  
+            "addressLocality": "Nice",  
+            "streetAddress": "61-63 Avenue Simone Veil"  
+        }  
+    },  
+    "areaServed": {  
+        "type": "Property",  
+        "value": "Nice"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "https://imredd.fr/en/home/"  
+    },  
+    "dateEnergyMeteringStarted": {  
+        "type": "Property",  
+        "value": "2019-09-04T15:29:17.999Z"  
+    },  
+    "dateObserved": {  
+        "type": "Property",  
+        "value": "2019-09-05T16:00:00.999Z"  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "Photovoltaic data provided by the data logger ABB"  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                43.66481,  
+                7.196545  
+            ]  
+        }  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "Photovoltaic station IMREDD"  
+    },  
+    "nominalPeakPowerGeneration": {  
+        "type": "Property",  
+        "value": 179  
+    },  
+    "refPhotovoltaicDevice": {  
+        "type": "Relationship",  
+        "Object": "urn:ngsi-ld:PhotovoltaicDevice:PV-T2-R-012"  
+    },  
+    "seeAlso": {  
+        "type": "Property",  
+        "value": "https://us.sunpower.com/products/solar-panels"  
+    },  
+    "temperature": {  
+        "type": "Property",  
+        "value": 23.4  
+    },  
+    "@context": [  
+        "https://smart-data-models.github.io/data-models/common-schema.json",  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"  
     ]  
-  },  
-  "address": {  
-    "addressCountry": "FR",  
-    "addressLocality": "Nice",  
-    "streetAddress": "61-63 Avenue Simone Veil"  
-  },  
-  "areaServed": "Nice",  
-  "refPhotovoltaicDevice": "urn:ngsi-ld:PhotovoltaicDevice:PV-T2-R-012",  
-  "dateObserved": "2019-09-05T16:00:00.999Z",  
-  "dateEnergyMeteringStarted": "2019-09-04T15:29:17.999Z",  
-  "nominalPeakPowerGeneration": 179,  
-  "temperature": 23.4,  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/common-schema.json",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+#### 太陽光発電測定 NGSI-LD 正規化例  
+PhotovoltaicMeasurement を JSON-LD 形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+```json  
+{  
+    "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
+    "type": "PhotovoltaicMeasurement",  
+    "address": {  
+        "addressCountry": "FR",  
+        "addressLocality": "Nice",  
+        "streetAddress": "61-63 Avenue Simone Veil"  
+    },  
+    "areaServed": "Nice",  
+    "dataProvider": "https://imredd.fr/en/home/",  
+    "dateEnergyMeteringStarted": "2019-09-04T15:29:17.999Z",  
+    "dateObserved": "2019-09-05T16:00:00.999Z",  
+    "description": "Photovoltaic data provided by the data logger ABB",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            43.66481,  
+            7.196545  
+        ]  
+    },  
+    "name": "Photovoltaic station IMREDD",  
+    "nominalPeakPowerGeneration": 179,  
+    "refPhotovoltaicDevice": "urn:ngsi-ld:PhotovoltaicDevice:PV-T2-R-012",  
+    "seeAlso": "https://us.sunpower.com/products/solar-panels",  
+    "temperature": 23.4,  
+    "@context": [  
+        "https://smart-data-models.github.io/data-models/common-schema.json",  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+    ]  
+}  
+```  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
