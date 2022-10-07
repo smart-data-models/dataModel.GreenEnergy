@@ -12,6 +12,7 @@
     "solarPowerGenerated": 1.2,
     "source": "bike-in.com",
     "@context": [
-        "https://smart-data-models.github.io/data-models/context.jsonld"
+        "https://smart-data-models.github.io/data-models/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"
     ]
 }
