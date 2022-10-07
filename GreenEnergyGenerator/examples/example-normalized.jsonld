@@ -23,6 +23,7 @@
     "source": "bike-in.com",
     "status": "working",
     "@context": [
-        "https://smart-data-models.github.io/data-models/context.jsonld"
+        "https://smart-data-models.github.io/data-models/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"
     ]
 }
