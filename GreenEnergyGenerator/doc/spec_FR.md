@@ -1,17 +1,32 @@
-Entité : GreenEnergyGenerator  
-=============================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : GreenEnergyGenerator  
+=============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/GreenEnergyGenerator/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Une station de générateur générique qui peut générer de l'énergie à partir de l'énergie verte**.  
+version : 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `generationSources`: Une liste des sources utilisées pour la production d'électricité. Enum : 'biomasse, éolien, géothermie, hydroélectricité, solaire'.  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `maxBiomassMeasure`: Une mesure de l'énergie maximale de la biomasse qui peut être générée. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (3 caractères maximum).  - `maxEolicPowerMeasure`: Mesure de l'énergie éolienne maximale qui peut être générée. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (3 caractères maximum).  - `maxGeothermalPowerGenerated`: Mesure de l'énergie géothermique maximale qui peut être générée. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (3 caractères maximum).  - `maxHydroPowerMeasure`: Mesure de l'énergie hydroélectrique maximale qui peut être produite. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (3 caractères maximum).  - `maxSolarPowerMeasure`: Mesure de l'énergie solaire maximale qui peut être produite. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (3 caractères maximum).  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `redistribution`: Indique si l'énergie générée sera déversée dans le réseau.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `selfConsumption`: Indiquez si l'énergie produite sera utilisée pour vous-même  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `status`: Statut du générateur d'énergie verte. Enum : 'outOfService, withIncidence, working' (hors service, avec incidence, en fonctionnement)  - `type`: Type d'entité NGSI : Il doit s'agir de GreenEnergyGenerator.    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `generationSources[array]`: Une liste des sources utilisées pour la production d'électricité. Enum : 'biomasse, éolien, géothermie, hydroélectricité, solaire'.  . Model: [https://schema.org/ItemList](https://schema.org/ItemList)- `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `maxBiomassMeasure[number]`: Une mesure de l'énergie maximale de la biomasse qui peut être générée. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (3 caractères maximum).  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxEolicPowerMeasure[number]`: Mesure de l'énergie éolienne maximale qui peut être générée. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (3 caractères maximum).  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxGeothermalPowerGenerated[number]`: Mesure de l'énergie géothermique maximale qui peut être générée. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (3 caractères maximum).  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxHydroPowerMeasure[number]`: Mesure de l'énergie hydroélectrique maximale qui peut être produite. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (3 caractères maximum).  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxSolarPowerMeasure[number]`: Mesure de l'énergie solaire maximale qui peut être produite. Le code d'unité (texte) de mesure donné en utilisant le code commun du CEFACT-ONU (3 caractères maximum).  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `redistribution[boolean]`: Indique si l'énergie générée sera déversée dans le réseau.  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `selfConsumption[boolean]`: Indiquez si l'énergie produite sera utilisée pour vous-même  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `status[string]`: Statut du générateur d'énergie verte. Enum : 'outOfService, withIncidence, working' (hors service, avec incidence, en fonctionnement)  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: Type d'entité NGSI. Il doit être GreenEnergyGenerator.  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `generationSources`  - `id`  - `location`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Modèle générique de générateur d'énergie verte. Un dispositif qui peut générer de l'énergie en utilisant l'énergie verte solaire ou éolienne.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GreenEnergyGenerator:    
@@ -345,29 +360,33 @@ GreenEnergyGenerator:
         model: https://schema.org/Text    
         type: Property    
     type:    
-      description: 'NGSI Entity Type: It has to be GreenEnergyGenerator'    
+      description: 'NGSI Entity Type. It has to be GreenEnergyGenerator'    
+      enum:    
+        - GreenEnergyGenerator    
       type: string    
-      value: GreenEnergyGenerator    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
   required:    
     - id    
     - type    
-    - location    
-    - generationSources    
   type: object    
   x-derived-from: ""    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/GreenEnergyGenerator/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.GreenEnergy/GreenEnergyGenerator/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### GreenEnergyGenerator Exemple de valeurs-clés NGSI-v2  
 Voici un exemple de GreenEnergyGenerator au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001",  
@@ -390,8 +409,10 @@ GreenEnergyGenerator:
   "maxBiomassPowerGenerated": 0  
 }  
 ```  
+</details>  
 #### GreenEnergyGenerator NGSI-v2 normalisé Exemple  
 Voici un exemple de GreenEnergyGenerator au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:GreenEnergy:santander:GreenEnergy:greenEnergyGenerator:0001",  
@@ -429,82 +450,96 @@ GreenEnergyGenerator:
   }  
 }  
 ```  
+</details>  
 #### GreenEnergyGenerator Valeurs-clés NGSI-LD Exemple  
 Voici un exemple de GreenEnergyGenerator au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GreenEnergy:santander:GreenEnergy:greenEnergyGenerator:0001",  
-  "type": "GreenEnergyGenerator",  
-  "status": {  
-    "type": "Text",  
-    "value": "working"  
-  },  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -3.80356167695194,  
-      43.46296641666926  
+    "id": "urn:ngsi-ld:GreenEnergy:santander:GreenEnergy:greenEnergyGenerator:0001",  
+    "type": "GreenEnergyGenerator",  
+    "generationSources": {  
+        "type": "Array",  
+        "value": [  
+            "solar",  
+            "eolic"  
+        ]  
+    },  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -3.80356167695194,  
+            43.46296641666926  
+        ]  
+    },  
+    "maxEolicPowerGenerated": {  
+        "type": "Number",  
+        "value": 10  
+    },  
+    "maxSolarPowerGenerated": {  
+        "type": "Number",  
+        "value": 20  
+    },  
+    "redistribution": {  
+        "type": "Boolean",  
+        "value": false  
+    },  
+    "selfConsumption": {  
+        "type": "Boolean",  
+        "value": true  
+    },  
+    "status": {  
+        "type": "Text",  
+        "value": "working"  
+    },  
+    "@context": [  
+        "https://smart-data-models.github.io/data-models/context.jsonld",  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"  
     ]  
-  },  
-  "selfConsumption": {  
-    "type": "Boolean",  
-    "value": true  
-  },  
-  "redistribution": {  
-    "type": "Boolean",  
-    "value": false  
-  },  
-  "generationSources": {  
-    "type": "Array",  
-    "value": [  
-      "solar",  
-      "eolic"  
-    ]  
-  },  
-  "maxSolarPowerGenerated": {  
-    "type": "Number",  
-    "value": 20  
-  },  
-  "maxEolicPowerGenerated": {  
-    "type": "Number",  
-    "value": 10  
-  },  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
 }  
 ```  
+</details>  
 #### GreenEnergyGenerator NGSI-LD normalisé Exemple  
 Voici un exemple de GreenEnergyGenerator au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001",  
-  "type": "GreenEnergyGenerator",  
-  "source": "bike-in.com",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -3.80356167695194,  
-      43.46296641666926  
+    "id": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001",  
+    "type": "GreenEnergyGenerator",  
+    "description": "mixed generator model ~004 with maximum power 22w",  
+    "generationSources": [  
+        "solar",  
+        "eolic"  
+    ],  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -3.80356167695194,  
+            43.46296641666926  
+        ]  
+    },  
+    "maxBiomassPowerGenerated": 0,  
+    "maxEolicPowerGenerated": 7,  
+    "maxHydroPowerGenerated": 0,  
+    "maxSolarPowerGenerated": 15,  
+    "name": "generator solar and eolic #9e46d",  
+    "redistribution": false,  
+    "selfConsumption": true,  
+    "source": "bike-in.com",  
+    "status": "working",  
+    "@context": [  
+        "https://smart-data-models.github.io/data-models/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"  
     ]  
-  },  
-  "name": "generator solar and eolic #9e46d",  
-  "description": "mixed generator model ~004 with maximum power 22w",  
-  "status": "working",  
-  "generationSources": [  
-    "solar",  
-    "eolic"  
-  ],  
-  "selfConsumption": true,  
-  "redistribution": false,  
-  "maxSolarPowerGenerated": 15,  
-  "maxEolicPowerGenerated": 7,  
-  "maxHydroPowerGenerated": 0,  
-  "maxBiomassPowerGenerated": 0,  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/context.jsonld"  
-  ]  
 }  
 ```  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
