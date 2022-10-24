@@ -1,20 +1,33 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティ太陽光発電の測定  
-==============  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/PhotovoltaicMeasurement/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description:**光起電力パネルからインバータ装置へ送られる連続電力を測定するためのデータモデルである。  
 バージョン: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `activePower`: アクティブパワー、φは電圧に対する電流の位相のずれを表す。単位コード（テキスト）は、UN/CEFACT_Common_Codes（最大3文字）を用いて与えられる。例えば、**KWT**はキロワットを表す。  - `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `current`: 電流の電気的強度。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて示される。例えば、**AMP**はAmpere（アンペア）を表します。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateEnergyMeteringStarted`: エネルギー計測の開始日（ISO8601 UTC形式  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObservedFrom`: 観測期間。ISO8601 UTC フォーマットでの開始日時。この属性は、ハイライトされる時間間隔に対応する場合、'dateObserved 属性に加えて使用することができます。  - `dateObservedTo`: 観測期間。ISO8601 UTC フォーマットによる終了日時。この属性は、強調表示する時間間隔に対応する場合、'dateObserved' 属性に加えて使用することができる  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `inverterStatus`: アクティブパワー、φは電圧に対する電流の位相のずれを表す。単位コード（テキスト）は、UN/CEFACT_Common_Codes（最大3文字）を用いて与えられる。例えば、**KWT** はキロワットを表す。Enum:'00-On sector, 01-Power failure / On battery, 02-Loss of communication, 03-Battery fault, 04-System shutdown, 05-Tension dip, 06-Overvoltage, 07-Voltage drop, 08-Voltage increase, 09-Line noise, 10-Frequency variation, 11-Transient Distortion, 12-Harmonic Distortion'.  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `nominalPeakPowerGeneration`: nominalPeakPowerGeneration は数値である。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられます。例えば、**KWT** はキロワットを表す。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `reactivePower`: 回路が使用する無効電力。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて示される。例えば、**K5** は、キロボルトアンペア-無効電力（kilovolt-ampere-reactive）を表す。  - `refPhotovoltaicDevice`:   - `refPointOfInterest`: リポジトリとリンクしている[PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)への参照。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperature`: 観測時に記録された温度を、装置の公称基準温度と比較したもの。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて示される。例えば、**CEL**は摂氏を表す。  - `type`: NGSI エンティティタイプ。これは、PhotovoltaicMeasurement でなければならない。    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `activePower[number]`: アクティブパワー、φは電圧に対する電流の位相のずれ。単位コード（テキスト）は、UN/CEFACT_Common_Codes（最大3文字）を用いて与えられる。例えば、**KWT**はキロワットを表す。  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `current[number]`: 電流の電気的強度。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて示される。例えば、**AMP**はAmpere（アンペア）を表す。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateEnergyMeteringStarted[string]`: エネルギー計測の開始日（ISO8601 UTC形式  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObservedFrom[string]`: 観測期間。ISO8601 UTC フォーマットでの開始日時。この属性は、ハイライトされる時間間隔に対応する場合、'dateObserved 属性に加えて使用することができます。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[string]`: 観測期間。ISO8601 UTC フォーマットでの終了日時。この属性は、強調表示する時間間隔に対応する場合、'dateObserved' 属性に加えて使用することができる  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `inverterStatus[array]`: アクティブパワー、φは電圧に対する電流の位相のずれを表す。単位コード（テキスト）は、UN/CEFACT_Common_Codes（最大3文字）を用いて与えられる。例えば、**KWT** はキロワットを表す。Enum:'00-On sector, 01-Power failure / On battery, 02-Loss of communication, 03-Battery fault, 04-System shutdown, 05-Tension dip, 06-Overvoltage, 07-Voltage drop, 08-Voltage increase, 09-Line noise, 10-Frequency variation, 11-Transient Distortion, 12-Harmonic Distortion'.  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `nominalPeakPowerGeneration[number]`: nominalPeakPowerGeneration は数値である。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられます。例えば、**KWT** はキロワットを表す。  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `reactivePower[number]`: 回路が使用する無効電力。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて示される。例えば、**K5** は、キロボルトアンペア-無効電力（kilovolt-ampere-reactive）を表す。  . Model: [https://schema.org/Number](https://schema.org/Number)- `refPhotovoltaicDevice[*]`:   . Model: [Reference to a [Photovoltaic Device](https://github.com/smart-data-models/dataModel.Energy/PhotovoltaicDevice/doc/spec.md) which captured this observation, if the entity is used https://schema.org/URL](Reference to a [Photovoltaic Device](https://github.com/smart-data-models/dataModel.Energy/PhotovoltaicDevice/doc/spec.md) which captured this observation, if the entity is used https://schema.org/URL)- `refPointOfInterest[*]`: リポジトリとリンクしている[PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)への参照。  . Model: [https://schema.org/URL](https://schema.org/URL)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperature[number]`: 観測時に記録された温度を、装置の公称基準温度と比較したもの。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて示される。例えば、**CEL**は摂氏を表す。  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: NGSI エンティティタイプ。これは、PhotovoltaicMeasurement でなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `dateEnergyMeteringStarted`  - `dateObserved`  - `id`  - `location`  - `refPhotovoltaicDevice`  - `temperature`  - `type`    
+- `dateEnergyMeteringStarted`  - `dateObserved`  - `id`  - `location`  - `refPhotovoltaicDevice`  - `temperature`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 以下の値を持つことができる。- 瞬間。特定の瞬間の時間から - 平均。ある時間帯の平均値 - rms.     rms. 一定期間の二乗平均平方根 - max.最大値：時間軸の最大値 - 最小値：時間軸の最小値time periodの最小値。  
 average, rms, maximum, minimum]の値を使用する場合、'measurementInterval'という別のメタデータ属性を使用して、測定期間の長さを秒単位で指定する必要があります。また、'timestamp' Meta Data属性は、測定期間の終了時刻を指定する必要があります。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PhotovoltaicMeasurement:    
@@ -405,9 +418,14 @@ PhotovoltaicMeasurement:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### PhotovoltaicMeasurement NGSI-v2 key-value 例  
+#### PhotovoltaicMeasurement NGSI-v2 key-value Example  
 PhotovoltaicMeasurementをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
@@ -436,8 +454,10 @@ PhotovoltaicMeasurement:
   "temperature": 23.4  
 }  
 ```  
+</details>  
 #### 太陽光発電測定 NGSI-v2 正規化例  
 以下は、正規化されたJSON-LD形式のPhotovoltaicMeasurementの例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
@@ -502,8 +522,10 @@ PhotovoltaicMeasurement:
   }  
 }  
 ```  
+</details>  
 #### 太陽光発電測定 NGSI-LD キー値例  
 PhotovoltaicMeasurementをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
@@ -573,8 +595,10 @@ PhotovoltaicMeasurement:
     ]  
 }  
 ```  
+</details>  
 #### 太陽光発電測定 NGSI-LD 正規化例  
 PhotovoltaicMeasurement を JSON-LD 形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
@@ -603,8 +627,17 @@ PhotovoltaicMeasurement:
     "temperature": 23.4,  
     "@context": [  
         "https://smart-data-models.github.io/data-models/common-schema.json",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"  
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
