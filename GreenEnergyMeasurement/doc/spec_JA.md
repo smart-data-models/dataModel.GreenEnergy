@@ -1,17 +1,32 @@
-エンティティGreenEnergyMeasurement（グリーンエナジーメジャメント  
-===========================================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティGreenEnergyMeasurement  
+============================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/GreenEnergyMeasurement/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな説明。**グリーンエネルギーを利用した発電量の瞬間的な測定値**。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな説明**グリーンエネルギーによる発電量を瞬時に示す指標**。  
+バージョン: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `biomassPowerGenerated`: バイオマスエネルギーによる発電量を指定する。UN/CEFACT Common Codeを使用した測定単位コード（テキスト）（最大3文字）を指定します。  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `eolicPowerGenerated`: エオリックエネルギーを用いた発電量を指定する。UN/CEFACT Common Codeを使用した測定単位コード（テキスト）（最大3文字）を指定します。  - `geothermalPowerGenerated`: 地熱を利用した発電量を指定する。UN/CEFACT Common Codeを使用した測定単位コード（テキスト）（最大3文字）を指定します。  - `hydroPowerGenerated`: 水力発電のエネルギーを利用した発電量を指定する。UN/CEFACT Common Codeを用いて与えられた測定単位コード（テキスト）（最大3文字）。  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `refGreenEnergyGenerator`: 測定対象となるエンティティ `GreenEnergyGenerator` への参照です。  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `solarPowerGenerated`: 太陽エネルギーによる発電量を指定する。UN/CEFACT Common Codeを使用した測定単位コード（テキスト）（最大3文字）。  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI Entity Typeです。GreenEnergyMeasurementでなければならない。    
-必須項目  
-- `id`  - `refGreenEnergyGenerator`  - `type`    
-1つまたは複数のグリーンエネルギー源を使用して生成されたエネルギーのスナップショット測定のための汎用モデルです。したがって、`GreenEnergyMeasurement`タイプのエンティティは、GreenEnergyGeneratorタイプのエンティティが付随していないと存在できません。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `biomassPowerGenerated[number]`: バイオマスエネルギーを利用した発電量を規定する。UN/CEFACT 共通コード（3 文字以内）で示される計測単位コード（テキスト）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `eolicPowerGenerated[number]`: エオリックエネルギーによる発電量を示す。UN/CEFACT 共通コード（3 文字以内）で指定した計測単位コード（テキスト）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `geothermalPowerGenerated[number]`: 地熱を利用した発電量を規定する。UN/CEFACT Common Codeで示される計測単位コード（テキスト）（3文字以内）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `hydroPowerGenerated[number]`: 水力エネルギーを利用した発電量を規定する。UN/CEFACT Common Code（3文字以内）で示される計測単位コード（テキスト）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `refGreenEnergyGenerator[*]`: 測定対象が属するエンティティ `GreenEnergyGenerator` へのリファレンスです。  . Model: [https://schema.org/URL](https://schema.org/URL)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `solarPowerGenerated[number]`: 太陽エネルギーを利用した発電量を規定する。UN/CEFACT Common Code で示される計測単位コード（テキスト）（3 文字以内）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSI エンティティタイプ。これは GreenEnergyMeasurement でなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+1 つまたは複数のグリーンエネルギー源を使用して生成されたエネルギーのスナップショット測定のための汎用モデル。したがって、`GreenEnergyMeasurement`型のエンティティは、GreenEnergyGenerator型のエンティティを伴わなければ存在することができない。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GreenEnergyMeasurement:    
@@ -329,27 +344,32 @@ GreenEnergyMeasurement:
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI Entity Type: It has to be GreenEnergyMeasurement'    
+      description: 'NGSI Entity Type. It has to be GreenEnergyMeasurement'    
+      enum:    
+        - GreenEnergyMeasurement    
       type: string    
-      value: GreenEnergyMeasurement    
       x-ngsi:    
         type: Property    
   required:    
     - id    
     - type    
-    - refGreenEnergyGenerator    
   type: object    
   x-derived-from: ""    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/GreenEnergyMeasurement/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.GreenEnergy/GreenEnergyMeasurement/schema.json    
   x-model-tags: ""    
-  x-version: 0.0.1    
+  x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### GreenEnergyMeasurement NGSI-v2 key-values 例  
-GreenEnergyMeasurementをkey-valuesとしてJSON-LD形式で表現した例を示します。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### GreenEnergyMeasurement NGSI-v2 key-value 例  
+以下は、GreenEnergyMeasurementをJSON-LD形式でkey-valuesとして表現した例です。これは、`options=keyValues`を使用したときにNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement:Generator:a34f24b",  
@@ -366,8 +386,10 @@ GreenEnergyMeasurement:
   "refGreenEnergyGenerator":"urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001"  
 }  
 ```  
-#### GreenEnergyMeasurement NGSI-v2の正規化例。  
-ここでは、正規化されたJSON-LD形式のGreenEnergyMeasurementの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### GreenEnergyMeasurement NGSI-v2 正規化例  
+以下は、GreenEnergyMeasurement を JSON-LD 形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement-Generator:a34f24b",  
@@ -398,61 +420,74 @@ GreenEnergyMeasurement:
   }  
 }  
 ```  
-#### GreenEnergyMeasurement NGSI-LD キーバリューの例  
-GreenEnergyMeasurementをkey-valuesとしてJSON-LD形式で表現した例です。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### GreenEnergyMeasurement NGSI-LD key-value 例  
+ここでは、GreenEnergyMeasurementをJSON-LD形式でkey-valuesとして表現した例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返す。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement-Generator:a34f24b",  
-  "type": "GreenEnergyMeasurement",  
-  "solarPowerGenerated": {  
-    "type": "Number",  
-    "value": 5.1  
-  },  
-  "eolicPowerGenerated": {  
-    "type": "Number",  
-    "value": 2.1  
-  },  
-  "hydroPowerGenerated": {  
-    "type": "Number",  
-    "value": 2.1  
-  },  
-  "biomassPowerGenerated": {  
-    "type": "Number",  
-    "value": 2.1  
-  },  
-  "geothermalPowerGenerated": {  
-    "type": "Number",  
-    "value": 2.1  
-  },  
-  "refGreenEnergyGenerator": {  
-    "type": "Relationship",  
-    "value": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001"  
-  },  
-  "@context": [  
-    "https://smartdatamodels.org/context.jsonld",  
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement-Generator:a34f24b",  
+    "type": "GreenEnergyMeasurement",  
+    "biomassPowerGenerated": {  
+        "type": "Number",  
+        "value": 2.1  
+    },  
+    "eolicPowerGenerated": {  
+        "type": "Number",  
+        "value": 2.1  
+    },  
+    "geothermalPowerGenerated": {  
+        "type": "Number",  
+        "value": 2.1  
+    },  
+    "hydroPowerGenerated": {  
+        "type": "Number",  
+        "value": 2.1  
+    },  
+    "refGreenEnergyGenerator": {  
+        "type": "Relationship",  
+        "value": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001"  
+    },  
+    "solarPowerGenerated": {  
+        "type": "Number",  
+        "value": 5.1  
+    },  
+    "@context": [  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"  
+    ]  
 }  
 ```  
-#### GreenEnergyMeasurement NGSI-LDの正規化例。  
-ここでは、正規化されたJSON-LD形式のGreenEnergyMeasurementの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### GreenEnergyMeasurement NGSI-LD 正規化例  
+以下は、GreenEnergyMeasurement を JSON-LD 形式で正規化した例である。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement:Generator:a34f24b",  
-  "type": "GreenEnergyMeasurement",  
-  "source": "bike-in.com",  
-  "dataProvider": "bike-in.com",  
-  "dateCreated": "2019-01-01T12:00:00Z",  
-  "dateModified": "2020-07-22T12:00:00Z",  
-  "solarPowerGenerated": 1.2,  
-  "eolicPowerGenerated": 3,  
-  "hydroPowerGenerated": 0,  
-  "biomassPowerGenerated": 0,  
-  "geothermalPowerGenerated": 0,  
-  "refGreenEnergyGenerator": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001",  
-  "@context": [  
-    "https://smart-data-models.github.io/data-models/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement:Generator:a34f24b",  
+    "type": "GreenEnergyMeasurement",  
+    "biomassPowerGenerated": 0,  
+    "dataProvider": "bike-in.com",  
+    "dateCreated": "2019-01-01T12:00:00Z",  
+    "dateModified": "2020-07-22T12:00:00Z",  
+    "eolicPowerGenerated": 3,  
+    "geothermalPowerGenerated": 0,  
+    "hydroPowerGenerated": 0,  
+    "refGreenEnergyGenerator": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001",  
+    "solarPowerGenerated": 1.2,  
+    "source": "bike-in.com",  
+    "@context": [  
+        "https://smart-data-models.github.io/data-models/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"  
+    ]  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
