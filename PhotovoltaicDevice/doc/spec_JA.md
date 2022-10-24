@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 エンティティフォトボルタイックデバイス  
-===================  
+===================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/PhotovoltaicDevice/LICENSE.md)  
 [ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 グローバルな記述。**このデータモデルは、STC（Standard Test Condition）及びNOCT（Normal Operating Cell Temperature）に準拠した光電池パネルの機械的特性、電気的特性、熱的特性を記述することを目的としています。*備考このデータモデルは、`Photovoltaic Device`を記述するメインエンティティとして直接使用することも、`refDevice`属性による参照を用いてデータモデル`DEVICE`のサブエンティティとして使用することも可能です。STCとNOCTで行う測定は、`Pmax`（最大公称電力）、`Umpp`（最適動作電圧）、`Impp`（最適動作電流）、`Uoc`（開放電圧）、`Isc`（短絡電流）である。*このデータモデルは、デバイス[PHOTOVOLTAIC]を記述するメインエンティティとして直接使用することも、`refDevice`属性による参照を使用してデータモデル[DEVICE]のサブエンティティとして使用することも可能です**。  
 バージョン: 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## プロパティ一覧  
 
-- `MaxPressureLoad`: aximum mechanics Panel にかかる圧力(せん断、弾性、圧縮)荷重。フォーマットは、3 項目のサブプロパティで構成される。単位コード（テキスト）は，[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与える。例えば，**PAL** は Pascal を表す。  - `MaximumSystemVoltage`: モジュール**に許容される最大システム電圧です。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて示される。例えば、**VLT**はVolt（ボルト）を表します。  - `NominalPower`: パネル**の公称消費電力。moduleSTC]属性の[Pmax]項目と同じ値です。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて指定します。例えば、**WTT**はWattを表します。  - `PanelNbModules`: パネル」ごとの「モジュール」数  - `address`: 郵送先住所  - `alternateName`: この項目の別称  - `application`: ソーラーパネルの種類（ここでは「電気式」）に関する対象用途。一意の値。https://schema.org/Text。Enum:'electric, thermal, other' (電気、熱、その他)  - `applicationClass`: モジュールに関連する潜在的な危険性を評価する。一意の値。Enum:'A, B, C'。  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `areaWeight`: 面積 重量はKg/m²で測定。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて示される。例えば、**28**はKilogram per square meter（1平方メートルあたりキログラム）を表します。  - `brandName`: アイテムのブランド名  - `cellDimension`: セルの外形寸法。フォーマットは 3 項目のサブプロパティで構成される。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて指定する。例えば、**MMT** はミリメートルを表す。  - `cellOperatingTemperature`: 太陽エネルギーを収集するセルの公称動作温度範囲である。フォーマットは 2 項目のサブプロパティで構成される。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。例えば、**CEL** は摂氏を表す。  - `cellType`: 光電池を構成するセルの種類。2種類の技術 *`Cristalline`* or *`Thin layers`*.一意の値。Enum:'amorphousSilicon, CfTe, CIS, monocrystalline, polycrystalline, other' （アモルファスシリコン、CfTe、CIS、単結晶、多結晶、その他）。  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateLastReported`: デバイスが正常にデータを報告した最後の時刻を示すタイムスタンプ。ISO8601 UTCフォーマットによる日付と時刻。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `documentation`: 技術ドキュメント（インストール/メンテナンス/使用済み）  - `fireClass`: 火への評価（IEC 61730）。ユニークな値。Enum:'A, B, C'。  - `id`: エンティティの一意な識別子  - `installationCondition`: 以下の環境での使用条件、可能性。組み合わせです。Enum:'desert, dust, extremeHeat, extremeCold, extremeClimate, extremeHumidity, marine, none, other, saline, sand, seismic'.  - `installationMode`: 地上基準系に対する装置の位置決め。一意の値。Enum:'ground, other, pole, roofing, wall'.  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `manufacturerName`: メーカー名 品名  - `modelName`: アイテムのモデル名  - `moduleDimension`: モジュールの外形寸法。モジュールは 1～n 個のセルの集合体である。フォーマットは 3 項目のサブプロパティで構成される。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与え る。例えば、**MMT** はミリメートル（Millimeter）を表す。  - `moduleNOCT`: 通常動作時のセル温度の測定値。フォーマットは 5 項目のサブプロパティで構成される。Pmax (W)。Umpp（ボルト）。Impp（アンペア）。Uoc（ボルト）。Isc（アンペア  - `moduleNbCells`: モジュール」ごとの「セル」数  - `moduleSTC`: Standard Test Condition の測定値。フォーマットは 5 項目のサブプロパティで構成される。Pmax (W)。Umpp（ボルト）。Impp（アンペア）。Uoc（ボルト）。Isc（アンペア  - `moduleYieldRate`: 地上基準系に対する装置の位置決め。一意の値  - `nTCClass`: 抵抗の負温度係数 - *NTC*は、与えられた負温度の変化に関連する物理的性質の相対的な変化を記述するものです。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用して与えられます。例えば、**P1** は Percent（パーセント）を表します。  - `name`: このアイテムの名称です。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pTCClass`: 抵抗の正温度係数 - *PTC* は、与えられた正温度の変化に関連する物理的性質の相対的な変化を記述するものです。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用して与えられます。例えば、**P1**はPercent（パーセント）を表す。  - `panelDimension`: パネルの外形寸法。太陽電池パネルは、1～n個のモジュールの集合体であり、モジュール自体は複数のセルで構成され、太陽の光から熱を集める。フォーマットは 3 項目のサブプロパティで構成される。ユニットコード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**MMT**はMillimeterを表す。  - `panelLifetime`: パネルの平均寿命。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与される。例えば、**ANN**はYearを表します。  - `panelOperatingTemperature`: 使用周囲温度範囲。パネルを使用する際の寒さや暑さに対する耐性の最小値と最大値を示す。フォーマットは 2 項目のサブプロパティで構成される。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。例えば、**CEL**は摂氏を表す。  - `panelWeight`: パネルの重量（Kg/m²を基準とする場合もある）。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて記載します。例えば、**KGM**はキログラムを表します。  - `panelYieldCurve`: オプション 1.T0] での [NominalPower] から [panelLifetime] に沿ったパネルのエネルギー生産量カーブ。このリストで提供される測定値は、製造者から提供された情報に従って、5 年を「ステップ」と して、5 年から始まるエネルギー生産能力をパーセントで表したシーケンスである。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用し て示される。例えば、**P1**はPercentを表す。  - `performanceLowIrradiance`: Performance at Low Irradianceに対する平均相対収量。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与される。例えば、**P1**はPercent（パーセント）を表します。  - `possibilityOfUse`: 活用の可能性。ユニークな値。Enum:'mixed, mobile, other, stationary'.  - `protectionIP`: ジャンクションボックスのIP 'Ingress Protection'。国際電気標準会議規格（EN 60-529）に基づき、機械筐体や電気筐体の侵入、粉塵、偶発的な接触、水に対する保護の度合いを分類・評価したレベルです。1桁目1桁目：固体粒子に対する保護等級（数字1桁：0～6または'X'）。2桁目2桁目：液体侵入に対する保護（数字1桁：0～9または'X'）3桁目：危険物へのアクセスに対する個人保護（数字1桁：0～9または'X'）。3桁目：危険箇所への立ち入りに対する個人保護（オプションの追加文字）。4桁目その他の保護（オプションで追加可能な文字）  - `refDevice`: 2番目のリンクとして使用される場合、メインエンティティの[デバイス](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md)への参照  - `refPointOfInterest`: リポジトリとリンクしている[PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)への参照。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `serialNumber`: 製造者から供給され、単一場所で動作モードで組み立てられた光電変換デバイスのシリアル番号のリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperatureCoefficient`: パネルへの温度影響係数。フォーマットは3項目のサブプロパティで構成される。Pmax (ワット)Uoc (ボルト)Isc (アンペア)  - `type`: NGSI エンティティタイプ。これは、PhotovoltaicDevice でなければならない。  - `typeOfUse`: 屋内外での位置づけを考慮した使い方ができる。ユニークな値。Enum:'indoor, outdoor, mixed, other'.    
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `MaxPressureLoad[object]`: aximum mechanics Panel にかかる圧力(せん断、弾性、圧縮)荷重。フォーマットは、3 項目のサブプロパティで構成される。単位コード（テキスト）は，[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与える。例えば，**PAL** は Pascal を表す。  . Model: [https://schema.org/Number](https://schema.org/Number)- `MaximumSystemVoltage[number]`: モジュール**に許容される最大システム電圧です。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて示される。例えば、**VLT**はVolt（ボルト）を表します。  . Model: [https://schema.org/Number](https://schema.org/Number)- `NominalPower[number]`: パネル**の公称消費電力。moduleSTC]属性の項目[Pmax]と同じ値です。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて指定します。例えば、**WTT**はWattを表します。  . Model: [https://schema.org/Number](https://schema.org/Number)- `PanelNbModules[number]`: パネル」ごとの「モジュール」数  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `application[array]`: ソーラーパネルの種類（ここでは「電気式」）に関する対象用途。一意の値。https://schema.org/Text。Enum:'electric, thermal, other' (電気、熱、その他)  - `applicationClass[array]`: モジュールに関連する潜在的な危険性を評価する。一意の値。Enum:'A, B, C'。  . Model: [https://schema.org/Text](https://schema.org/Text)- `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `areaWeight[number]`: 面積 重量はKg/m²で測定。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて示される。例えば、**28**はKilogram per square meter（1平方メートルあたりキログラム）を表します。  . Model: [https://schema.org/Number](https://schema.org/Number)- `brandName[string]`: アイテムのブランド名  . Model: [https://schema.org/brand](https://schema.org/brand)- `cellDimension[object]`: セルの外形寸法。フォーマットは 3 項目のサブプロパティで構成される。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて指定する。例えば、**MMT** はミリメートルを表す。  - `cellOperatingTemperature[object]`: 太陽エネルギーを収集するセルの公称動作温度範囲である。フォーマットは 2 項目のサブプロパティで構成される。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。例えば、**CEL** は摂氏を表す。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `cellType[array]`: 光電池を構成するセルの種類。2種類の技術 *`Cristalline`* or *`Thin layers`*.一意の値。Enum:'amorphousSilicon, CfTe, CIS, monocrystalline, polycrystalline, other' （アモルファスシリコン、CfTe、CIS、単結晶、多結晶、その他）。  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateLastReported[string]`: デバイスが正常にデータを報告した最後の時刻を示すタイムスタンプ。ISO8601 UTCフォーマットによる日付と時刻。  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `documentation[string]`: 技術ドキュメント（インストール/メンテナンス/使用済み）  . Model: [https://schema.org/Text](https://schema.org/Text)- `fireClass[array]`: 火への評価（IEC 61730）。ユニークな値。Enum:'A, B, C'。  . Model: [https://schema.org/Text](https://schema.org/Text)- `id[*]`: エンティティの一意な識別子  - `installationCondition[array]`: 以下の環境での使用条件、可能性。組み合わせです。Enum:'desert, dust, extremeHeat, extremeCold, extremeClimate, extremeHumidity, marine, none, other, saline, sand, seismic'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `installationMode[array]`: 地上基準系に対する装置の位置決め。一意の値。Enum:'ground, other, pole, roofing, wall'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `manufacturerName[string]`: メーカー名 品名  . Model: [https://schema.org/manufacturer](https://schema.org/manufacturer)- `modelName[string]`: アイテムのモデル名  . Model: [https://schema.org/model](https://schema.org/model)- `moduleDimension[object]`: モジュールの外形寸法。モジュールは 1～n 個のセルの集合体である。フォーマットは 3 項目のサブプロパティで構成される。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与え る。例えば、**MMT** はミリメートル（Millimeter）を表す。  - `moduleNOCT[object]`: 通常動作時のセル温度の測定値。フォーマットは 5 項目のサブプロパティで構成される。Pmax (W)。Umpp（ボルト）。Impp（アンペア）。Uoc（ボルト）。Isc（アンペア  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `moduleNbCells[number]`: モジュール」ごとの「セル」数  . Model: [https://schema.org/Number](https://schema.org/Number)- `moduleSTC[object]`: Standard Test Condition の測定値。フォーマットは 5 項目のサブプロパティで構成される。Pmax (W)。Umpp（ボルト）。Impp（アンペア）。Uoc（ボルト）。Isc（アンペア  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `moduleYieldRate[number]`: 地上基準系に対する装置の位置決め。一意の値  . Model: [https://schema.org/Number](https://schema.org/Number)- `nTCClass[number]`: 抵抗の負温度係数 - *NTC*は、与えられた負温度の変化に関連する物理的性質の相対的な変化を記述するものです。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用して与えられます。例えば、**P1** は Percent（パーセント）を表します。  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `pTCClass[number]`: 抵抗の正温度係数 - *PTC*は、与えられた正温度の変化に関連する物理的性質の相対的な変化を記述するものです。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用して与えられます。例えば、**P1**はPercent（パーセント）を表す。  - `panelDimension[object]`: パネルの外形寸法。太陽電池パネルは、1～n個のモジュールの集合体であり、モジュール自体は複数のセルで構成され、太陽の光から熱を集める。フォーマットは 3 項目のサブプロパティで構成される。ユニットコード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて与えられる。例えば、**MMT**はMillimeterを表す。  - `panelLifetime[number]`: パネルの平均寿命。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与される。例えば、**ANN**はYearを表します。  . Model: [https://schema.org/Number](https://schema.org/Number)- `panelOperatingTemperature[object]`: 使用周囲温度範囲。パネルを使用する際の寒さや暑さに対する耐性の最小値と最大値を示す。フォーマットは 2 項目のサブプロパティで構成される。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与する。例えば、**CEL**は摂氏を表す。  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `panelWeight[number]`: パネルの重量（Kg/m²を基準とする場合もある）。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて記載します。例えば、**KGM**はキログラムを表します。  . Model: [https://schema.org/Number](https://schema.org/Number)- `panelYieldCurve[array]`: オプション 1.T0] での [NominalPower] から [panelLifetime] に沿ったパネルのエネルギー生産量カーブ。このリストで提供される測定値は、製造者から提供された情報に従って、5 年を「ステップ」と して、5 年から始まるエネルギー生産能力をパーセントで表したシーケンスである。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を使用し て示される。例えば、**P1**はPercentを表す。  - `performanceLowIrradiance[number]`: Performance at Low Irradianceに対する平均相対収量。単位コード（テキスト）は、[UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes)を用いて付与される。例えば、**P1**はPercent（パーセント）を表します。  . Model: [https://schema.org/Number](https://schema.org/Number)- `possibilityOfUse[array]`: 活用の可能性。ユニークな値。Enum:'mixed, mobile, other, stationary'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `protectionIP[string]`: ジャンクションボックスのIP 'Ingress Protection'。国際電気標準会議規格（EN 60-529）に基づき、機械筐体や電気筐体の侵入、粉塵、偶発的な接触、水に対する保護の度合いを分類・評価したレベルです。1桁目1桁目：固体粒子に対する保護等級（数字1桁：0～6または'X'）。2桁目2桁目：液体侵入に対する保護（数字1桁：0～9または'X'）3桁目：危険物へのアクセスに対する個人保護（数字1桁：0～9または'X'）。3桁目：危険箇所への立ち入りに対する個人保護（オプションの追加文字）。4桁目その他の保護（オプションで追加可能な文字）  . Model: [https://schema.org/Text](https://schema.org/Text)- `refDevice[*]`: 2番目のリンクとして使用される場合、メインエンティティの[デバイス](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md)への参照  . Model: [https://schema.org/URL](https://schema.org/URL)- `refPointOfInterest[*]`: リポジトリとリンクしている[PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md)への参照。  . Model: [https://schema.org/URL](https://schema.org/URL)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `serialNumber[array]`: 製造者から供給され、単一場所で動作モードで組み立てられた光電池のシリアル番号のリスト。  . Model: [https://schema.org/serialNumber](https://schema.org/serialNumber)- `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `temperatureCoefficient[object]`: パネルへの温度影響係数。フォーマットは3項目のサブプロパティで構成される。Pmax (ワット)Uoc (ボルト)Isc (アンペア)  . Model: [https://schema.org/StructuredValue](https://schema.org/StructuredValue)- `type[string]`: NGSI エンティティタイプ。これは、PhotovoltaicDevice でなければならない。  - `typeOfUse[array]`: 屋内外での位置づけを考慮した使い方ができる。ユニークな値。Enum:'indoor, outdoor, mixed, other'.  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 必要なプロパティ  
-- `dateLastReported`  - `id`  - `location`  - `type`    
+- `dateLastReported`  - `id`  - `location`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Pmax] 最大公称電力は**WTT**で測定され、ワットを表す。- Umpp] 最適動作電圧は**VLT**単位で表され、ボルトを表す。- Impp] 最適動作電流（単位：AMP**）は、アンペアを表します。- Uoc] 開回路電圧は**VLT**で測定され、Voltを表します。- Isc] 短絡電流は、**AMP**で測定され、アンペアを表します。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
 アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PhotovoltaicDevice:    
@@ -714,9 +727,14 @@ PhotovoltaicDevice:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
 #### PhotovoltaicDevice NGSI-v2 key-value 例  
 ここでは、PhotovoltaicDeviceをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:PhotovoltaicDevice:PhotovoltaicDevice:MNCA-PV-T2-R-012",  
@@ -840,8 +858,10 @@ PhotovoltaicDevice:
   }  
 }  
 ```  
+</details>  
 #### PhotovoltaicDevice NGSI-v2 正規化例  
 PhotovoltaicDeviceをJSON-LD形式で正規化した例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:PhotovoltaicDevice:PhotovoltaicDevice:MNCA-PV-T2-R-012",  
@@ -1106,8 +1126,10 @@ PhotovoltaicDevice:
   }  
 }  
 ```  
+</details>  
 #### 太陽光発電装置 NGSI-LD キー値例  
-PhotovoltaicDeviceをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+PhotovoltaicDeviceをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:PhotovoltaicDevice:PhotovoltaicDevice:MNCA-PV-T2-R-012",  
@@ -1380,8 +1402,10 @@ PhotovoltaicDevice:
     ]  
 }  
 ```  
+</details>  
 #### 太陽光発電装置 NGSI-LD 正規化例  
 PhotovoltaicDeviceをJSON-LD形式で正規化した例です。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "urn:ngsi-ld:PhotovoltaicDevice:PhotovoltaicDevice:MNCA-PV-T2-R-012",  
@@ -1514,8 +1538,17 @@ PhotovoltaicDevice:
         "Isc": 0.053  
     },  
     "@context": [  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"  
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
