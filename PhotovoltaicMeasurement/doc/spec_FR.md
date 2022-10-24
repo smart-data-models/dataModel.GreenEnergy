@@ -1,20 +1,33 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entité : PhotovoltaicMeasurement  
-================================  
+================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/PhotovoltaicMeasurement/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Le modèle de données est destiné à mesurer la puissance continue transférée par le panneau photo-voltaïque à un dispositif onduleur.**  
 version : 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `activePower`: Puissance active,où phi est le déphasage du courant par rapport à la tension. Le code d'unité (texte) est donné en utilisant les UN/CEFACT_Common_Codes (3 caractères maximum). Par exemple, **KWT** représente le kilowatt.  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `current`: Intensité électrique du courant. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **AMP** représente l'Ampère  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateEnergyMeteringStarted`: La date de début du comptage de l'énergie dans un format ISO8601 UTC.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateObservedFrom`: Période d'observation : Date et heure de début dans un format ISO8601 UTC. Cet attribut peut être utilisé en complément de l'attribut 'dateObserved lorsqu'il correspond à un intervalle de temps à mettre en évidence.  - `dateObservedTo`: Période d'observation : Date et heure de fin dans un format ISO8601 UTC. Cet attribut peut être utilisé en complément de l'attribut "dateObserved" lorsqu'il correspond à un intervalle de temps à mettre en évidence.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `inverterStatus`: Puissance active,où phi est le déphasage du courant par rapport à la tension. Le code d'unité (texte) est donné en utilisant les UN/CEFACT_Common_Codes (3 caractères maximum). Par exemple, **KWT** représente le Kilowatt. Enum : '00-Sur secteur, 01-Panne d'alimentation / Sur batterie, 02-Perte de communication, 03-Défaut de batterie, 04-Arrêt du système, 05-Perte de tension, 06-Surtension, 07-Chute de tension, 08-Elévation de tension, 09-Bruit de ligne, 10-Variation de fréquence, 11-Distorsion transitoire, 12-Distorsion harmonique'.  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `nominalPeakPowerGeneration`: nominalPeakPowerGeneration est un nombre. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **KWT** représente un kilowatt.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `reactivePower`: Puissance réactive utilisée par les circuits. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **K5** représente le kilovolt-ampère-réactif.  - `refPhotovoltaicDevice`:   - `refPointOfInterest`: Référence à un [PointOfInterest] (https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) lié au Référentiel.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `temperature`: Température enregistrée au moment de l'observation par rapport à la température de référence nominale de l'appareil. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **CEL** représente le degré Celsius.  - `type`: Type d'entité NGSI. Il doit s'agir de PhotovoltaicMeasurement.    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `activePower[number]`: Puissance active,où phi est le déphasage du courant par rapport à la tension. Le code d'unité (texte) est donné en utilisant les UN/CEFACT_Common_Codes (3 caractères maximum). Par exemple, **KWT** représente le kilowatt.  . Model: [https://schema.org/Number](https://schema.org/Number)- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `current[number]`: Intensité électrique du courant. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **AMP** représente l'Ampère  . Model: [https://schema.org/Number](https://schema.org/Number)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateEnergyMeteringStarted[string]`: La date de début du comptage de l'énergie dans un format ISO8601 UTC.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `dateObservedFrom[string]`: Période d'observation : Date et heure de début dans un format ISO8601 UTC. Cet attribut peut être utilisé en complément de l'attribut 'dateObserved lorsqu'il correspond à un intervalle de temps à mettre en évidence.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `dateObservedTo[string]`: Période d'observation : Date et heure de fin dans un format ISO8601 UTC. Cet attribut peut être utilisé en complément de l'attribut "dateObserved" lorsqu'il correspond à un intervalle de temps à mettre en évidence.  . Model: [https://schema.org/DateTime](https://schema.org/DateTime)- `description[string]`: Une description de cet article  - `id[*]`: Identifiant unique de l'entité  - `inverterStatus[array]`: Puissance active,où phi est le déphasage du courant par rapport à la tension. Le code d'unité (texte) est donné en utilisant les UN/CEFACT_Common_Codes (3 caractères maximum). Par exemple, **KWT** représente le Kilowatt. Enum : '00-Sur secteur, 01-Panne d'alimentation / Sur batterie, 02-Perte de communication, 03-Défaut de batterie, 04-Arrêt du système, 05-Perte de tension, 06-Surtension, 07-Chute de tension, 08-Elévation de tension, 09-Bruit de ligne, 10-Variation de fréquence, 11-Distorsion transitoire, 12-Distorsion harmonique'.  . Model: [https://schema.org/Number](https://schema.org/Number)- `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément.  - `nominalPeakPowerGeneration[number]`: nominalPeakPowerGeneration est un nombre. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **KWT** représente un kilowatt.  . Model: [https://schema.org/Number](https://schema.org/Number)- `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `reactivePower[number]`: Puissance réactive utilisée par les circuits. Le code de l'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **K5** représente le kilovolt-ampère-réactif.  . Model: [https://schema.org/Number](https://schema.org/Number)- `refPhotovoltaicDevice[*]`:   . Model: [Reference to a [Photovoltaic Device](https://github.com/smart-data-models/dataModel.Energy/PhotovoltaicDevice/doc/spec.md) which captured this observation, if the entity is used https://schema.org/URL](Reference to a [Photovoltaic Device](https://github.com/smart-data-models/dataModel.Energy/PhotovoltaicDevice/doc/spec.md) which captured this observation, if the entity is used https://schema.org/URL)- `refPointOfInterest[*]`: Référence à un [PointOfInterest] (https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) lié au Référentiel.  . Model: [https://schema.org/URL](https://schema.org/URL)- `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `temperature[number]`: Température enregistrée au moment de l'observation par rapport à la température de référence nominale de l'appareil. Le code d'unité (texte) est donné en utilisant les [Codes communs du CEFACT-ONU] (http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). Par exemple, **CEL** représente le degré Celsius.  . Model: [https://schema.org/Number](https://schema.org/Number)- `type[string]`: Type d'entité NGSI. Il doit s'agir de PhotovoltaicMeasurement.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `dateEnergyMeteringStarted`  - `dateObserved`  - `id`  - `location`  - `refPhotovoltaicDevice`  - `temperature`  - `type`    
+- `dateEnergyMeteringStarted`  - `dateObserved`  - `id`  - `location`  - `refPhotovoltaicDevice`  - `temperature`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Il peut avoir les valeurs suivantes. - instantané. De l'instant spécifique du temps - moyenne. La moyenne d'une période de temps - rms.     La moyenne quadratique d'une période de temps - maximum. Le maximum d'une période de temps - minimum. Le minimum d'une période de temps.  
 Lorsque vous utilisez les valeurs [moyenne, rms, maximum, minimum], un autre attribut de métadonnées appelé "measurementInterval" doit être utilisé pour indiquer la durée de la période de mesure en secondes. De même, l'attribut de métadonnées "timestamp" doit correspondre à l'heure de fin de la période de mesure.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 PhotovoltaicMeasurement:    
@@ -405,9 +418,14 @@ PhotovoltaicMeasurement:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### PhotovoltaicMeasurement Valeurs-clés NGSI-v2 Exemple  
 Voici un exemple de PhotovoltaicMeasurement au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
@@ -436,8 +454,10 @@ PhotovoltaicMeasurement:
   "temperature": 23.4  
 }  
 ```  
+</details>  
 #### PhotovoltaicMeasurement NGSI-v2 normalisé Exemple  
 Voici un exemple de PhotovoltaicMeasurement au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
@@ -502,8 +522,10 @@ PhotovoltaicMeasurement:
   }  
 }  
 ```  
+</details>  
 #### Mesure du photovoltaïque Valeurs clés NGSI-LD Exemple  
 Voici un exemple de PhotovoltaicMeasurement au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-LD lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
@@ -573,8 +595,10 @@ PhotovoltaicMeasurement:
     ]  
 }  
 ```  
+</details>  
 #### PhotovoltaicMeasurement NGSI-LD normalisé Exemple  
 Voici un exemple de PhotovoltaicMeasurement au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
     "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",  
@@ -603,8 +627,17 @@ PhotovoltaicMeasurement:
     "temperature": 23.4,  
     "@context": [  
         "https://smart-data-models.github.io/data-models/common-schema.json",  
-        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld"  
+        "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"  
     ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
