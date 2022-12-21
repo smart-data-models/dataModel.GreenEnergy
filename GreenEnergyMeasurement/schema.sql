@@ -1,0 +1,3 @@
+/* (Beta) Export of data model GreenEnergyMeasurement of the subject dataModel.GreenEnergy for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE GreenEnergyMeasurement_type AS ENUM ('GreenEnergyMeasurement');
+CREATE TABLE GreenEnergyMeasurement (address json, alternateName text, areaServed text, biomassPowerGenerated text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, eolicPowerGenerated text, geothermalPowerGenerated text, hydroPowerGenerated text, id text, location json, name text, owner json, refGreenEnergyGenerator text, seeAlso json, solarPowerGenerated text, source text, type GreenEnergyMeasurement_type);
