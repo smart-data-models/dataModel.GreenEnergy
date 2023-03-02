@@ -1,9 +1,13 @@
 {
     "@context": {
+        "GreenEnergyGenerator": "https://smartdatamodels.org/dataModel.GreenEnergy/GreenEnergyGenerator",
+        "GreenEnergyMeasurement": "https://smartdatamodels.org/dataModel.GreenEnergy/GreenEnergyMeasurement",
         "MaxPressureLoad": "https://smartdatamodels.org/dataModel.GreenEnergy/MaxPressureLoad",
         "MaximumSystemVoltage": "https://smartdatamodels.org/dataModel.GreenEnergy/MaximumSystemVoltage",
         "NominalPower": "https://smartdatamodels.org/dataModel.GreenEnergy/NominalPower",
         "PanelNbModules": "https://smartdatamodels.org/dataModel.GreenEnergy/PanelNbModules",
+        "PhotovoltaicDevice": "https://smartdatamodels.org/dataModel.GreenEnergy/PhotovoltaicDevice",
+        "PhotovoltaicMeasurement": "https://smartdatamodels.org/dataModel.GreenEnergy/PhotovoltaicMeasurement",
         "activePower": "https://smartdatamodels.org/dataModel.GreenEnergy/activePower",
         "address": "https://smartdatamodels.org/address",
         "alternateName": "https://smartdatamodels.org/alternateName",
