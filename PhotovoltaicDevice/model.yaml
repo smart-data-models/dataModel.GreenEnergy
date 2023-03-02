@@ -35,13 +35,13 @@ PhotovoltaicDevice:
         type: Property
         units: watts
     PanelNbModules:
-      description: 'Number of ''Modules'' per ''Panel'''
+      description: Number of 'Modules' per 'Panel'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
     address:
-      description: 'The mailing address'
+      description: The mailing address
       properties:
         addressCountry:
           description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''
@@ -52,6 +52,9 @@ PhotovoltaicDevice:
         addressRegion:
           description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''
           type: string
+        district:
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'
+          type: string
         postOfficeBoxNumber:
           description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''
           type: string
@@ -61,12 +64,15 @@ PhotovoltaicDevice:
         streetAddress:
           description: 'Property. The street address. Model:''https://schema.org/streetAddress'''
           type: string
+        streetNr:
+          description: Number identifying a specific property on a public street.
+          type: string
       type: object
       x-ngsi:
         model: https://schema.org/address
         type: Property
     alternateName:
-      description: 'An alternative name for this item'
+      description: An alternative name for this item
       type: string
       x-ngsi:
         type: Property
@@ -94,7 +100,7 @@ PhotovoltaicDevice:
         model: https://schema.org/Text
         type: Property
     areaServed:
-      description: 'The geographic area where a service or offered item is provided'
+      description: The geographic area where a service or offered item is provided
       type: string
       x-ngsi:
         model: https://schema.org/Text
@@ -105,9 +111,9 @@ PhotovoltaicDevice:
       x-ngsi:
         model: https://schema.org/Number
         type: Property
-        units: 'kilograms per square meter'
+        units: kilograms per square meter
     brandName:
-      description: 'Brand Name of the item'
+      description: Brand Name of the item
       type: string
       x-ngsi:
         model: https://schema.org/brand
@@ -140,7 +146,7 @@ PhotovoltaicDevice:
       x-ngsi:
         model: https://schema.org/StructuredValue
         type: Property
-        units: 'Degree Celsius'
+        units: Degree Celsius
     cellType:
       description: 'Type of cells used to built the photo-voltaic unit. 2 kinds of Technologies *`Cristalline`* or  *`Thin layers`*. A unique value. Enum:''amorphousSilicon, CfTe, CIS, monocrystalline, polycrystalline, other'''
       items:
@@ -157,36 +163,36 @@ PhotovoltaicDevice:
         model: https://schema.org/Text
         type: Property
     dataProvider:
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'
+      description: A sequence of characters identifying the provider of the harmonised data entity.
       type: string
       x-ngsi:
         type: Property
     dateCreated:
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'
+      description: Entity creation timestamp. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     dateLastReported:
-      description: 'A timestamps which denotes the last time when the device successfully reported data. Date and time in an ISO8601 UTCformat.'
+      description: A timestamps which denotes the last time when the device successfully reported data. Date and time in an ISO8601 UTCformat.
       format: date-time
       type: string
       x-ngsi:
         model: https://schema.org/DateTime
         type: Property
     dateModified:
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.
       format: date-time
       type: string
       x-ngsi:
         type: Property
     description:
-      description: 'A description of this item'
+      description: A description of this item
       type: string
       x-ngsi:
         type: Property
     documentation:
-      description: 'Technical Documentation (Installation / maintenance / used)'
+      description: Technical Documentation (Installation / maintenance / used)
       type: string
       x-ngsi:
         model: https://schema.org/Text
@@ -205,15 +211,15 @@ PhotovoltaicDevice:
         type: Property
     id:
       anyOf: &photovoltaicdevice_-_properties_-_owner_-_items_-_anyof
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
-      description: 'Unique identifier of the entity'
+      description: Unique identifier of the entity
       x-ngsi:
         type: Property
     installationCondition:
@@ -254,7 +260,7 @@ PhotovoltaicDevice:
     location:
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'
       oneOf:
-        - description: 'Geoproperty. Geojson reference to the item. Point'
+        - description: GeoProperty. Geojson reference to the item. Point
           properties:
             bbox:
               items:
@@ -273,9 +279,9 @@ PhotovoltaicDevice:
           required:
             - type
             - coordinates
-          title: 'GeoJSON Point'
+          title: GeoJSON Point
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. LineString'
+        - description: GeoProperty. Geojson reference to the item. LineString
           properties:
             bbox:
               items:
@@ -297,9 +303,9 @@ PhotovoltaicDevice:
           required:
             - type
             - coordinates
-          title: 'GeoJSON LineString'
+          title: GeoJSON LineString
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. Polygon'
+        - description: GeoProperty. Geojson reference to the item. Polygon
           properties:
             bbox:
               items:
@@ -323,9 +329,9 @@ PhotovoltaicDevice:
           required:
             - type
             - coordinates
-          title: 'GeoJSON Polygon'
+          title: GeoJSON Polygon
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiPoint'
+        - description: GeoProperty. Geojson reference to the item. MultiPoint
           properties:
             bbox:
               items:
@@ -346,9 +352,9 @@ PhotovoltaicDevice:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiPoint'
+          title: GeoJSON MultiPoint
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -372,9 +378,9 @@ PhotovoltaicDevice:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiLineString'
+          title: GeoJSON MultiLineString
           type: object
-        - description: 'Geoproperty. Geojson reference to the item. MultiLineString'
+        - description: GeoProperty. Geojson reference to the item. MultiLineString
           properties:
             bbox:
               items:
@@ -400,18 +406,18 @@ PhotovoltaicDevice:
           required:
             - type
             - coordinates
-          title: 'GeoJSON MultiPolygon'
+          title: GeoJSON MultiPolygon
           type: object
       x-ngsi:
-        type: Geoproperty
+        type: GeoProperty
     manufacturerName:
-      description: 'Manufacturer Name of the item'
+      description: Manufacturer Name of the item
       type: string
       x-ngsi:
         model: https://schema.org/manufacturer
         type: Property
     modelName:
-      description: 'Model Name of the item'
+      description: Model Name of the item
       type: string
       x-ngsi:
         model: https://schema.org/model
@@ -433,7 +439,7 @@ PhotovoltaicDevice:
         type: Property
         units: Millimeters
     moduleNOCT:
-      description: 'Normal Operating Cell Temperature measurements. The format is structured by a sub-property of 5 items. Pmax in Watt. Umpp in Volt. Impp in Ampere. Uoc in Volt. Isc in Ampere'
+      description: Normal Operating Cell Temperature measurements. The format is structured by a sub-property of 5 items. Pmax in Watt. Umpp in Volt. Impp in Ampere. Uoc in Volt. Isc in Ampere
       properties:
         Impp:
           minimum: 0
@@ -455,13 +461,13 @@ PhotovoltaicDevice:
         model: https://schema.org/StructuredValue
         type: Property
     moduleNbCells:
-      description: 'Number of ''cells'' per ''module'''
+      description: Number of 'cells' per 'module'
       type: number
       x-ngsi:
         model: https://schema.org/Number
         type: Property
     moduleSTC:
-      description: 'Standard Test Condition measurements. The format is structured by a sub-property of 5 items. Pmax in Watt. Umpp in Volt. Impp in Ampere. Uoc in Volt. Isc in Ampere'
+      description: Standard Test Condition measurements. The format is structured by a sub-property of 5 items. Pmax in Watt. Umpp in Volt. Impp in Ampere. Uoc in Volt. Isc in Ampere
       properties:
         Impp:
           minimum: 0
@@ -483,7 +489,7 @@ PhotovoltaicDevice:
         model: https://schema.org/StructuredValue
         type: Property
     moduleYieldRate:
-      description: 'Positioning of the device in relation to a ground reference system. A unique value'
+      description: Positioning of the device in relation to a ground reference system. A unique value
       minimum: 0
       type: number
       x-ngsi:
@@ -497,15 +503,15 @@ PhotovoltaicDevice:
         model: https://schema.org/Number
         type: Property
     name:
-      description: 'The name of this item.'
+      description: The name of this item.
       type: string
       x-ngsi:
         type: Property
     owner:
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)
       items:
         anyOf: *photovoltaicdevice_-_properties_-_owner_-_items_-_anyof
-        description: 'Property. Unique identifier of the entity'
+        description: Property. Unique identifier of the entity
       type: array
       x-ngsi:
         type: Property
@@ -551,7 +557,7 @@ PhotovoltaicDevice:
       x-ngsi:
         model: https://schema.org/StructuredValue
         type: Property
-        units: 'Degree Celsius'
+        units: Degree Celsius
     panelWeight:
       description: 'Weight of a panel (Sometime the reference used is Kg / m²). The unit code (text) is given using the [UN/CEFACT Common Codes](http://wiki.goodrelations-vocabulary.org/Documentation/UN/CEFACT_Common_Codes). For instance, **KGM** represents Kilogram'
       minimum: 0
@@ -595,12 +601,12 @@ PhotovoltaicDevice:
         type: Property
     refDevice:
       anyOf:
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
       description: 'Reference to the Main Entity [Device](https://github.com/smart-data-models/dataModel.Device/blob/master/Device/doc/spec.md) if used as second link'
@@ -609,12 +615,12 @@ PhotovoltaicDevice:
         type: Property
     refPointOfInterest:
       anyOf:
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           maxLength: 256
           minLength: 1
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
           type: string
-        - description: 'Property. Identifier format of any NGSI entity'
+        - description: Property. Identifier format of any NGSI entity
           format: uri
           type: string
       description: 'Reference to a [PointOfInterest](https://github.com/smart-data-models/dataModel.PointOfInterest/blob/master/PointOfInterest/doc/spec.md) linked with the Repository.'
@@ -622,7 +628,7 @@ PhotovoltaicDevice:
         model: https://schema.org/URL
         type: Relationship
     seeAlso:
-      description: 'list of uri pointing to additional resources about the item'
+      description: list of uri pointing to additional resources about the item
       oneOf:
         - items:
             format: uri
@@ -634,7 +640,7 @@ PhotovoltaicDevice:
       x-ngsi:
         type: Property
     serialNumber:
-      description: 'List of serial numbers of Photo-voltaic device supplied by the manufacturer and assembled in operating mode on a single location'
+      description: List of serial numbers of Photo-voltaic device supplied by the manufacturer and assembled in operating mode on a single location
       items:
         type: string
       type: array
@@ -663,7 +669,7 @@ PhotovoltaicDevice:
         model: https://schema.org/StructuredValue
         type: Property
     type:
-      description: 'NGSI Entity type. It has to be PhotovoltaicDevice'
+      description: NGSI Entity type. It has to be PhotovoltaicDevice
       enum:
         - PhotovoltaicDevice
       type: string
