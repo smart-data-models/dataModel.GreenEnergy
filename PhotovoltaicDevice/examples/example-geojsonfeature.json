@@ -5,7 +5,7 @@
     "type": "GeoProperty",
     "value": {
       "type": "Point",
-      "coordinates ": [
+      "coordinates": [
         43.66481,
         7.196545
       ]
@@ -88,11 +88,15 @@
     },
     "cellType": {
       "type": "Property",
-      "value": "polycrystalline"
+      "value": [
+        "polycrystalline"
+      ]
     },
     "installationMode": {
       "type": "Property",
-      "value": "roofing"
+      "value": [
+        "roofing"
+      ]
     },
     "installationCondition": {
       "type": "Property",
@@ -179,7 +183,9 @@
     },
     "applicationClass": {
       "type": "Property",
-      "value": "A"
+      "value": [
+        "A"
+      ]
     },
     "fireClass": {
       "type": "Property",
