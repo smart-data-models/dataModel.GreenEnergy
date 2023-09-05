@@ -1,92 +1,127 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-エンティティグリーンエナジー・ジェネレーター  
-======================<!-- /10-Header -->  
+エンティティグリーン・エナジー・ジェネレーター  
+=======================<!-- /10-Header -->  
 <!-- 15-License -->  
-[オープンライセンス](https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/GreenEnergyGenerator/LICENSE.md)  
-[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+[オープン・ライセンス](https://github.com/smart-data-models//dataModel.GreenEnergy/blob/master/GreenEnergyGenerator/LICENSE.md)  
+[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-グローバルな説明**グリーンエネルギーからエネルギーを生成することができる汎用発電所**。  
+グローバルな説明**グリーンエネルギーからエネルギーを生成することができる一般的な発電所**。  
 バージョン: 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-## プロパティ一覧  
+## プロパティのリスト  
 
-<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `generationSources[array]`: 発電に使用されるソースのリスト。Enum:'biomass, eolic, geothermal, hydropower, solar'.  . Model: [https://schema.org/ItemList](https://schema.org/ItemList)- `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `maxBiomassMeasure[number]`: 生成可能な最大バイオマスエネルギーの指標。UN/CEFACT Common Code（3文字以内）を用いて付与された計測単位コード（テキスト）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxEolicPowerMeasure[number]`: 発生可能な最大エオリックエネルギーの尺度。UN/CEFACT共通コード（最大3文字）を用いて与えられる計測単位コード（テキスト）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxGeothermalPowerGenerated[number]`: 発電可能な最大地熱エネルギーの指標。UN/CEFACT Common Code（最大3文字）を用いて与えられる計測単位コード（テキスト）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxHydroPowerMeasure[number]`: 発電可能な最大水力エネルギーの指標。UN/CEFACT Common Code（最大3文字）で示される計測単位コード（テキスト）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxSolarPowerMeasure[number]`: 発電可能な最大太陽エネルギーの指標。UN/CEFACT共通コード（3文字以内）で示される計測単位コード（テキスト）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名称です。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `redistribution[boolean]`: 発電したエネルギーをネットワークに投棄するかどうかを示す  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `selfConsumption[boolean]`: 発電したエネルギーを自給自足で使用するかどうかを示す  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `status[string]`: グリーンエネルギー発電機の状態。Enum:'outOfService, withIncidence, working'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI エンティティタイプ。GreenEnergyGenerator でなければならない。  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
+<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。    
+	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `generationSources[array]`: 発電に使用される電源のリスト。Enum:'biomass, eolic, geothermal, hydropower, solar'.  . Model: [https://schema.org/ItemList](https://schema.org/ItemList)- `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `maxBiomassMeasure[number]`: 生成可能な最大バイオマスエネルギーの尺度。UN/CEFACT共通コード（最大3文字）を用いて与えられる測定の単位コード（テキスト）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxEolicPowerMeasure[number]`: 発生可能な最大電気エネルギーの尺度。UN/CEFACT共通コード（最大3文字）を用いて与えられる測定単位コード（テキスト）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxGeothermalPowerGenerated[number]`: 発電可能な最大地熱エネルギーの尺度。UN/CEFACT 共通コード(最大 3 文字)を用いて与えられる測定の単位コード(テキスト)。  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxHydroPowerMeasure[number]`: 発電可能な最大水力エネルギーの尺度。UN/CEFACT共通コード（最大3文字）を用いて与えられる測定の単位コード（テキスト）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `maxSolarPowerMeasure[number]`: 発電可能な最大太陽エネルギーの尺度。UN/CEFACT共通コード（最大3文字）を用いて与えられる測定の単位コード（テキスト）。  . Model: [https://schema.org/Number](https://schema.org/Number)- `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `redistribution[boolean]`: 発電されたエネルギーがネットワークに捨てられるかどうかを示す。  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `selfConsumption[boolean]`: 発電したエネルギーを自家用に使用するかどうかを示す  . Model: [https://schema.org/Boolean](https://schema.org/Boolean)- `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `status[string]`: グリーンエネルギー発電機のステータス。Enum:'outOfService, withIncidence, working'.  . Model: [https://schema.org/Text](https://schema.org/Text)- `type[string]`: NGSI エンティティタイプ。これは GreenEnergyGenerator でなければならない。  . Model: [https://schema.org/Text](https://schema.org/Text)<!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
-必要なプロパティ  
+必須プロパティ  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-グリーンエネルギー発電機の一般的なモデル。太陽エネルギーや電気エネルギーを用いてエネルギーを生成する装置。  
+グリーンエネルギー発電機の汎用モデル。太陽エネルギーまたは電気エネルギーを使用してエネルギーを生成することができる装置。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
 ## プロパティのデータモデル記述  
-アルファベット順に並びます（クリックで詳細へ）  
+アルファベット順（クリックで詳細表示）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 GreenEnergyGenerator:    
-  description: 'A generic generator station which can generate energy from green energy'    
+  description: A generic generator station which can generate energy from green energy    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
@@ -107,22 +142,26 @@ GreenEnergyGenerator:
         model: https://schema.org/ItemList    
         type: Property    
     id:    
-      anyOf: &greenenergygenerator_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -141,9 +180,11 @@ GreenEnergyGenerator:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -165,9 +206,11 @@ GreenEnergyGenerator:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -191,9 +234,11 @@ GreenEnergyGenerator:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -214,9 +259,11 @@ GreenEnergyGenerator:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -240,9 +287,11 @@ GreenEnergyGenerator:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -268,66 +317,82 @@ GreenEnergyGenerator:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     maxBiomassMeasure:    
-      description: 'A measure of maximum biomass energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters).'    
+      description: A measure of maximum biomass energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
         units: KWT    
     maxEolicPowerMeasure:    
-      description: 'A measure of maximum eolic energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters).'    
+      description: A measure of maximum eolic energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
         units: KWT    
     maxGeothermalPowerGenerated:    
-      description: 'A measure of maximum geothermal energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters).'    
+      description: A measure of maximum geothermal energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
         units: KWT    
     maxHydroPowerMeasure:    
-      description: 'A measure of maximum hydropower energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters).'    
+      description: A measure of maximum hydropower energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
         units: KWT    
     maxSolarPowerMeasure:    
-      description: 'A measure of maximum solar energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters).'    
+      description: A measure of maximum solar energy that can be generated. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)    
       type: number    
       x-ngsi:    
         model: https://schema.org/Number    
         type: Property    
         units: KWT    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *greenenergygenerator_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     redistribution:    
-      description: 'Indicates whether the generated energy will be dumped into the network'    
+      description: Indicates whether the generated energy will be dumped into the network    
       type: boolean    
       x-ngsi:    
         model: https://schema.org/Boolean    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -339,13 +404,13 @@ GreenEnergyGenerator:
       x-ngsi:    
         type: Property    
     selfConsumption:    
-      description: 'Indicate whether energy generated will use for self'    
+      description: Indicate whether energy generated will use for self    
       type: boolean    
       x-ngsi:    
         model: https://schema.org/Boolean    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
@@ -360,7 +425,7 @@ GreenEnergyGenerator:
         model: https://schema.org/Text    
         type: Property    
     type:    
-      description: 'NGSI Entity Type. It has to be GreenEnergyGenerator'    
+      description: NGSI Entity Type. It has to be GreenEnergyGenerator    
       enum:    
         - GreenEnergyGenerator    
       type: string    
@@ -372,7 +437,7 @@ GreenEnergyGenerator:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/GreenEnergyGenerator/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.GreenEnergy/GreenEnergyGenerator/schema.json    
   x-model-tags: ""    
@@ -384,8 +449,8 @@ GreenEnergyGenerator:
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## ペイロードの例  
-#### GreenEnergyGenerator NGSI-v2 key-value の例。  
-以下は、GreenEnergyGeneratorをJSON-LD形式でkey-valuesにした例である。これは `options=keyValues` を使用した場合に NGSI-v2 と互換性があり、個々のエンティティのコンテキストデータが返される。  
+#### GreenEnergyGenerator NGSI-v2 キー値の例  
+JSON-LD形式のGreenEnergyGeneratorのkey-valuesの例である。これは、`options=keyValues`を使用したときにNGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -411,7 +476,7 @@ GreenEnergyGenerator:
 ```  
 </details>  
 #### GreenEnergyGenerator NGSI-v2 正規化例  
-以下は、GreenEnergyGenerator を JSON-LD 形式で正規化した例である。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化された JSON-LD 形式の GreenEnergyGenerator の例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -451,8 +516,8 @@ GreenEnergyGenerator:
 }  
 ```  
 </details>  
-#### GreenEnergyGenerator NGSI-LD キー値例  
-ここでは、GreenEnergyGeneratorをJSON-LD形式でkey-valuesにした例を示します。これは `options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータが返される。  
+#### GreenEnergyGenerator NGSI-LD キー値の例  
+以下は、GreenEnergyGenerator の JSON-LD フォーマットのキー値の例である。これは NGSI-LD と互換性があり、`options=keyValues` を使うと個々のエンティティのコンテキストデータを返す。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -501,7 +566,7 @@ GreenEnergyGenerator:
 ```  
 </details>  
 #### GreenEnergyGenerator NGSI-LD 正規化例  
-以下は、GreenEnergyGenerator を JSON-LD 形式で正規化した例である。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+以下は、正規化された JSON-LD 形式の GreenEnergyGenerator の例である。これは、オプションを使用しない場合のNGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -538,7 +603,7 @@ GreenEnergyGenerator:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
