@@ -23,11 +23,19 @@
         "applicationClass": "https://smartdatamodels.org/dataModel.GreenEnergy/applicationClass",
         "areaServed": "https://smartdatamodels.org/areaServed",
         "areaWeight": "https://smartdatamodels.org/dataModel.GreenEnergy/areaWeight",
+        "bbox": {
+            "@container": "@list",
+            "@id": "geojson:bbox"
+        },
         "biomassPowerGenerated": "https://smartdatamodels.org/dataModel.GreenEnergy/biomassPowerGenerated",
         "brandName": "https://smartdatamodels.org/dataModel.GreenEnergy/brandName",
         "cellDimension": "https://smartdatamodels.org/dataModel.GreenEnergy/cellDimension",
         "cellOperatingTemperature": "https://smartdatamodels.org/dataModel.GreenEnergy/cellOperatingTemperature",
         "cellType": "https://smartdatamodels.org/dataModel.GreenEnergy/cellType",
+        "coordinates": {
+            "@container": "@list",
+            "@id": "geojson:coordinates"
+        },
         "current": "https://smartdatamodels.org/dataModel.GreenEnergy/current",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
