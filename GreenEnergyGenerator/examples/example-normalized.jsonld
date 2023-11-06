@@ -10,7 +10,7 @@
     },
     "location": {
         "type": "GeoProperty",
-        "value" {
+        "value": {
             "type": "Point",
             "coordinates": [
                 -3.80356167695194,
