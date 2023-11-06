@@ -2,23 +2,23 @@
   "id": "PhotovoltaicMeasurement:ENERGY-IMREDD-PV-0001",
   "type": "PhotovoltaicMeasurement",
   "dataProvider": {
-    "type": "Property",
+    "type": "Text",
     "value": "https://imredd.fr/en/home/"
   },
   "name": {
-    "type": "Property",
+    "type": "Text",
     "value": "Photovoltaic station IMREDD"
   },
   "description": {
-    "type": "Property",
+    "type": "Text",
     "value": "Photovoltaic data provided by the data logger ABB"
   },
   "seeAlso": {
-    "type": "Property",
+    "type": "Text",
     "value": "https://us.sunpower.com/products/solar-panels"
   },
   "location": {
-    "type": "GeoProperty",
+    "type": "geo:json",
     "value": {
       "type": "Point",
       "coordinates": [
@@ -28,7 +28,7 @@
     }
   },
   "address": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "addressCountry": "FR",
       "addressLocality": "Nice",
@@ -36,27 +36,27 @@
     }
   },
   "areaServed": {
-    "type": "Property",
+    "type": "Text",
     "value": "Nice"
   },
   "refPhotovoltaicDevice": {
-    "type": "Relationship",
+    "type": "Text",
     "Object": "urn:ngsi-ld:PhotovoltaicDevice:PV-T2-R-012"
   },
   "dateObserved": {
-    "type": "Property",
+    "type": "DateTime",
     "value": "2019-09-05T16:00:00.999Z"
   },
   "dateEnergyMeteringStarted": {
-    "type": "Property",
+    "type": "DateTime",
     "value": "2019-09-04T15:29:17.999Z"
   },
   "nominalPeakPowerGeneration": {
-    "type": "Property",
+    "type": "Number",
     "value": 179
   },
   "temperature": {
-    "type": "Property",
+    "type": "Number",
     "value": 23.4
   }
 }
