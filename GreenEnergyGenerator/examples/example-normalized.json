@@ -6,11 +6,14 @@
     "value": "working"
   },
   "location": {
-    "type": "Point",
-    "coordinates": [
-      -3.80356167695194,
-      43.46296641666926
-    ]
+    "type": "geo:json",
+    "value": {
+      "type": "Point",
+      "coordinates": [
+        -3.80356167695194,
+        43.46296641666926
+      ]
+    }
   },
   "selfConsumption":{
     "type": "Boolean",
