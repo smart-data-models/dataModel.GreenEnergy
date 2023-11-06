@@ -22,7 +22,7 @@
     "value":0
   },
   "refGreenEnergyGenerator":{
-    "type":"Relationship",
+    "type":"Text",
     "value":"urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001"
   }
 }
