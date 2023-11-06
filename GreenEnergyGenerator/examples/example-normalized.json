@@ -2,8 +2,8 @@
   "id": "urn:ngsi-ld:GreenEnergy:santander:GreenEnergy:greenEnergyGenerator:0001",
   "type": "GreenEnergyGenerator",
   "status": {
-    "type":"Text",
-    "value":"working"
+    "type": "Text",
+    "value": "working"
   },
   "location": {
     "type": "Point",
@@ -13,23 +13,23 @@
     ]
   },
   "selfConsumption":{
-    "type":"Boolean",
-    "value":true
+    "type": "Boolean",
+    "value": true
   },
   "redistribution":{
-    "type":"Boolean",
-    "value":false
+    "type": "Boolean",
+    "value": false
   },
   "generationSources":{
-    "type":"Array",
-    "value":[ "solar","eolic"]
+    "type": "StructuredValue",
+    "value": ["solar","eolic"]
   },
   "maxSolarPowerGenerated":{
-    "type":"Number",
+    "type": "Number",
     "value": 20
   },
   "maxEolicPowerGenerated": {
-    "type":"Number",
-    "value":10
+    "type": "Number",
+    "value": 10
   }
 }
