@@ -41,7 +41,7 @@
   },
   "refPhotovoltaicDevice": {
     "type": "Text",
-    "Object": "urn:ngsi-ld:PhotovoltaicDevice:PV-T2-R-012"
+    "value": "urn:ngsi-ld:PhotovoltaicDevice:PV-T2-R-012"
   },
   "dateObserved": {
     "type": "DateTime",
