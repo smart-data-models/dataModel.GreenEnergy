@@ -3,16 +3,22 @@
   "type": "GreenEnergyGenerator",
   "location": {
     "type": "Point",
-    "coordinates": [-3.80356167695194, 43.46296641666926]
+    "coordinates": [
+      -3.80356167695194,
+      43.46296641666926
+    ]
   },
   "source": "bike-in.com",
   "dataProvider": "bike-in.com",
   "name": "generator solar and eolic #9e46d",
   "description": "mixed generator model ~004 with maximum power 22kw",
-  "status":"working",
-  "generationSources":["solar","eolic"],
-  "selfConsumption":true,
-  "redistribution":false,
+  "status": "working",
+  "generationSources": [
+    "solar",
+    "eolic"
+  ],
+  "selfConsumption": true,
+  "redistribution": false,
   "maxSolarPowerGenerated": 15,
   "maxEolicPowerGenerated": 7,
   "maxHydroPowerGenerated": 0,
