@@ -15,19 +15,22 @@
       ]
     }
   },
-  "selfConsumption":{
+  "selfConsumption": {
     "type": "Boolean",
     "value": true
   },
-  "redistribution":{
+  "redistribution": {
     "type": "Boolean",
     "value": false
   },
-  "generationSources":{
+  "generationSources": {
     "type": "StructuredValue",
-    "value": ["solar","eolic"]
+    "value": [
+      "solar",
+      "eolic"
+    ]
   },
-  "maxSolarPowerGenerated":{
+  "maxSolarPowerGenerated": {
     "type": "Number",
     "value": 20
   },
