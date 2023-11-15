@@ -1,28 +1,28 @@
 {
   "id": "urn:ngsi-ld:GreenEnergyMeasurement:santander:GreenEnergyMeasurement-Generator:a34f24b",
   "type": "GreenEnergyMeasurement",
-  "solarPowerGenerated":{
-    "type":"Number",
-    "value":5.1
+  "solarPowerGenerated": {
+    "type": "Number",
+    "value": 5.1
   },
-  "eolicPowerGenerated":{
-    "type":"Number",
-    "value":2.1
+  "eolicPowerGenerated": {
+    "type": "Number",
+    "value": 2.1
   },
-  "hydroPowerGenerated":{
-    "type":"Number",
-    "value":0
+  "hydroPowerGenerated": {
+    "type": "Boolean",
+    "value": false
   },
-  "biomassPowerGenerated":{
-    "type":"Number",
-    "value":0
+  "biomassPowerGenerated": {
+    "type": "Boolean",
+    "value": false
   },
-  "geothermalPowerGenerated":{
-    "type":"Number",
-    "value":0
+  "geothermalPowerGenerated": {
+    "type": "Boolean",
+    "value": false
   },
-  "refGreenEnergyGenerator":{
-    "type":"Text",
-    "value":"urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001"
+  "refGreenEnergyGenerator": {
+    "type": "Text",
+    "value": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001"
   }
 }
