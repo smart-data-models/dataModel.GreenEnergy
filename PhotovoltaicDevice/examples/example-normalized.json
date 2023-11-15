@@ -2,29 +2,29 @@
   "id": "urn:ngsi-ld:PhotovoltaicDevice:PhotovoltaicDevice:MNCA-PV-T2-R-012",
   "type": "PhotovoltaicDevice",
   "name": {
-    "type": "Property",
+    "type": "Text",
     "value": "DEVICE-PV-T2-R-012"
   },
   "alternateName": {
-    "type": "Property",
-    "value": "AirPort – global Observation"
+    "type": "Text",
+    "value": "AirPort \u2013 global Observation"
   },
   "description": {
-    "type": "Property",
+    "type": "Text",
     "value": "Photo-voltaic Device description"
   },
   "location": {
-    "type": "GeoProperty",
+    "type": "geo:json",
     "value": {
       "type": "Point",
       "coordinates": [
-        43.664810,
+        43.66481,
         7.196545
       ]
     }
   },
   "address": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "addressCountry": "FR",
       "addressLocality": "Nice",
@@ -32,34 +32,31 @@
     }
   },
   "areaServed": {
-    "type": "Property",
+    "type": "Text",
     "value": "Nice Aeroport"
   },
   "refDevice": {
-    "type": "Relationship",
+    "type": "Text",
     "value": "urn:ngsi-ld:Device:PV-T2-R-012"
   },
   "dateLastReported": {
-    "type": "Property",
-    "value": {
-      "type": "DateTime",
-      "value": "2020-05-17T09:47:00Z"
-    }
+    "type": "DateTime",
+    "value": "2020-05-17T09:47:00Z"
   },
   "brandName": {
-    "type": "Property",
+    "type": "Text",
     "value": "Canadian Solar"
   },
   "modelName": {
-    "type": "Property",
+    "type": "Text",
     "value": "CS6P-270P"
   },
   "manufacturerName": {
-    "type": "Property",
+    "type": "Text",
     "value": "Canadian Solar EMEA GmbH,"
   },
   "serialNumber": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "CSPV270P-SN1804L6J34Z8742H",
       "CSPV270P-SN1804L6J34Z8743H",
@@ -69,19 +66,25 @@
     ]
   },
   "application": {
-    "type": "Property",
-    "value": ["electric"]
+    "type": "StructuredValue",
+    "value": [
+      "electric"
+    ]
   },
   "cellType": {
-    "type": "Property",
-    "value": ["polycrystalline"]
+    "type": "StructuredValue",
+    "value": [
+      "polycrystalline"
+    ]
   },
   "installationMode": {
-    "type": "Property",
-    "value": ["roofing"]
+    "type": "StructuredValue",
+    "value": [
+      "roofing"
+    ]
   },
   "installationCondition": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "extremeHeat",
       "extremeCold",
@@ -90,25 +93,25 @@
     ]
   },
   "possibilityOfUsed": {
-    "type": "Property",
+    "type": "Text",
     "value": "stationary"
   },
   "integrationMode": {
-    "type": "Property",
+    "type": "Text",
     "value": "IAB"
   },
   "documentation": {
-    "type": "Property",
+    "type": "Text",
     "value": "https://www.myDevicePV.Cn"
   },
   "owners": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "Airport-Division Maintenance"
     ]
   },
   "cellDimension": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "length": 16.0,
       "width": 9.0,
@@ -116,11 +119,11 @@
     }
   },
   "moduleNbCells": {
-    "type": "Property",
+    "type": "Number",
     "value": 60
   },
   "moduleDimension": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "length": 1600,
       "width": 975,
@@ -128,11 +131,11 @@
     }
   },
   "panelNbModules": {
-    "type": "Property",
-    "value": 1
+    "type": "Boolean",
+    "value": true
   },
   "panelDimension": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "length": 1638,
       "width": 982,
@@ -140,15 +143,15 @@
     }
   },
   "panelWeight": {
-    "type": "Property",
+    "type": "Number",
     "value": 18
   },
   "arealWeight": {
-    "type": "Property",
+    "type": "Number",
     "value": 32
   },
   "maxPressureLoad": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "hail": 2500,
       "snow": 5400,
@@ -156,35 +159,39 @@
     }
   },
   "NominalPower": {
-    "type": "Property",
+    "type": "Number",
     "value": 270
   },
   "MaximumSystemVoltage": {
-    "type": "Property",
+    "type": "Number",
     "value": 1000
   },
   "applicationClass": {
-    "type": "Property",
-    "value": ["A"]
+    "type": "StructuredValue",
+    "value": [
+      "A"
+    ]
   },
   "fireClass": {
-    "type": "Property",
-    "value": ["C"]
+    "type": "StructuredValue",
+    "value": [
+      "C"
+    ]
   },
   "pTCClass": {
-    "type": "Property",
+    "type": "Number",
     "value": 92.1
   },
   "nTCClass": {
-    "type": "Property",
+    "type": "Number",
     "value": 88.3
   },
   "protectionIP": {
-    "type": "Property",
+    "type": "Text",
     "value": "IP67"
   },
   "moduleSTC": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "Pmax": 270,
       "Umpp": 30.8,
@@ -194,7 +201,7 @@
     }
   },
   "moduleNOCT": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "Pmax": 196,
       "Umpp": 28.1,
@@ -204,25 +211,25 @@
     }
   },
   "moduleYieldRate": {
-    "type": "Property",
+    "type": "Number",
     "value": 16.79
   },
   "panelOperatingTemperature": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "min": -40,
       "max": 85
     }
   },
   "cellOperatingTemperature": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "min": 45,
       "max": 2
     }
   },
   "temperatureCoefficient": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "Pmax": -0.41,
       "Uoc": -0.31,
@@ -230,15 +237,15 @@
     }
   },
   "performanceLowIrradiance": {
-    "type": "Property",
+    "type": "Number",
     "value": 96.5
   },
   "panelLifetime": {
-    "type": "Property",
+    "type": "Number",
     "value": 30
   },
   "panelYieldCurve": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": [
       "95.0",
       "92.5",
@@ -249,11 +256,11 @@
     ]
   },
   "panelYieldRate": {
-    "type": "Property",
+    "type": "Number",
     "value": 0.5
   },
   "panelTiltReference": {
-    "type": "Property",
+    "type": "StructuredValue",
     "value": {
       "min": 28,
       "max": 37
