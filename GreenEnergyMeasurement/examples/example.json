@@ -5,10 +5,10 @@
   "dataProvider": "bike-in.com",
   "dateCreated": "2019-01-01T12:00:00Z",
   "dateModified": "2020-07-22T12:00:00Z",
-  "solarPowerGenerated":1.2,
-  "eolicPowerGenerated":3,
-  "hydroPowerGenerated":0,
-  "biomassPowerGenerated":0,
-  "geothermalPowerGenerated":0,
-  "refGreenEnergyGenerator":"urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001"
+  "solarPowerGenerated": 1.2,
+  "eolicPowerGenerated": 3,
+  "hydroPowerGenerated": 0,
+  "biomassPowerGenerated": 0,
+  "geothermalPowerGenerated": 0,
+  "refGreenEnergyGenerator": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001"
 }
