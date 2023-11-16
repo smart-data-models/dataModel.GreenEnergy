@@ -1,29 +1,29 @@
 {
-    "id": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001",
-    "type": "GreenEnergyGenerator",
-    "description": "mixed generator model ~004 with maximum power 22w",
-    "generationSources": [
-        "solar",
-        "eolic"
-    ],
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -3.80356167695194,
-            43.46296641666926
-        ]
-    },
-    "maxBiomassPowerGenerated": 0,
-    "maxEolicPowerGenerated": 7,
-    "maxHydroPowerGenerated": 0,
-    "maxSolarPowerGenerated": 15,
-    "name": "generator solar and eolic #9e46d",
-    "redistribution": false,
-    "selfConsumption": true,
-    "source": "bike-in.com",
-    "status": "working",
-    "@context": [
-        "https://smart-data-models.github.io/data-models/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"
+  "id": "urn:ngsi-ld:GreenEnergyGenerator:santander:GreenEnergy:greenEnergyGenerator:0001",
+  "type": "GreenEnergyGenerator",
+  "description": "mixed generator model ~004 with maximum power 22w",
+  "generationSources": [
+    "solar",
+    "eolic"
+  ],
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -3.80356167695194,
+      43.46296641666926
     ]
+  },
+  "maxBiomassPowerGenerated": 0,
+  "maxEolicPowerGenerated": 7,
+  "maxHydroPowerGenerated": 0,
+  "maxSolarPowerGenerated": 15,
+  "name": "generator solar and eolic #9e46d",
+  "redistribution": false,
+  "selfConsumption": true,
+  "source": "bike-in.com",
+  "status": "working",
+  "@context": [
+    "https://smart-data-models.github.io/data-models/context.jsonld",
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"
+  ]
 }
