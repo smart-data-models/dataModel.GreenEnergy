@@ -2,7 +2,7 @@
   "id": "urn:ngsi-ld:PhotovoltaicDevice:PhotovoltaicDevice:MNCA-PV-T2-R-012",
   "type": "PhotovoltaicDevice",
   "name": "DEVICE-PV-T2-R-012",
-  "alternateName": "AirPort – global Observation",
+  "alternateName": "AirPort \u2013 global Observation",
   "description": "Photo-voltaic Device description",
   "location": {
     "type": "Point",
@@ -29,9 +29,15 @@
     "CSPV270P-SN1804L6J34Z8745H",
     "CSPV270P-SN1804L6J34Z8746H"
   ],
-  "application": ["electric"],
-  "cellType": ["polycrystalline"],
-  "installationMode": ["roofing"],
+  "application": [
+    "electric"
+  ],
+  "cellType": [
+    "polycrystalline"
+  ],
+  "installationMode": [
+    "roofing"
+  ],
   "installationCondition": [
     "extremeHeat",
     "extremeCold",
@@ -70,8 +76,12 @@
   },
   "NominalPower": 270,
   "MaximumSystemVoltage": 1000,
-  "applicationClass": ["A"],
-  "fireClass": ["C"],
+  "applicationClass": [
+    "A"
+  ],
+  "fireClass": [
+    "C"
+  ],
   "pTCClass": 92.1,
   "nTCClass": 88.3,
   "protectionIP": "IP67",
@@ -119,7 +129,7 @@
     "max": 37
   },
   "@context": [
-      "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
-      "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"
+    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"
   ]
 }
