@@ -3,7 +3,7 @@
     "modelTags": "",
     "$id": "https://smart-data-models.github.io/data-models.Energy/PhotovoltaicMeasurement/schema.json",
     "title": "PhotovoltaicMeasurement schema",
-    "$schemaVersion": "0.0.2",
+    "$schemaVersion": "0.0.3",
     "description": "The Data Model is intended to measure the continuous power transferred by the photo-voltaic panel to an Inverter Device.",
     "type": "object",
     "allOf": [
@@ -21,6 +21,9 @@
                         "PhotovoltaicMeasurement"
                     ],
                     "description": "Property. NGSI Entity type. It has to be PhotovoltaicMeasurement"
+                },
+                "dateObserved": {
+                    "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/dateObserved"
                 },
                 "refPhotovoltaicDevice": {
                     "anyOf": [
