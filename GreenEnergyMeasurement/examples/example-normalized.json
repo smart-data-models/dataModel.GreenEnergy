@@ -10,16 +10,16 @@
     "value": 2.1
   },
   "hydroPowerGenerated": {
-    "type": "Boolean",
-    "value": false
+    "type": "Number",
+    "value": 0
   },
   "biomassPowerGenerated": {
-    "type": "Boolean",
-    "value": false
+    "type": "Number",
+    "value": 0
   },
   "geothermalPowerGenerated": {
-    "type": "Boolean",
-    "value": false
+    "type": "Number",
+    "value": 0
   },
   "refGreenEnergyGenerator": {
     "type": "Text",
