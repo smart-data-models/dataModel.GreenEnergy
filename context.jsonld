@@ -42,6 +42,7 @@
         "dateEnergyMeteringStarted": "https://smartdatamodels.org/dataModel.GreenEnergy/dateEnergyMeteringStarted",
         "dateLastReported": "https://smartdatamodels.org/dataModel.GreenEnergy/dateLastReported",
         "dateModified": "https://smartdatamodels.org/dateModified",
+        "dateObserved": "https://smartdatamodels.org/dateObserved",
         "dateObservedFrom": "https://smartdatamodels.org/dataModel.GreenEnergy/dateObservedFrom",
         "dateObservedTo": "https://smartdatamodels.org/dataModel.GreenEnergy/dateObservedTo",
         "description": "http://purl.org/dc/terms/description",
