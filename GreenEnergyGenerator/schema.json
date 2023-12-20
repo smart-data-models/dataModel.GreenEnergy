@@ -4,7 +4,7 @@
     "$id": "https://smart-data-models.github.io/dataModel.GreenEnergy/GreenEnergyGenerator/schema.json",
     "title": "GSMA / Smart Data Models - GreenEnergyGenerator",
     "description": "A generic generator station which can generate energy from green energy",
-    "$schemaVersion": "0.0.2",
+    "$schemaVersion": "0.0.3",
     "type": "object",
     "allOf": [
         {
@@ -55,19 +55,19 @@
                     "type": "boolean",
                     "description": "Property. Indicates whether the generated energy will be dumped into the network. Model:'https://schema.org/Boolean'"
                 },
-                "maxSolarPowerMeasure": {
+                "maxSolarPowerGenerated": {
                     "type": "number",
                     "description": "Property. Model:'https://schema.org/Number'. A measure of maximum solar energy that can be generated. Units:'KWT'. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)"
                 },
-                "maxEolicPowerMeasure": {
+                "maxEolicPowerGenerated": {
                     "type": "number",
                     "description": "Property. Model:'https://schema.org/Number'. A measure of maximum eolic energy that can be generated. Units:'KWT'. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)"
                 },
-                "maxHydroPowerMeasure": {
+                "maxHydroPowerGenerated": {
                     "type": "number",
                     "description": "Property. Model:'https://schema.org/Number'. A measure of maximum hydropower energy that can be generated. Units:'KWT'. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)"
                 },
-                "maxBiomassMeasure": {
+                "maxBiomassGenerated": {
                     "type": "number",
                     "description": "Property. Model:'https://schema.org/Number'. A measure of maximum biomass energy that can be generated. Units:'KWT'. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)"
                 },
