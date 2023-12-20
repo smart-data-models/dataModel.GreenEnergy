@@ -29,5 +29,13 @@
       "solar",
       "eolic"
     ]
+  },
+  "maxSolarPowerGenerated":{
+    "type": "Number",
+    "value": 20
+  },
+  "maxEolicPowerGenerated": {
+    "type": "Number",
+    "value": 10
   }
 }
