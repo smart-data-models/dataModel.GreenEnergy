@@ -18,9 +18,5 @@
     "eolic"
   ],
   "selfConsumption": true,
-  "redistribution": false,
-  "maxSolarPowerGenerated": 15,
-  "maxEolicPowerGenerated": 7,
-  "maxHydroPowerGenerated": 0,
-  "maxBiomassPowerGenerated": 0
+  "redistribution": false
 }
