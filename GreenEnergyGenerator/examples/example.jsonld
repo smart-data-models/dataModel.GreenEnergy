@@ -18,6 +18,10 @@
   "selfConsumption": true,
   "source": "bike-in.com",
   "status": "working",
+  "maxSolarPowerGenerated": 15,
+  "maxEolicPowerGenerated": 7,
+  "maxHydroPowerGenerated": 0,
+  "maxBiomassPowerGenerated": 0,
   "@context": [
     "https://smart-data-models.github.io/data-models/context.jsonld",
     "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"
