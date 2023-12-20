@@ -67,7 +67,7 @@
                     "type": "number",
                     "description": "Property. Model:'https://schema.org/Number'. A measure of maximum hydropower energy that can be generated. Units:'KWT'. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)"
                 },
-                "maxBiomassGenerated": {
+                "maxBiomassPowerGenerated": {
                     "type": "number",
                     "description": "Property. Model:'https://schema.org/Number'. A measure of maximum biomass energy that can be generated. Units:'KWT'. The unit code (text) of measurement given using the UN/CEFACT Common Code (max. 3 characters)"
                 },
