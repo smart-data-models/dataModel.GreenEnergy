@@ -13,10 +13,6 @@
       43.46296641666926
     ]
   },
-  "maxBiomassPowerGenerated": 0,
-  "maxEolicPowerGenerated": 7,
-  "maxHydroPowerGenerated": 0,
-  "maxSolarPowerGenerated": 15,
   "name": "generator solar and eolic #9e46d",
   "redistribution": false,
   "selfConsumption": true,
