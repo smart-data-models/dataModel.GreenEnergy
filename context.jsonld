@@ -25,7 +25,7 @@
         "areaWeight": "https://smartdatamodels.org/dataModel.GreenEnergy/areaWeight",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "biomassPowerGenerated": "https://smartdatamodels.org/dataModel.GreenEnergy/biomassPowerGenerated",
         "brandName": "https://smartdatamodels.org/dataModel.GreenEnergy/brandName",
@@ -34,7 +34,7 @@
         "cellType": "https://smartdatamodels.org/dataModel.GreenEnergy/cellType",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "current": "https://smartdatamodels.org/dataModel.GreenEnergy/current",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
@@ -59,20 +59,20 @@
         "installationMode": "https://smartdatamodels.org/dataModel.GreenEnergy/installationMode",
         "inverterStatus": "https://smartdatamodels.org/dataModel.GreenEnergy/inverterStatus",
         "length": "https://smartdatamodels.org/dataModel.GreenEnergy/length",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "manufacturerName": "https://smartdatamodels.org/dataModel.GreenEnergy/manufacturerName",
         "max": {
             "@container": "@list",
-            "@id": "ngsi-ld:max"
+            "@id": "https://uri.etsi.org/ngsi-ld/max"
         },
-        "maxBiomassMeasure": "https://smartdatamodels.org/dataModel.GreenEnergy/maxBiomassMeasure",
-        "maxEolicPowerMeasure": "https://smartdatamodels.org/dataModel.GreenEnergy/maxEolicPowerMeasure",
+        "maxBiomassPowerGenerated": "https://smartdatamodels.org/dataModel.GreenEnergy/maxBiomassPowerGenerated",
+        "maxEolicPowerGenerated": "https://smartdatamodels.org/dataModel.GreenEnergy/maxEolicPowerGenerated",
         "maxGeothermalPowerGenerated": "https://smartdatamodels.org/dataModel.GreenEnergy/maxGeothermalPowerGenerated",
-        "maxHydroPowerMeasure": "https://smartdatamodels.org/dataModel.GreenEnergy/maxHydroPowerMeasure",
-        "maxSolarPowerMeasure": "https://smartdatamodels.org/dataModel.GreenEnergy/maxSolarPowerMeasure",
+        "maxHydroPowerGenerated": "https://smartdatamodels.org/dataModel.GreenEnergy/maxHydroPowerGenerated",
+        "maxSolarPowerGenerated": "https://smartdatamodels.org/dataModel.GreenEnergy/maxSolarPowerGenerated",
         "min": {
             "@container": "@list",
-            "@id": "ngsi-ld:min"
+            "@id": "https://uri.etsi.org/ngsi-ld/min"
         },
         "modelName": "https://smartdatamodels.org/dataModel.GreenEnergy/modelName",
         "moduleDimension": "https://smartdatamodels.org/dataModel.GreenEnergy/moduleDimension",
@@ -108,7 +108,7 @@
         "snow": "https://smartdatamodels.org/dataModel.GreenEnergy/snow",
         "solarPowerGenerated": "https://smartdatamodels.org/dataModel.GreenEnergy/solarPowerGenerated",
         "source": "https://smartdatamodels.org/source",
-        "status": "ngsi-ld:status",
+        "status": "https://uri.etsi.org/ngsi-ld/status",
         "streetAddress": "https://smartdatamodels.org/streetAddress",
         "streetNr": "https://smartdatamodels.org/streetNr",
         "temperature": "https://smartdatamodels.org/dataModel.GreenEnergy/temperature",
