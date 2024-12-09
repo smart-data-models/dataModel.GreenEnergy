@@ -24,8 +24,6 @@
   "seeAlso": "https://us.sunpower.com/products/solar-panels",
   "temperature": 23.4,
   "@context": [
-    "https://smart-data-models.github.io/data-models/common-schema.json",
-    "https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld",
     "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"
   ]
 }
