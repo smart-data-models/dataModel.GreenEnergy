@@ -1,0 +1,2 @@
+"id_", "type_", "deviceCategory_", "ipAddress__0_", "location__type_", "location__coordinates__0_", "location__coordinates__1_"
+"urn:ngsi-ld:SolarTracker:PCU1", "SolarTracker", "PCU", "10.13.13.3", "Point", "16.563426", "40.850953"
