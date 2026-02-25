@@ -22,6 +22,12 @@ Link to the [example](https://smart-data-models.github.io/dataModel.GreenEnergy/
 
 Link to the [example](https://smart-data-models.github.io/dataModel.GreenEnergy/SolarTracker/examples/example-normalized.jsonld) (normalized) for NGSI-LD
 
+Link to the [example](https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/SolarTracker/examples/example.json.csv) (keyvalues) for NGSI v2 in CSV format
+
+Link to the [example](https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/SolarTracker/examples/example-normalized.json.csv) (normalized) for NGSI-V2 in CSV format
+
+Link to the [example](https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/SolarTracker/examples/example-normalized.jsonld.csv) (normalized) for NGSI-LD in CSV format
+
 ### Dynamic Examples generation
 
 Link to the [Generator](https://smartdatamodels.org/extra/ngsi-ld_generator.php?schemaUrl=https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/SolarTracker/schema.json&email=info@smartdatamodels.org) of NGSI-LD normalized payloads compliant with this data model. Refresh for new values
