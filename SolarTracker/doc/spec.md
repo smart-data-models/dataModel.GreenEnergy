@@ -28,7 +28,6 @@
 Required properties  
 - `deviceCategory`  - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-NotesYaml -->  
-notes appearing at the beginning of the spec  
 <!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
@@ -626,7 +625,6 @@ SolarTracker:
 </details>    
 <!-- /60-ModelYaml -->  
 <!-- 70-MiddleNotes -->  
-notes appearing in the middle of the spec  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
 ## Example payloads    
@@ -919,7 +917,6 @@ SolarTracker:
 ```  
 </details><!-- /80-Examples -->  
 <!-- 90-FooterNotes -->  
-notes appearing in the footer of the spec  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
 See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
