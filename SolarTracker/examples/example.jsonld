@@ -1,0 +1,14 @@
+{
+  "id": "urn:ngsi-ld:SolarTracker:PCU1-FCU1",
+  "type": "SolarTracker",
+  "backtracking": "off",
+  "deviceCategory": "FCU",
+  "owner": ["urn:ngsi-ld:Device:PCU1"],
+  "location": {
+    "type": "Point",
+    "coordinates": [16.563436, 40.850453]
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.GreenEnergy/master/context.jsonld"
+  ]
+}
