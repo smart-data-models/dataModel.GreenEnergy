@@ -13,7 +13,7 @@ The following entity types are available:
 
 - [PhotovoltaicMeasurement](https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/PhotovoltaicMeasurement/README.md). The Data Model is intended to measure the continuous power transferred by the photo-voltaic panel to an Inverter Device.
 
-- [SolrTracker](https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/SolrTracker/README.md). .
+- [SolarTracker](https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/SolarTracker/README.md). Description of the data model SolarTracker 
 
 ### Contributors
 [Link](https://github.com/smart-data-models/dataModel.GreenEnergy/blob/master/CONTRIBUTORS.yaml) to the 4 current contributors.
