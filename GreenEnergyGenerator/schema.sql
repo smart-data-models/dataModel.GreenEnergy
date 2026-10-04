@@ -1,3 +1,28 @@
 /* (Beta) Export of data model GreenEnergyGenerator of the subject dataModel.GreenEnergy for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE status_type AS ENUM ('outOfService','withIncidence','working');CREATE TYPE GreenEnergyGenerator_type AS ENUM ('GreenEnergyGenerator');
-CREATE TABLE GreenEnergyGenerator (address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, generationSources JSON, id TEXT PRIMARY KEY, location JSON, maxBiomassPowerGenerated NUMERIC, maxEolicPowerGenerated NUMERIC, maxGeothermalPowerGenerated NUMERIC, maxHydroPowerGenerated NUMERIC, maxSolarPowerGenerated NUMERIC, name TEXT, owner JSON, redistribution BOOLEAN, seeAlso JSON, selfConsumption BOOLEAN, source TEXT, status status_type, type GreenEnergyGenerator_type);
+CREATE TYPE status_type AS ENUM ('outOfService', 'withIncidence', 'working');
+CREATE TYPE GreenEnergyGenerator_type AS ENUM ('GreenEnergyGenerator');
+CREATE TABLE GreenEnergyGenerator (
+  "address" JSON,
+  "alternateName" TEXT,
+  "areaServed" TEXT,
+  "dataProvider" TEXT,
+  "dateCreated" TIMESTAMP,
+  "dateModified" TIMESTAMP,
+  "description" TEXT,
+  "generationSources" JSON,
+  "id" TEXT PRIMARY KEY,
+  "location" JSON,
+  "maxBiomassPowerGenerated" NUMERIC,
+  "maxEolicPowerGenerated" NUMERIC,
+  "maxGeothermalPowerGenerated" NUMERIC,
+  "maxHydroPowerGenerated" NUMERIC,
+  "maxSolarPowerGenerated" NUMERIC,
+  "name" TEXT,
+  "owner" JSON,
+  "redistribution" BOOLEAN,
+  "seeAlso" JSON,
+  "selfConsumption" BOOLEAN,
+  "source" TEXT,
+  "status" status_type,
+  "type" GreenEnergyGenerator_type
+);
