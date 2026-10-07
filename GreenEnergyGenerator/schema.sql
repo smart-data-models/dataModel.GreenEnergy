@@ -1,5 +1,5 @@
 /* (Beta) Export of data model GreenEnergyGenerator of the subject dataModel.GreenEnergy for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE status_type AS ENUM ('outOfService', 'withIncidence', 'working');
+CREATE TYPE GreenEnergyGenerator_status_type AS ENUM ('outOfService', 'withIncidence', 'working');
 CREATE TYPE GreenEnergyGenerator_type AS ENUM ('GreenEnergyGenerator');
 CREATE TABLE GreenEnergyGenerator (
   "address" JSON,
@@ -23,6 +23,6 @@ CREATE TABLE GreenEnergyGenerator (
   "seeAlso" JSON,
   "selfConsumption" BOOLEAN,
   "source" TEXT,
-  "status" status_type,
+  "status" GreenEnergyGenerator_status_type,
   "type" GreenEnergyGenerator_type
 );
